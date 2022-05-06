@@ -1,9 +1,0 @@
-@charset "UTF-8";
-@import 'variables'; // 변수
-@import 'reset.scss'; // 초기화
-@import url(common_new.css); // header, footer
-
-@import 'main'; // main
-@import 'board'; // 게시판, 테이블, 상세페이지
-@import 'form'; // input, list style
-@import 'button'; // button, popup
