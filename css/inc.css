@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Amiri:400,700&display=swap');
+@-ms-viewport{width:device-width}
+html{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+html,body,div,p,span,a,img,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,form,input,select,textarea,button,label,fieldset,table,tr,td,th,tbody,thead,tfoot,caption,video,strong,em,i,b{margin:0;padding:0; border:0; word-break:keep-all; font-family:'Noto Sans KR', sans-serif;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;} 
+ul,ol,li{ list-style:none;}
+img { border:none;}
+em, i, b{ font-style:normal;}
+table{ border-collapse:collapse; border-spacing:0;}
+table > caption{ position:relative;}
+strong{ font-weight:normal;}
+caption, legend, label.hidden{ position:absolute; left:0; top:0; overflow:hidden; width:1px; height:1px; text-indent:-9999px; background:none; font-size:0; line-height:0;}
+cpation > strong{ position:absolute; left:0; top:-9999px; overflow:hidden; width:0; height:0;}
+span, strong, a, em, i, b{ font-size:inherit; font-family:inherit;}
+
+a:link{ color:#333;text-decoration:none}
+a:visited{ color:#333; text-decoration:none}
+a:active{ color:#333;text-decoration:none}
+a:hover{ color:#333;text-decoration:none}
+
+html, body{ overflow-x:hidden;}
+
+.box{ margin:0 auto; width:1200px;}
