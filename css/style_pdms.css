@@ -81,12 +81,19 @@
     .pdms .section1 .mock_list > li { margin-left: 60px; }
     .pdms .section1:before { height: 1286px; }
     .pdms .section1 .frame { left: -20px; margin-top: 100px; }
-    .pdms .section2 .wrap { width: 100%; }
+    .pdms .wrap, .pdms .section2 .wrap { width: 100%; }
     .pdms .section2 .wrap > li:first-child, .pdms .section2 .wrap > li:last-child { float: none; width: 100%; padding-bottom: 100px; }
     .pdms .section2 .wrap > li:first-child:before { top: 0; height: 100%; background-size: cover; }
     .pdms .section2 .wrap > li:last-child .sub_w_1 { margin-top: 0; }
     .pdms .section2 .menu { display: block; text-align: center; padding: 80px 0 80px 0; }
-
+    .pdms .section2 .wrap > li:last-child .inner { padding-right: 0; }
+    .pdms .section2 .wrap > li:last-child .sub_w_1 { transform: translateX(0); margin-top: 100px; }
+    .pdms .section2 .wrap > li:last-child:after { height: 100%; bottom: 0; }
+    .pdms .section2 .sub_tit { margin: 80px 0 50px; }
+    .pdms .section3 .wrap > div { top: 0; text-align: center; margin: 100px 0; }
+    .pdms .section3 .mock_list { left: -20px; padding-top: 100px; }
+    .pdms .section3 .mock_list > li { margin-left: 60px; }
+    .pdms .section4 { padding: 100px 0; }
 }
 
 @media screen and (max-width: 1230px){

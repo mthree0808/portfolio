@@ -434,7 +434,7 @@ body.main, body.sub { opacity: 0; }
     .main .con_idx ul > li.sports .logo, .main .con_idx ul > li.sports .ob { display: none; }
     .ov_area { margin: 85px auto; }
     .mock_list a { box-sizing: border-box; }
-    .footer { padding: 30px 0; margin-top: 50px; }
+    .footer { width: auto; padding: 30px 30px; margin-top: 50px; }
 }
 
 @media screen and (max-width: 1130px){

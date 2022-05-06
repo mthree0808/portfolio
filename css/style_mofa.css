@@ -188,7 +188,7 @@
     .mofa .section4 .mock_list a { border-radius: 15px; }
     .mofa .section4 .mock_list > li { display: block; width: calc(50% - 15px); margin-bottom: 30px; }
     .mofa .section4 .mock_list > li.issue1 { top: 0; margin-right: 0; }
-    .mofa .section4 .mock_list > li.issue2 .frame_top, .mofa .section4 .mock_list a { height: 550px; background-size: cover; image-rendering: -webkit-optimize-contrast; }
+    .mofa .section4 .mock_list > li.issue2 .frame_top, .mofa .section4 .mock_list a { height: 400px; background-size: cover; image-rendering: -webkit-optimize-contrast; }
     .mofa .section4 .mock_list > li.issue2 .frame_top { width: 100%; }
     .mofa .section4 .mock_list > li.issue3 { top: 0; margin-right: 0; }
     .mofa .section4 .mock_list > li.issue4 { top: 0; }
@@ -218,9 +218,9 @@
     .mofa .section1 .wrap { padding: 0; }
     .mofa .section1 .mock_list > li:first-child { margin-bottom: 30px; }
     .mofa .section1 .mock_list > li:nth-child(2), .mofa .section1 .mock_list > li:nth-child(3) { float: none; width: 100%; }
-    .mofa .section1 .mock_list > li:nth-child(2) a, .mofa .section1 .mock_list > li:nth-child(3) a { width: 220px; display: inline-block; }
+    .mofa .section1 .mock_list > li:nth-child(2) a, .mofa .section1 .mock_list > li:nth-child(3) a { width: 260px; display: inline-block; }
     .mofa .section1 .mock_list > li:nth-child(3) { margin-top: 30px; }
-    .mofa .intro_m, .mofa .main_m_1 { height: 400px; }
+    .mofa .intro_m, .mofa .main_m_1 { height: 460px; }
     .mofa .section2, .mofa .section3 .mock_list { padding: 0 30px; }
     .mofa .section2 .map { margin: 80px 0 50px; }
     .mofa .section3 .sub_tit { padding: 50px 0 60px; }
@@ -228,9 +228,9 @@
     .mofa .section3 .icon_area, .mofa .section3 > div { display: none; }
     .mofa .section4:before { background-size: cover; }
     .mofa .section4 .mock_list > li { width: 100%; }
-    .mofa .section4 .mock_list > li a, .mofa .section4 .mock_list > li.issue2 .frame_top a { width: 220px; display: inline-block; }
+    .mofa .section4 .mock_list > li a, .mofa .section4 .mock_list > li.issue2 .frame_top a { width: 260px; display: inline-block; }
     .mofa .section4 .mock_list > li.issue2 .frame_top { box-sizing: border-box; }
-    .mofa .section4 .mock_list a { height: 400px; }
+    .mofa .section4 .mock_list a { height: 460px; }
     .mofa .section4 .mock_list > li.issue2 .frame { height: auto; }
     .mofa .section4 .mock_list > li.issue6 { margin-bottom: 0; }
     .mofa .info dl:first-child > dd ul > li { height: 140px; }
