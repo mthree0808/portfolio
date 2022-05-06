@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 안산시 다국어 */
+.ansan .svisual > span:before { background-image: url(../images/sub/ansan/bg.jpg); }
+.ansan .main_area { position: relative; }
+.ansan .main_area:before { content: ''; position: absolute; left: 0; top: 140px; z-index: -1; width: 100%; height: 1148px; 
+background: -moz-linear-gradient(135deg, #30217d 0%, #450377 100%);   
+background: -ms-linear-gradient(135deg,  #30217d 0%, #450377 100%);
+background: linear-gradient(135deg,  #30217d 0%, #450377 100%); }
+.ansan .main_area:after { content: 'ANSAN'; position: absolute; right: 50%; margin-right: -1178px; top: 586px; z-index: 1; transform: rotate(90deg); font-family: montB; font-size: 230px; color: #fff; opacity: 0.04; }
+.ansan .main_area .frame { height: 2168px; background-size: 1400px; }
+.ansan .main_area .frame_top { height: 683px; background-size: 1400px; }
+.ansan .section1 { padding: 280px 0 0 0; }
+.ansan .section1 .sub_tit { position: relative; margin-bottom: 60px; text-align: left; }
+.ansan .section1 .sub_tit:before { content: ''; position: absolute; left: -345px; top: -148px; z-index: -1; width: 514px; height: 438px; background: url(../images/sub/ansan/tit_bg1.jpg) no-repeat center top; }
+.ansan .wrap { width: 1700px; text-align: right; }
+.ansan .section1 .wrap > div { position: relative; display: inline-block; vertical-align: top; width: 1078px; }
+.ansan .section1 .wrap > div:before { content: ''; position: absolute; right: -792px; top: -10px; z-index: -1; width: 1496px; height: 164px; background: url(../images/sub/ansan/inno.png) no-repeat center top; }
+.ansan .section1 .wrap > div:after { content: ''; position: absolute; left: -719px; bottom: -145px; z-index: -1; width: 1078px; height: 164px; background: url(../images/sub/ansan/gro.png) no-repeat center top; }
+.ansan .section1 .mock_list { text-align: left; width: 2290px; left: 50%; margin-top: 240px; margin-left: -750px; }
+.ansan .section1 .mock_list > li { margin-left: 125px; }
+.ansan .section1 .mock_list > li:first-child { position: relative; margin-left: 0; }
+.ansan .section1 .mock_list > li:first-child:before { content: ''; position: absolute; left: 404px; bottom: -123px; z-index: 3; width: 267px; height: 316px; background: url(../images/sub/ansan/sh.png) no-repeat center top; }
+.ansan .section1 .mock_list > li:last-child { position: relative; margin-top: 308px; }
+.ansan .section1 .mock_list > li:last-child > ul { position: absolute; left: -660px; bottom: 80px; z-index: -1; text-align: left; font-size: 0; }
+.ansan .section1 .mock_list > li:last-child > ul > li { display: inline-block; vertical-align: top; transform: skewX(-54deg); width: 220px; height: 25px; background-color: #e5e6e9; border: 2px solid #e5e6e9; margin-left: 40px; }
+.ansan .section1 .mock_list > li:last-child > ul > li:first-child { margin-left: 0; background-color: #fff; border: 2px solid #ff9c00;
+border-left-width: 3px; border-right-width: 3px; }
+.ansan .section2 .mock_list { width: 1570px; left: 50%; transform: translateX(-50%); }
+.ansan .section2 .mock_list > li.issue1 { width: 100%; margin: 120px 0 0 0; }
+.ansan .section2 .mock_list > li.issue2 { position: absolute; right: 0; transform: translateY(320px); }
+.ansan .section2 .mock_list > li.issue3 { width: 100%; margin: 90px 0 0 0; }
+.ansan .section2 .mock_list > li.issue4 { position: absolute; right: 0; transform: translateY(413px); }
+.ansan .section2 .mock_list > li.issue5 { width: 100%; margin: 90px 0 0 0; }
+.ansan .section3 { padding-top: 300px; text-align: center; }
+.ansan .section3 .sub_tit { display: inline-block; vertical-align: top;  position: relative; padding-left: 320px; text-align: center; }
+.ansan .section3 .sub_tit:before { content: ''; position: absolute; right: -410px; top: -148px; z-index: -1; width: 514px; height: 438px; background: url(../images/sub/ansan/tit_bg2.jpg) no-repeat center top; }
+.ansan .section3 .wrap { position: relative; z-index: 1; margin-top: 40px; }
+.ansan .section3 .issue1 { position: absolute; left: 135px; top: 0; z-index: 1; }
+.ansan .section3 .mock_list { position: relative; margin-left: 590px; text-align: left; }
+.ansan .section3 .mock_list > li.issue2 { position: relative; margin-top: 190px; width: 100%; }
+.ansan .section3 .mock_list > li.issue2 > ul { position: absolute; left: 448px; top: 145px; z-index: 1; font-size: 0; }
+.ansan .section3 .mock_list > li.issue2 > ul > li { display: inline-block; vertical-align: top; width: 120px; height: 115px; margin-left: 45px; }
+.ansan .section3 .mock_list > li.issue2 > ul > li.st1 { margin-left: 0; background: url(../images/sub/ansan/icon1.png) no-repeat center top; }
+.ansan .section3 .mock_list > li.issue2 > ul > li.st2 { background: url(../images/sub/ansan/icon2.png) no-repeat center top; }
+.ansan .section3 .mock_list > li.issue2 > ul > li.st3 { background: url(../images/sub/ansan/icon3.png) no-repeat center top; }
+.ansan .section3 .mock_list > li.issue2 > ul > li.st4 { background: url(../images/sub/ansan/icon4.png) no-repeat center top; }
+.ansan .section3 .mock_list > li.issue3 { position: absolute; left: 444px; transform: translateY(550px); }
+.ansan .section3 .mock_list > li.issue4 { position: relative; margin-top: 120px; width: 100%; }
+.ansan .section3 .mock_list > li.issue4:before { content: ''; position: absolute; left: -665px; bottom: -85px; z-index: 1; width: 440px; height: 304px; background: url(../images/sub/ansan/illu1.jpg) no-repeat center top; border-radius: 20px; }
+.ansan .section3 .mock_list > li.issue4:after { content: ''; position: absolute; right: 110px; bottom: -5px; z-index: 1; width: 440px; height: 304px; background: url(../images/sub/ansan/illu2.jpg) no-repeat center top; border-radius: 20px; }
+.ansan .section3 .mock_list:last-child { margin: 120px 0 0 135px; }
+.ansan .section3 .mock_list:last-child > li.issue5 { position: relative; margin: 490px 0 0 0; }
+.ansan .section3 .mock_list:last-child > li.issue5:before { content: ''; position: absolute; left: -95px; top: -425px; z-index: 1; width: 440px; height: 304px; background: url(../images/sub/ansan/illu3.jpg) no-repeat center top; border-radius: 20px; }
+.ansan .section3 .mock_list:last-child > li.issue6 { margin: 0 0 0 125px; }
+.ansan .section3 .mock_list:last-child > li.issue7 { position: relative; margin: 100px 0 0 125px; }
+.ansan .section3 .mock_list:last-child > li.issue7:before { content: ''; position: absolute; right: -110px; bottom: -405px; z-index: 1; width: 440px; height: 304px; background: url(../images/sub/ansan/illu4.jpg) no-repeat center top; border-radius: 20px; }
+.ansan .info { padding: 180px 0 240px; }
+.ansan .info dl { margin-top: 100px; }
+.ansan .info dl:first-child { margin-top: 0; }
+.ansan .info:after { content: ''; display: block; clear: both; }
+.ansan .info .wrap { width: 1512px; text-align: left; }
+.ansan .info dt { margin-bottom: 50px; }
+.ansan .info dl:first-child ul:after { content: ''; display: block; clear: both; }
+.ansan .info dl:first-child li { float: left; display: table; margin-left: 20px; width: 300px; height: 120px; transform: skewX(-45deg); }
+.ansan .info dl:first-child li:first-child { margin-left: 60px; }
+.ansan .info dl:first-child li > span { display: table-cell; vertical-align: middle; text-align: center; font-family: montM; font-size: 20px; color: #fff; transform: skewX(45deg); }
+.ansan .info dl:first-child li.st1 { background-color: #372392; }
+.ansan .info dl:first-child li.st2 { background-color: #ff9c00; }
+.ansan .info dl:first-child li.st3 { background-color: #537abf; }
+.ansan .info dl:first-child li.st4 { background-color: #29b354; }
+.ansan .info dl:last-child li { float: left; margin-left: 70px; }
+.ansan .info dl:last-child li:first-child { margin-left: 0; }
+
+/* 안산시 다국어 이미지 */
+.ansan .main { background-image: url(../images/sub/ansan/main.jpg); height: 600px; }
+.ansan .main_m { background-image: url(../images/sub/ansan/main_m_th.jpg); height: 1181px; }
+.ansan .all_1 { background-image: url(../images/sub/ansan/all_1_th.jpg); height: 650px; }
+.ansan .all_2 { background-image: url(../images/sub/ansan/all_2_th.jpg); height: 650px; }
+.ansan .drop { position: relative; z-index: 3; background-image: url(../images/sub/ansan/drop_th.jpg); height: 613px; }
+.ansan .sub_w_1 { background-image: url(../images/sub/ansan/sub_w_1_th.jpg); height: 744px; }
+.ansan .sub_w_2 { background-image: url(../images/sub/ansan/sub_w_2_th.jpg); height: 744px; }
+.ansan .sub_w_3 { background-image: url(../images/sub/ansan/sub_w_3_th.jpg); height: 993px; }
+.ansan .sub_w_4 { background-image: url(../images/sub/ansan/sub_w_4_th.jpg); height: 1115px; }
+.ansan .sub_w_5 { background-image: url(../images/sub/ansan/sub_w_5_th.jpg); height: 800px; }
+.ansan .sub_w_6 { background-image: url(../images/sub/ansan/sub_w_6_th.jpg); height: 1170px; }
+.ansan .sub_w_7 { background-image: url(../images/sub/ansan/sub_w_7_th.jpg); height: 922px; }
+.ansan .sub_m_1 { background-image: url(../images/sub/ansan/sub_m_1_th.jpg); height: 650px; }
+.ansan .sub_m_2 { background-image: url(../images/sub/ansan/sub_m_2_th.jpg); height: 650px; }
+.ansan .sub_m_3 { background-image: url(../images/sub/ansan/sub_m_3_th.jpg); height: 940px; }
+.ansan .sub_m_4 { background-image: url(../images/sub/ansan/sub_m_4_th.jpg); height: 660px; }

@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+font-family: 'notokrBL';
+src: url('../font/notokr-black.eot'); src:local(※);
+src: url('../font/notokr-black.eot?#iefix') format('embedded-opentype'),
+	 url('../font/notokr-black.woff2') format('woff2'),
+	 url('../font/notokr-black.woff') format('woff'),
+	 url('../font/notokr-black.ttf') format('truetype'),
+	 url('../font/notokr-black.svg#notokr-black') format('svg');
+}
+@font-face {
+font-family: 'notokrB';
+src: url('../font/notokr-bold.eot'); src:local(※);
+src: url('../font/notokr-bold.eot?#iefix') format('embedded-opentype'),
+	 url('../font/notokr-bold.woff2') format('woff2'),
+	 url('../font/notokr-bold.woff') format('woff'),
+	 url('../font/notokr-bold.ttf') format('truetype'),
+	 url('../font/notokr-bold.svg#notokr-bold') format('svg');
+}
+@font-face {
+font-family: 'notokrM';
+src: url('../font/notokr-medium.eot'); src:local(※);
+src: url('../font/notokr-medium.eot?#iefix') format('embedded-opentype'),
+	 url('../font/notokr-medium.woff2') format('woff2'),
+	 url('../font/notokr-medium.woff') format('woff'),
+	 url('../font/notokr-medium.ttf') format('truetype'),
+	 url('../font/notokr-medium.svg#notokr-medium') format('svg');
+}
+@font-face {
+font-family: 'notokrR';
+src: url('../font/notokr-regular.eot'); src:local(※);
+src: url('../font/notokr-regular.eot?#iefix') format('embedded-opentype'),
+	 url('../font/notokr-regular.woff2') format('woff2'),
+	 url('../font/notokr-regular.woff') format('woff'),
+	 url('../font/notokr-regular.ttf') format('truetype'),
+	 url('../font/notokr-regular.svg#notokr-regular') format('svg');
+}
+@font-face {
+font-family: 'notokrL';
+src: url('../font/notokr-light.eot'); src:local(※);
+src: url('../font/notokr-light.eot?#iefix') format('embedded-opentype'),
+	 url('../font/notokr-light.woff2') format('woff2'),
+	 url('../font/notokr-light.woff') format('woff'),
+	 url('../font/notokr-light.ttf') format('truetype'),
+	 url('../font/notokr-light.svg#notokr-light') format('svg');
+}
+@font-face {
+font-family: 'notokrT';
+src: url('../font/notokr-thin.eot'); src:local(※);
+src: url('../font/notokr-thin.eot?#iefix') format('embedded-opentype'),
+	 url('../font/notokr-thin.woff2') format('woff2'),
+	 url('../font/notokr-thin.woff') format('woff'),
+	 url('../font/notokr-thin.ttf') format('truetype'),
+	 url('../font/notokr-thin.svg#notokr-thin') format('svg');
+}
+@font-face {
+	font-family: 'montM';
+	src: url('../font/montserrat-medium.ttf'); src:local(※);
+	src: url('../font/montserrat-medium.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-medium.woff2') format('woff2'),
+		 url('../font/montserrat-medium.woff') format('woff'),
+		 url('../font/montserrat-medium.ttf') format('truetype'),
+		 url('../font/montserrat-medium.svg#montserrat-medium') format('svg');
+}
+@font-face {
+	font-family: 'montSB';
+	src: url('../font/montserrat-semibold.eot'); src:local(※);
+	src: url('../font/montserrat-semibold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-semibold.woff2') format('woff2'),
+		 url('../font/montserrat-semibold.woff') format('woff'),
+		 url('../font/montserrat-semibold.ttf') format('truetype'),
+		 url('../font/montserrat-semibold.svg#montserrat-semibold') format('svg');
+}
+@font-face {
+	font-family: 'montB';
+	src: url('../font/montserrat-bold.eot'); src:local(※);
+	src: url('../font/montserrat-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-bold.woff2') format('woff2'),
+		 url('../font/montserrat-bold.woff') format('woff'),
+		 url('../font/montserrat-bold.ttf') format('truetype'),
+		 url('../font/montserrat-bold.svg#montserrat-bold') format('svg');
+}
+@font-face {
+	font-family: 'montEB';
+	src: url('../font/montserrat-extrabold.eot'); src:local(※);
+	src: url('../font/montserrat-extrabold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-extrabold.woff2') format('woff2'),
+		 url('../font/montserrat-extrabold.woff') format('woff'),
+		 url('../font/montserrat-extrabold.ttf') format('truetype'),
+		 url('../font/montserrat-extrabold.svg#montserrat-extrabold') format('svg');
+}
+@font-face {
+	font-family: 'openB';
+	src: url('../font/opensans-bold.eot'); src:local(※);
+	src: url('../font/opensans-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/opensans-bold.woff2') format('woff2'),
+		 url('../font/opensans-bold.woff') format('woff'),
+		 url('../font/opensans-bold.ttf') format('truetype'),
+		 url('../font/opensans-bold.svg#opensans-bold') format('svg');
+}
+@font-face {
+	font-family: 'jalnan';
+	src: url('../font/jalnan.eot'); src:local(※);
+	src: url('../font/jalnan.eot?#iefix') format('embedded-opentype'),
+		 url('../font/jalnan.woff2') format('woff2'),
+		 url('../font/jalnan.woff') format('woff'),
+		 url('../font/jalnan.ttf') format('truetype'),
+		 url('../font/jalnan.svg#jalnan') format('svg');
+}
+@font-face {
+	font-family: 'bingB';
+	src: url('../font/binggrae-bold.eot'); src:local(※);
+	src: url('../font/binggrae-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/binggrae-bold.woff2') format('woff2'),
+		 url('../font/binggrae-bold.woff') format('woff'),
+		 url('../font/binggrae-bold.ttf') format('truetype'),
+		 url('../font/binggrae-bold.svg#binggrae-bold') format('svg');
+}
+@font-face {
+	font-family: 'lotteB';
+	src: url('../font/lottedream-bold.eot'); src:local(※);
+	src: url('../font/lottedream-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/lottedream-bold.woff2') format('woff2'),
+		 url('../font/lottedream-bold.woff') format('woff'),
+		 url('../font/lottedream-bold.ttf') format('truetype'),
+		 url('../font/lottedream-bold.svg#lottedream-bold') format('svg');
+}
+@font-face {
+	font-family: 'robotoB';
+	src: url('../font/roboto-bold.eot'); src:local(※);
+	src: url('../font/roboto-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/roboto-bold.woff2') format('woff2'),
+		 url('../font/roboto-bold.woff') format('woff'),
+		 url('../font/roboto-bold.ttf') format('truetype'),
+		 url('../font/roboto-bold.svg#roboto-bold') format('svg');
+}
+@font-face {
+	font-family: 'gmarketB';
+	src: url('../font/gmarket-bold.eot'); src:local(※);
+	src: url('../font/gmarket-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/gmarket-bold.woff2') format('woff2'),
+		 url('../font/gmarket-bold.woff') format('woff'),
+		 url('../font/gmarket-bold.ttf') format('truetype'),
+		 url('../font/gmarket-bold.svg#gmarket-bold') format('svg');
+}
+@font-face {
+	font-family: 'nanum';
+	src: url('../font/nanum.eot'); src:local(※);
+	src: url('../font/nanum.eot?#iefix') format('embedded-opentype'),
+		 url('../font/nanum.woff2') format('woff2'),
+		 url('../font/nanum.woff') format('woff'),
+		 url('../font/nanum.ttf') format('truetype'),
+		 url('../font/nanum.svg#nanum') format('svg');
+}

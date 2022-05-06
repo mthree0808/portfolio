@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 개인정보침해예방시스템 */
+.privacy .svisual { left: 50%; width: 2000px; transform: translateX(-50%); overflow: visible; }
+.privacy .svisual .bg:before { background-image: url(../images/sub/privacy/t_bg.jpg); animation: none; }
+.privacy .svisual .ai { position: absolute; left: -280px; top: 0; z-index: 3; width: 865px; height: 804px; background: url(../images/sub/privacy/ai.png) no-repeat center top; opacity: 0; animation: ai 1s forwards; animation-delay: 300ms; }
+.privacy .svisual .hand { position: absolute; right: 0; top: 0; z-index: 3; width: 530px; height: 609px; background: url(../images/sub/privacy/hand.png) no-repeat center top; opacity: 0; animation: hand 1s forwards; animation-delay: 600ms; }
+.privacy .main_area { position: relative; z-index: 4; }
+.privacy .main_area .frame { height: 1569px; background-size: 1400px auto; } 
+.privacy .main_area .frame:before { content: ''; position: absolute; left: -280px; top: 414px; z-index: 3; width: 210px; height: 186px; background: url(../images/sub/privacy/illu_1.png) no-repeat center top; } 
+.privacy .main_area .frame:after { content: ''; position: absolute; right: -276px; top: 800px; z-index: 3; width: 210px; height: 191px; background: url(../images/sub/privacy/illu_2.png) no-repeat center top; } 
+.privacy .main_area .frame_top { height: 745px; background-size: 1400px auto; }
+.privacy .section1 { position: relative; background-color: #edf6fb; padding: 440px 0 180px; transform: translateY(-173px); overflow: hidden; }
+.privacy .section1 .mock_list:first-child { left: 50%; margin-left: -1203px; width: 2162px; text-align: left; }
+.privacy .section1 .mock_list:first-child .sub_tit { position: absolute; right: 160px; top: 0; z-index: 1; text-align: right; }
+.privacy .section1 .mock_list:first-child > li { margin-left: 90px; }
+.privacy .section1 .mock_list:first-child > li > a { margin-top: 115px; }
+.privacy .section1 .mock_list:first-child > li:first-child { position: relative; margin-left: 0; }
+.privacy .section1 .mock_list:first-child > li.issue1:before { content: ''; position: absolute; right: 214px; top: -531px; z-index: -1; width: 430px; height: 430px; background-color: #03c6a8; border-radius: 50%; }
+.privacy .section1 .mock_list:first-child > li.issue2:before { content: ''; position: absolute; right: -415px; top: -165px; z-index: -1; width: 717px; height: 717px; background-color: #16a6fd; border-radius: 50%; }
+.privacy .section1 .mock_list:last-child { margin-top: 130px; text-align: center; }
+.privacy .section1 .mock_list:last-child > li > a { display: inline-block; vertical-align: top; }
+.privacy .section1 .mock_list:last-child ul > li { display: inline-block; vertical-align: top; position: relative; z-index: 4; }
+.privacy .section1 .mock_list:last-child ul > li.issue1 { position: relative; margin-top: -75px; }
+.privacy .section1 .mock_list:last-child ul > li.issue1:after { content: ''; position: absolute; right: -385px; bottom: -80px; z-index: -1; width: 210px; height: 210px; background-color: #f8ca2d; border-radius: 50%; }
+.privacy .section1 .mock_list:last-child ul > li.issue2 { left: -360px; margin-top: -62px; z-index: 1; }
+.privacy .section1 .mock_list:last-child ul > li.issue3 { position: relative; right: -360px; margin-top: -82px; }
+.privacy .section1 .mock_list:last-child ul > li.issue3:after { content: ''; position: absolute; left: -970px; bottom: -468px; z-index: -1; width: 658px; height: 658px; background-color: #5968c3; border-radius: 50%; }
+.privacy .section2 { padding: 100px 0 180px; } 
+.privacy .section2 .mock_list:first-child { position: relative; width: 2162px; left: 50%; margin-left: -1000px; }
+.privacy .section2 .mock_list:first-child > li { margin-left: 90px; }
+.privacy .section2 .mock_list:first-child > li:first-child { position: relative; margin-left: 0; }
+.privacy .section2 .mock_list:first-child > li:first-child:before { content: 'PERSONAL'; position: absolute; right: -500px; top: -130px; z-index: -1; font-family: montB; font-size: 180px; color: #f7f7f7; }
+.privacy .section2 .mock_list:first-child > li:last-child { margin-top: 160px; }
+.privacy .section2 .mock_list:last-child { position: relative; width: 2162px; left: 50%; margin-left: -1220px; margin-top: 200px; }
+.privacy .section2 .mock_list:last-child > li { margin-left: 90px; }
+.privacy .section2 .mock_list:last-child > li:first-child { margin-left: 0; margin-top: 160px; }
+.privacy .section2 .mock_list:last-child > li:last-child { position: relative; }
+.privacy .section2 .mock_list:last-child > li:last-child:before { content: 'INFORMATION'; position: absolute; right: 75px; top: -150px; z-index: -1; font-family: montB; font-size: 180px; color: #f7f7f7; }
+.privacy .info { padding-top: 0; }
+.privacy .info dl { margin-top: 100px; }
+.privacy .info dl:first-child { margin-top: 0; }
+.privacy .info dl > dt { margin-bottom: 50px; }
+.privacy .info dl > dd ul:after { content: ''; display: block; clear: both; }
+.privacy .info dl:first-child > dd ul > li { float: left; margin-left: 40px; }
+.privacy .info dl:last-child > dd ul > li { float: left; margin-left: 70px; }
+.privacy .info dl > dd ul > li:first-child { margin-left: 0; }
+.privacy .info dl:first-child > dd ul > li { display: table; text-align: center; width: 160px; height: 160px; margin-left: 40px; border-radius: 50%; border-width: 16px; border-style: solid; }
+.privacy .info dl:first-child > dd ul > li:first-child { margin-left: 0; }
+.privacy .info dl:first-child > dd ul > li.st1 { background-color: #29ace4; border-color: #dcf2ff; }
+.privacy .info dl:first-child > dd ul > li.st2 { background-color: #03c6a8; border-color: #d9f7f2; }
+.privacy .info dl:first-child > dd ul > li.st3 { background-color: #f96796; border-color: #fee8ef; }
+.privacy .info dl:first-child > dd ul > li.st4 { background-color: #6574cf; border-color: #e8eaf8; }
+.privacy .info dl:first-child > dd ul > li.st5 { background-color: #415866; border-color: #eceeef; }
+.privacy .info dl:first-child > dd ul > li span { display: table-cell; vertical-align: middle; font-family: montM; font-size: 20px; color: #fff; }
+.privacy .info dl:last-child ul > li > .gmarketB { margin-top: 20px; }
+
+/* 개인정보침해예방시스템 이미지 */
+.privacy .main { background-image: url(../images/sub/privacy/main.jpg); height: 768px; }
+.privacy .sub_w_1 { background-image: url(../images/sub/privacy/sub_w_1_th.jpg); height: 660px; }
+.privacy .sub_w_2 { background-image: url(../images/sub/privacy/sub_w_2_th.jpg); height: 660px; }
+.privacy .sub_w_3 { background-image: url(../images/sub/privacy/sub_w_3_th.jpg); height: 623px; }
+.privacy .sub_w_4 { background-image: url(../images/sub/privacy/sub_w_4_th.jpg); height: 588px; }
+.privacy .sub_w_5 { background-image: url(../images/sub/privacy/sub_w_5_th.jpg); height: 431px; }
+.privacy .sub_w_6 { background-image: url(../images/sub/privacy/sub_w_6_th.jpg); height: 494px; }
+.privacy .sub_w_7 { background-image: url(../images/sub/privacy/sub_w_7_th.jpg); height: 650px; }
+.privacy .sub_w_8 { background-image: url(../images/sub/privacy/sub_w_8_th.jpg); height: 650px; }
+.privacy .sub_w_9 { background-image: url(../images/sub/privacy/sub_w_9_th.jpg); height: 860px; }
+.privacy .sub_w_10 { background-image: url(../images/sub/privacy/sub_w_10_th.jpg); height: 843px; }
+
+/* 애니메이션 */
+@keyframes ai {
+    0% { left: -380px; opacity: 0; }
+    100% { left: -280px; opacity: 1; }
+}
+@keyframes hand {
+    0% { right: -100px; opacity: 0; }
+    100% { right: 0; opacity: 1; }
+}
