@@ -1,0 +1,247 @@
+@mixin noto{
+	@font-face {
+	  font-family: 'Noto Sans';
+		font-weight: 200;
+	  font-style: normal;
+	  src: url('../fonts/NotoSansKR-Light.eot');
+	  src: local(※), url('../fonts/NotoSansKR-Light.eot#iefix') format('embedded-opentype'),
+	  url('../fonts/NotoSansKR-Light.woff') format('woff'),
+	  url('../fonts/NotoSansKR-Light.otf') format('opentype');
+	}
+	@font-face {
+	  font-family: 'Noto Sans';
+		font-weight: 300;
+	  font-style: normal;
+	  src: url('../fonts/NotoSansKR-DemiLight.eot');
+	  src: local(※), url('../fonts/NotoSansKR-DemiLight.eot#iefix') format('embedded-opentype'),
+	  url('../fonts/NotoSansKR-DemiLight.woff') format('woff'),
+	  url('../fonts/NotoSansKR-DemiLight.otf') format('opentype');
+	}
+	@font-face {
+	  font-family: 'Noto Sans';
+		font-weight: 400;
+	  font-style: normal;
+	  src: url('../common/fonts/NotoSansKR-Regular.eot');
+	  src: local(※), url('../fonts/NotoSansKR-Regular.eot#iefix') format('embedded-opentype'),
+	  url('../fonts/NotoSansKR-Regular.woff') format('woff'),
+	  url('../fonts/NotoSansKR-Regular.otf') format('opentype');
+	}
+	@font-face {
+	  font-family: 'Noto Sans';
+		font-weight: 500;
+	  font-style: normal;
+	  src: url('../fonts/NotoSansKR-Medium.eot');
+	  src: local(※), url('../fonts/NotoSansKR-Medium.eot#iefix') format('embedded-opentype'),
+	  url('../fonts/NotoSansKR-Medium.woff') format('woff'),
+	  url('../fonts/NotoSansKR-Medium.otf') format('opentype');
+	}
+	@font-face {
+	  font-family: 'Noto Sans';
+		font-weight: 700;
+	  font-style: normal;
+	  src: url('../fonts/NotoSansKR-Bold.eot');
+	  src: local(※), url('../fonts/NotoSansKR-Bold.eot#iefix') format('embedded-opentype'),
+	  url('../fonts/NotoSansKR-Bold.woff') format('woff'),
+	  url('../fonts/NotoSansKR-Bold.otf') format('opentype');
+	}
+}
+@mixin roboto{
+	@font-face {
+		font-family: 'Roboto';
+		font-weight: 300;
+		font-style: normal;
+		src: url('../fonts/Roboto-Light.eot');
+		src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/Roboto-Light.woff') format('woff'),
+				url('../fonts/Roboto-Light.otf') format('opentype');
+		unicode-range: U+0030-0039;
+	}
+	@font-face {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-style: normal;
+		src: url('../fonts/Roboto-Regular.eot');
+		src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/Roboto-Regular.woff') format('woff'),
+				url('../fonts/Roboto-Regular.otf') format('opentype');
+		unicode-range: U+0030-0039;
+	}
+	@font-face {
+		font-family: 'Roboto';
+		font-weight: 500;
+		font-style: normal;
+		src: url('../fonts/Roboto-Medium.eot');
+		src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/Roboto-Medium.woff') format('woff'),
+				url('../fonts/Roboto-Medium.otf') format('opentype');
+		unicode-range: U+0030-0039;
+	}
+	@font-face {
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-style: normal;
+		src: url('../fonts/Roboto-Bold.eot');
+		src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/Roboto-Bold.woff') format('woff'),
+				url('../fonts/Roboto-Bold.otf') format('opentype');
+		unicode-range: U+0030-0039;
+	}
+}
+
+@mixin jalnan{
+	@font-face {
+		font-family: 'Jalnan';
+		font-weight: 400;
+		font-style: normal;
+		src: url('../fonts/Jalnan.eot');
+		src: url('../fonts/Jalnan.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/Jalnan.woff') format('woff'),
+				url('../fonts/Jalnan.otf') format('opentype');
+	}
+}
+
+@mixin desktop { @media (min-width: 1180px) { @content; }}
+@mixin lg{ @media (max-width: 1500px) { @content; } }
+@mixin tablet { @media (max-width: 1180px) { @content; } }
+@mixin mobile { @media (max-width: 900px){ @content; } }
+@mixin s-mobile { @media (max-width: 720px){ @content; } }
+@mixin m-mobile { @media (max-width: 500px){ @content; } }
+$img-common: "../img/";
+
+//color
+$white: #fff;
+$black: #000;
+$red: #db375d;
+$blue: #0379d5;
+$navy: #16325a;
+$orange: #ff8400;
+$yellow: #ffc107;
+$green: #06a29f;
+$purple: #9650ec;
+$pink: #f66184;
+$gray-black: #222;
+$gray-deep: #343434;
+$gray-dark: #666;
+$gray-base: #757575;
+$gray-medium: #a4a4a4;
+$gray-medium2: #cecece;
+$gray-light: #fafafa;
+$popup-bg: rgba(0,0,0,0.8);
+$point-color1: #0379d5;
+$point-color2: #04a2a1;
+$point-color3: #495f74;
+$bg-color1: #f9fafb;
+$bg-color2: #f5f7f9;
+
+//border
+$border-base: 1px solid #ddd;
+$border-dashed: 1px dashed #ddd;
+$board-border-top: 2px solid #222;
+
+//font-size
+$fz-base: 16px;
+$fz-min: 0.625em; //10px
+$fz-xxs: 0.813em; //13px
+$fz-xs: 0.875em; //14px
+$fz-sm: 0.938em; //15px
+$fz-md: 1.063em; //17px
+$fz-md2: 1.125em; //18px
+$fz-lg: 1.25em; //20px
+$fz-xl: 1.375em; //22px
+$fz-xxl: 1.5em; //24px
+
+//style
+$header-height: 80px;
+$shadow-black: 0 0 10px rgba($black ,0.15);
+$shadow-white: 0 0 10px rgba($white, 0.15);
+
+$ff-noto: 'Noto Sans', sans-serif;
+$ff-roboto: 'Roboto';
+
+$lh-base: 1.3;
+$lh-md: 1.4;
+$lh-lg: 1.5;
+
+$table-bg: #f3f4f6;
+$table-border-top: 2px solid #222;
+$table-border: 1px solid #dadbdd;
+$table-padding: 15px;
+$tab-active-color: #33658c;
+
+$input-height: 36px;
+$input-padding: 0 10px;
+$select-padding: 0 25px 0 10px;
+$input-margin: 5px;
+$checkbox-size: 20px;
+$input-border: 1px solid #dadbdd;
+$input-bg-color: $white;
+$input-focus-color: $point-color1;
+$focus-outline: 1px dotted $gray-base;
+$button-padding: 0 20px;
+$button-bg: $point-color1;
+$button-bg-cancel: $white;
+$button-bg-form: #636363;
+$button-border: $input-border;
+$radio-color: #cacfd3;
+$radio-active-color: #09a1bd;
+
+$paging-size: 30px;
+$paging-color: #8c8c8c;
+
+//mixin
+@mixin clearfix{&:after{content: ''; display: block; clear: both;}}
+@mixin va-m($font-size...){
+	font-size: 0;
+	&:before{content: ''; display: inline-block; height: 100%; vertical-align: middle;}
+	>.va_m{display: inline-block; font-size: $font-size; vertical-align: middle;}
+}
+@mixin table-reset{width: 100%; table-layout: fixed; border-spacing: 0; border-collapse: collapse;}
+@mixin ell1{max-width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+@mixin ell2{text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+@mixin ell3{text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+@mixin speed{transition: all 0.3s;}
+@mixin transform($attr){-ms-transform: $attr;transform: $attr;}
+@mixin transform-middle{position: absolute; top: 50%; left: 50%; @include transform(translate(-50%, -50%));}
+@mixin input-reset{
+	-webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: inherit; font-size: inherit; font-weight: inherit;
+}
+@mixin file_icon{
+	min-height: 22px; background: url($img-common+"file_folder.png") no-repeat; background-size: auto 22px;
+	@include mobile{min-height: 20px; background-size: auto 20px;}
+	&.pdf{background-image: url($img-common+"file_pdf.png");}
+	&.word{background-image: url($img-common+"file_word.png");}
+	&.hwp{background-image: url($img-common+"file_hwp.png");}
+	&.ppt{background-image: url($img-common+"file_ppt.png");}
+	&.xls{background-image: url($img-common+"file_xls.png");}
+	@include desktop{@include underline;}
+}
+@mixin underline{
+	@include desktop{@include speed; 
+		&:hover{text-decoration: underline; @content;}
+	}
+}
+
+@mixin widthM{width:0px;
+	&.w5{width: 5px;}
+	&.w10{width: 10px;}
+	&.w15{width: 15px;}
+	&.w20{width: 20px;}
+	&.w25{width: 25px;}
+	&.w100{width: 100px;}
+	&.w120{width: 120px;}
+	&.auto{width: auto;}
+}
+
+/* margin */
+@for $i from 0 through 10 {
+	.mt#{5*$i}{margin-top:#{5*$i}px !important}
+}
+@for $i from 0 through 10 {
+	.mr#{5*$i}{margin-right:#{5*$i}px !important}
+}
+@for $i from 0 through 10 {
+	.mb#{5*$i}{margin-bottom:#{5*$i}px !important}
+}
+@for $i from 0 through 10 {
+	.ml#{5*$i}{margin-left:#{5*$i}px !important}
+}

@@ -1,0 +1,454 @@
+/* board */
+.bd_srch_box{margin-bottom: 27px; padding: 15px; text-align: center; background: #eff2f6; @include mobile{margin-bottom: 20px;}
+	.form_sel{max-width: 120px;}
+	.form_inp{@include tablet{max-width: 240px;}
+		&.date{max-width: 150px; @include mobile{max-width: inherit;
+			&:last-of-type{width: calc(100% - 13px);}
+		}}
+	}
+	.form_sel, .form_inp, .common_btn{height: 40px; margin: 0 3px; vertical-align: middle; @include mobile{height: 30px; width: 100%; max-width: inherit; margin: 0 0 3px; font-size: $fz-xs;}}
+	.common_btn{line-height: 39px; font-weight: 300; @include mobile{height: 32px; margin: 8px 0 0; line-height: 31px;}}
+	label{padding-right: 20px; font-weight: 500; vertical-align: middle; @include mobile{display: none;}}
+	.srch_each1{margin-bottom: 10px;
+		.form_sel{max-width: 150px;
+			&:last-child{max-width: 340px;}
+		}
+		@include mobile{margin-bottom: 0;
+			.form_sel{max-width: inherit;
+				&:last-child{max-width: inherit;}
+			}
+		}
+	}
+	.srch_each2{
+		.form_inp{max-width: 532px; @include mobile{max-width: inherit;}}
+	}
+}
+.bd_attr{padding-top: 8px; margin-bottom: 10px; @include clearfix; @include mobile{margin-bottom: 6px; font-size: $fz-xs;}
+	.fc_red{font-weight: 500;}
+	.chk_each{margin-top: 12px; margin-left: 12px; font-size: $fz-sm;}
+	@include mobile{
+		.chk_each+.tab_onoff{float: right;}
+	}
+}
+.board_list{border-top: $table-border-top;
+	li>a{display: table; width: 100%; table-layout: fixed; padding: 20px 0; border-bottom: $table-border; @include mobile{display: block; padding: 14px;}
+		.num{display: table-cell; width: 55px; text-align: center; @include mobile{display: block; width: 100%; margin-bottom: 8px; text-align: left; font-size: $fz-xs;}}
+		.tit{display: table-cell; text-align: left; @include ell1; @include mobile{display: block; margin-bottom: 8px; @include ell2; white-space: inherit;}}
+		.writer{display: table-cell; width: 15%; text-align: center; 
+			@include mobile{display: inline-block; width: auto; 
+				@include mobile{margin-right: 25px;}}
+			.ico{display: inline-block; padding-left: 24px; background: url($img-sub+"icon_writer.png") no-repeat left center; 
+				@include mobile{padding-left: 20px; font-size: $fz-xs; color: $gray-dark; background-size: 16px auto;}}
+		}
+		.date{display: table-cell; width: 15%; text-align: center; 
+			@include mobile{display: inline-block; width: auto;
+			@include mobile{margin-right: 25px;}}
+			.ico{display: inline-block; padding-left: 24px; background: url($img-sub+"icon_time.png") no-repeat left center; 
+				@include mobile{padding-left: 20px; font-size: $fz-xs; color: $gray-dark; background-size: 16px auto;}}
+		}
+		.file{display: table-cell; width: 75px; text-align: center; @include file_icon;  background-position: center; height: 24px; @include mobile{display: inline-block; width: 17px; vertical-align: middle;}}
+		.tit_box{display: table-cell; text-align: left; 
+			@include mobile{display: inline;}
+			.tit1{display: inline-block; margin-bottom: 8px; @include ell1; 
+				@include mobile{display: block; max-height: 40px; margin-bottom: 8px; @include ell2; white-space: inherit;}
+				.icon_secret{display: inline-block; width: 23px; height: 23px; font-size: 0; background: url($img-sub+"icon_secret.png") no-repeat left top / auto 100%; vertical-align: bottom; 
+					@include mobile{width: 18px; height: 18px;}}
+			}
+			.writer, .place{display: block; width: auto; text-align: left; 
+				@include mobile{display: inline-block; vertical-align: middle;}
+			}
+			.bd_status{
+				+.tit1{display: block; margin-bottom: 0;
+					@include mobile{margin-bottom: 8px; display: -webkit-box;}
+				}
+				@include mobile{margin-bottom: 5px;}
+			}
+		}
+		.place{display: table-cell; width: 15%; text-align: center; 
+			@include mobile{display: inline-block; width: auto; 
+				@include mobile{margin-right: 25px;}}
+			.ico{display: inline-block; padding-left: 24px; background: url($img-sub+"icon_place.png") no-repeat left top; 
+				@include mobile{padding-left: 20px; font-size: $fz-xs; color: $gray-dark; background-size: 16px auto;}}
+		}
+		.attr_box{display: table-cell; width: 18%; padding: 0 10px; vertical-align: middle; 
+			@include mobile{display: inline-block; width: auto; padding: 0;}
+			
+			.date{display: block; width: auto; text-align: left; 
+				@include mobile{display: inline-block;}}
+		}
+		.hits{display: table-cell; width: 10%; text-align: center; vertical-align: middle; 
+			@include mobile{display: inline-block; width: auto;}
+			.ico{display: inline-block; padding-left: 30px; background: url($img-sub+"icon_hits.png") no-repeat left center; 
+				@include mobile{padding-left: 20px; font-size: $fz-xs; color: $gray-dark; background-size: 16px auto;}}
+		}
+		.file_box{display: table-cell; width: 12%; padding: 0 10px; vertical-align: middle;
+			@include mobile{display: inline; padding: 0;}
+			.file{display: block; width: auto; margin-bottom: 7px; background-position: right center;
+				@include mobile{display: inline-block; width: 18px; margin-right: 20px; margin-bottom: 0;}
+			}
+			.hits{display: block; width: auto; text-align: right;
+				@include mobile{display: inline-block;}
+			}
+		}
+	}
+}
+
+/* paging */
+.paging{padding-top: $spacer-lg; margin-top: 0; font-size: 0; text-align: center; @include mobile{padding-top: $spacer-md;}
+	&>ul{display: inline-block; vertical-align: middle; overflow: hidden;
+		&>li{float: left;}
+		a{display: block; min-width: $paging-size; height: $paging-size; line-height: $paging-size - 1; margin: 0 2px; padding: 0 4px; text-align: center; font-size: $fz-base; color: $paging-color; border: $border-base; transition-duration: 0.3s; @include tablet{min-width: 32px; height: 32px; line-height: 31px; font-size: 15px;}
+			&:hover, &:focus{@include desktop{ border-color: $input-focus-color; }}
+		}
+	}
+	.active a{color: $white; background-color: $point-color1; border-color: $point-color1;}
+	&>a{display: inline-block; width: $paging-size; height: $paging-size; background-repeat: no-repeat; background-color: $white; background-position: center; background-size: auto 14px; border: $border-base; vertical-align: middle; @include trans-speed; @include tablet{width: 32px; height: 32px;}
+		&:hover, &:focus{@include desktop{ border-color: $input-focus-color; }}
+	}
+}
+.prev_page{margin-right: 13px; background-image: url($img-sub+'pg_prev.png');}
+.next_page{margin-left: 13px; background-image: url($img-sub+'pg_next.png');}
+
+/* board detail */
+.bv_top{padding: 20px 15px; border-top: $table-border-top; border-bottom: 1px dashed $gray-medium;
+	.bv_tit1{margin-bottom: 12px; font-size: $fz-xl; font-weight: 500; @include mobile{font-size: $fz-md2;}}
+	.bv_attr{@include clearfix;
+		li{float: left; margin-right: 30px; position: relative; @include mobile{margin-right: 0; padding: 0 15px;
+			&:first-child{padding-left: 0;}
+			&:last-child{padding-right: 0;
+				&:before{display: none;}
+			}
+			&:before{content: ''; display: block; width: 1px; height: 12px; background: $gray-medium2; position: absolute; top: 5px; right: 0;}}
+			&.writer{
+				.ico{display: inline-block; padding-left: 24px; background: url($img-sub+"icon_writer.png") no-repeat left center; @include mobile{padding-left: 20px; font-size: $fz-sm; color: $gray-dark; background-size: 16px auto;}}
+			}
+			&.date{
+				.ico{display: inline-block; padding-left: 24px; background: url($img-sub+"icon_time.png") no-repeat left center; @include mobile{padding-left: 20px; font-size: $fz-sm; color: $gray-dark; background-size: 16px auto;}}
+			}
+			&.hits{float: right; margin-right: 0; @include mobile{float: Left;}
+				.ico{display: inline-block; padding-left: 32px; background: url($img-sub+"icon_hits.png") no-repeat left center; @include mobile{padding-left: 20px; font-size: $fz-sm; color: $gray-dark; background-size: 16px auto;}}
+			}
+			&.bv_status{color: $point-color1; @include mobile{padding-top: 2px; font-size: $fz-sm;}}
+			&.phone{
+				.ico{display: inline-block; min-height: 21px; padding-left: 28px; background: url($img-sub+"icon_phone.png") no-repeat left center; @include mobile{min-height: inherit; padding-left: 20px; font-size: $fz-sm; color: $gray-dark; background-size: 18px auto;}}
+			}
+		}
+	}
+}
+.bv_file_list{padding: 20px 15px; background: $gray-light; border-bottom: $border-base;
+	li{margin-bottom: 10px;
+		&:last-child{margin-bottom: 0;}
+	}
+}
+.a_file{display: inline-block; padding-left: 30px; color: $gray-dark; background-position: left center; @include mobile{padding-left: 20px; font-size: $fz-xs; @include ell1;}
+	@include file_icon;
+}
+.editor_view{padding: 45px 15px; line-height: 1.5; color: $gray-dark; border-bottom: 1px solid $gray-medium; @include mobile{padding: 18px 15px; font-size: $fz-xs;}}
+.answer_view{margin-top: 80px; @include mobile{margin-top: 40px;}}
+
+/* 에디터 삽입 컨텐츠 리셋스타일 제거 */
+.editor_view{
+	ol{padding-left: 19px; list-style-type:decimal;
+		li{list-style-type:decimal;}
+	}
+	ul{padding-left: 19px; list-style-type:disc;
+		li{list-style-type:disc;}
+	}
+	i, em{font-style:italic;}
+	b, strong{font-weight:bold;}
+}
+
+/* FAQ */
+.faq_list{border-top: $table-border-top;
+	>li{border-bottom: $border-base;}
+	.faq_tit{display: table; width: 100%; table-layout: fixed;
+		.tit1{display: table-cell; vertical-align: middle;
+			.ico{display: block; padding: 10px 60px 10px 20px; line-height: 1.5; font-size: $fz-md2; font-weight: 500; position: relative; @include ell1; @include mobile{font-size: $fz-sm; padding: 10px 40px 10px 15px;}
+				&:after{content: ''; display: block; width: 28px; height: 15px; background: url($img-sub+"icon_faq_arr.png") no-repeat; position: absolute; top: 50%; margin-top: -7px; right: 20px; @include trans-speed; @include mobile{width: 18px; height: 10px; background-size: 100% auto; margin-top: -5px; right: 15px;}}
+			}
+		}
+		&.active{
+			.ico{white-space: inherit;
+				&:after{@include transform(rotate(-180deg)); background-image: url($img-sub+"icon_faq_arr_on.png");}
+			}
+		}
+	}
+	.faq_txt_wrap{display: none;
+		.faq_txt_box{display: table; width: 100%; border-top: $border-base;
+			.icon_faq.answer{color: $gray-medium;}
+			.faq_txt{display: table-cell; padding: 20px 15px; font-size: $fz-xs;}
+		}
+	}
+	.icon_faq{display: table-cell; width: 100px; padding: 20px 0; text-align: center; font-size: $fz-xxl; font-weight: 500; color: $blue; border-right: $border-base; vertical-align: middle; @include mobile{width: 40px; padding: 10px 0; font-size: $fz-base;}}
+}
+
+/* 리스트,썸네일형 선택 게시판 */
+.tab_style{float: right; margin-top: -8px; border: 1px solid #e8e8e8; @include clearfix;
+	>li{float: left; background: #fff; border-right: 1px solid #e8e8e8;
+		&.active{background: #eff2f6;}
+		a{display: block; padding: 8px 18px;
+			.ico{display: inline-block; padding-left: 23px; font-size: $fz-sm; background: url($kid-sub+"icon_list1.png") no-repeat left center;}
+			@include desktop{&:hover .ico{text-decoration: underline;}}
+		}
+		&:nth-child(2){border-right-width: 0;
+			.ico{background-image: url($kid-sub+"icon_list2.png");}
+		}
+	}
+	@include mobile{float: none; margin-top: 8px;
+		>li{width: 50%;
+			a{padding: 8px 10px; text-align: center;
+				.ico{padding-left: 17px; font-size: $fz-xs; background-size: 12px auto;}
+			}
+		}
+	}
+}
+.list_board{border-top: $board-border-top;
+	>li>a{display: block; padding: 25px 0; border-bottom: $border-base; @include clearfix;
+		@include desktop{
+			&:hover{
+				.tit1{text-decoration: underline;}
+				.img_box img{@include transform(scale(1.05));}
+			}
+		}
+		.img_box{float: left; width: 130px; height: 180px; margin-right: 28px; border: $border-base; overflow: hidden;
+			img{width: 100%; @include trans-speed;}
+		}
+		.con_box{float: left; width: calc(100% - 158px);
+			.tit1{display: block; margin-top: 30px; margin-bottom: 15px; font-size: $fz-xl; font-weight: 500; @include ell1;}
+			.book_attr{
+				>li{margin-bottom: 6px; font-size: $fz-md; color: $gray-dark;
+					&:last-child{margin-bottom: 0;}
+				}
+			}
+		}
+	}
+	&.thumb{padding: 20px 0; border-bottom: 1px solid #222; @include clearfix;
+		>li{float: left; width: calc(25% - 29px); margin-right: 38px;
+			>a{padding: 20px 0; border-bottom-width: 0;
+				.img_box{float: none; display: block; width: 100%; height: 249px; @include trans-speed;}
+				.con_box{float: none; width: auto;
+					.tit1{height: 40px; margin: 15px 0 8px; font-size: $fz-base; @include ell2; white-space: inherit;}
+					.book_attr{
+						li{margin-bottom: 2px; font-size: $fz-sm; color: $gray-medium;
+							.txt1{font-size: 0;}
+						}
+					}
+				}
+			}
+			&:nth-child(4n){margin-right: 0;}
+			&:nth-child(4n+1){clear: both;}
+		}
+	}
+
+	@include tablet{
+		&.thumb>li>a .img_box{height: 220px;}
+	}
+	@media screen and (max-width: 780px){
+		&.thumb>li{width: calc(50% - 10px); margin-right: 20px;
+			&:nth-child(2n){margin-right: 0;}
+			&:nth-child(2n+1){clear: both;}
+			>a .img_box{height: auto;}
+		}
+	}
+	@include mobile{
+		>li>a{padding: 15px 0;
+			.img_box{width: 110px; height: auto; margin-right: 15px;}
+			.con_box{width: calc(100% - 125px);
+				.tit1{max-height: 40px; font-size: $fz-base; @include ell2; white-space: inherit;}
+				.book_attr>li{font-size: $fz-sm;}
+			}
+		}
+	}
+}
+
+/* 도서찾기 상세페이지 */
+.search_detail{padding: 45px 40px; border: $border-base;
+	.sch_top{margin-bottom: 30px; padding-bottom: 15px; border-bottom: $board-border-top; position: relative;
+		.sch_name{padding-right: 170px; font-size: $fz-xl; font-weight: 500;}
+		.btn_fav{padding: 8px 15px; border: 1px solid #bbb; border-radius: 5px; position: absolute; bottom: 9px; right: 0;
+			.ico{display: inline-block; padding-left: 35px; position: relative;
+				&:before{content: ''; display: block; width: 27px; height: 22px; background: url($kid-sub+"icon_fav.png") no-repeat right top; position: absolute; top: 0; left: 0; @include trans-speed;}
+				@include desktop{&:hover:before{background-position: left top;}}
+			}
+		}
+		.pay_label{display: inline-block; padding: 8px 15px; color: $point-color1; border-radius: 5px; border: 1px solid $point-color1; position: absolute; bottom: 9px; right: 0;
+			&.orange{background-color: #ffa900; color: $white; border-color: #ffa900;}
+		}
+	}
+	.sch_con{@include clearfix;
+		.img_box{float: left; display: block; width: 180px; height: 250px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.15);
+			img{width: 100%;}
+		}
+		.con_box{float: right; width: calc(100% - 250px);
+			.con_each{margin-bottom: 25px;
+				&:last-child{margin-bottom: 0;}
+				.tit1{display: inline-block; margin-bottom: 10px; padding: 4px 6px; border: 2px solid #ffd47f; border-radius: 2px;
+					.ico{display: inline-block; padding-left: 27px; padding-right: 5px; font-size: $fz-sm; background: url($kid-sub+"icon_type3.png") no-repeat left 5px center; position: relative;
+						&:before{content: ''; display: block; width: 100%; height: 8px; background: rgba(255,212,127, 0.4); position: absolute; bottom: 0; left: 0; z-index: -1;}
+						@for $i from 1 through 7{&.type#{$i}{background-image: url($kid-sub+"icon_type"+$i+".png");}}
+						&.type1{background-position: left 5px center;}
+						&.type2{background-position: left 3px center;}
+						&.type4{background-position: left 3px center;}
+					}
+				}
+				.a_file{text-decoration: underline;}
+				.sch_list>li{margin-bottom: 6px; padding-left: 155px; position: relative;
+					&:last-child{margin-bottom: 0;}
+					.tit2{color: #9b9b9b; position: absolute; top: 0; left: 0;}
+					@include mobile{padding-left: 105px;}
+				}
+			}
+		}
+		&.nurture{
+			.img_box{width: 300px; height: 250px;}
+			.con_box{width: calc(100% - 370px);}
+			@include mobile{
+				.img_box{width: auto; height: auto;}
+				.con_box{width: auto;}
+			}
+		}
+	}
+	@include mobile{padding: 20px 15px;
+		.sch_top{margin-bottom: 20px; padding-bottom: 0; border-bottom-width: 0; @include clearfix;
+			.sch_name{display: block; padding-right: 0; font-size: $fz-md;}
+			.btn_fav{width: 100%; padding: 4px 15px; margin-top: 8px; text-align: center; position: static;
+				.ico{padding-left: 20px; font-size: $fz-sm;
+					&:before{width: 18px; height: 14px; background-size: auto 14px; top: 2px;}
+				}
+			}
+			.pay_label{float: right; margin-top: 8px; padding: 4px 15px; text-align: center; font-size: $fz-sm; position: static;}
+		}
+		.sch_con{
+			.img_box{float: none; width: 100%; max-width: 170px; height: auto; margin: auto;}
+			.con_box{float: none; width: auto; margin-top: 20px;
+				.sch_list>li{font-size: $fz-sm;}
+			}
+		}
+	}
+}
+
+/* 이미지형 게시판 */
+.month_box{margin-bottom: 30px; padding: 15px; text-align: center; border: 1px dotted #d7d7d7;
+	button[class^=month_]{width: 34px; height: 34px; background: url($kid-sub+"month_prev.png") no-repeat center; border: $border-base; vertical-align: middle; @include trans-speed;
+		&.month_next{background-image: url($kid-sub+"month_next.png");}
+		@include desktop{&:hover{border-color: $point-color1;}}
+	}
+	.month_txt{display: inline-block; margin: 0 50px; vertical-align: middle;
+		.tit1{display: block; font-size: 2.125rem; font-weight: 500;}
+		.txt1{display: inline-block; padding-left: 21px; padding-right: 4px; font-size: $fz-md; background: url($kid-sub+"icon_title.png") no-repeat left 4px top 2px; position: relative;
+			&:before{content: ''; display: block; width: 100%; height: 10px; background: rgba(255,212,127, 0.4); position: absolute; left: 0; bottom: 0; z-index: -1;}
+		}
+	}
+	@include mobile{margin-top: 20px;
+		.month_txt{margin: 0 25px;
+			.tit1{font-size: $fz-xl;}
+			.txt1{font-size: $fz-sm; background-size: auto 14px;}
+		}
+	}
+}
+.img_board{padding-top: 40px; border-top: $board-border-top; border-bottom: $border-base; @include clearfix;
+	@include mobile{padding-top: 20px;}
+	>li{float: left; width: calc(33.33% - 27px); margin-right: 40px;
+		&:nth-child(3n){margin-right: 0;}
+		&:nth-child(3n+1){clear: fix;}
+		>a{display: block; padding-bottom: 40px; position: relative; @include trans-speed;
+			.ib_label{display: block; padding: 8px 18px; color: $white; background: #a4334f; position: absolute; top: 1px; left: 1px; z-index: 5;}
+			.img_box{display: block; padding-top: 67.2%; margin-bottom: 15px; border: $border-base; overflow: hidden; position: relative;
+				&:before{content: ''; display: block; width: 100%; height: 100%; background: rgba(0,0,0,0.6); position: absolute; top: 0; left: 0; opacity: 0; @include trans-speed;}
+				&:after{content: ''; display: block; width: 30px; height: 30px; background: url($kid-sub+"icon_more.png") no-repeat; position: absolute; top: 50%; left: 50%; margin-top: -15px; margin-left: -15px; opacity: 0;}
+				img{width: 100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+			}
+			.tit1{display: block; font-size: $fz-md2; font-weight: 500;}
+		}
+		@include desktop{
+			>a:hover{
+				.img_box{
+					&:before{opacity: 1; z-index: 3;}
+					&:after{opacity: 1; z-index: 3;}
+				}
+				.tit1{text-decoration: underline;}
+			}
+		}
+		@include tablet{width: calc(33.33% - 14px); margin-right: 20px;
+			// >a{
+			// 	.img_box{height: 165px;}
+			// }
+		}
+		@include mobile{width: calc(50% - 5px); margin-right: 10px;
+			&:nth-child(3n){margin-right: 10px;}
+			&:nth-child(2n){margin-right: 0;}
+			&:nth-child(3n+1){clear: inherit;}
+			&:nth-child(2n+1){clear: both;}
+			>a{padding-bottom: 20px;
+				.ib_label{padding: 4px 12px; font-size: $fz-xs;}
+				.img_box{margin-bottom: 10px;}
+				.tit1{font-size: $fz-base;}
+			}
+		}
+	}
+}
+
+/* 강좌계획안 */
+.class_board{border-top: $board-border-top;
+	>li{border-bottom: $border-base;
+		>a{display: table; width: 100%; table-layout: fixed;
+			.num1{display: table-cell; width: 55px; text-align: center; font-weight: 500; vertical-align: middle;}
+			.txt_box{display: table-cell; padding: 25px 20px 25px 15px; vertical-align: middle;
+				.class_label{display: block; margin-bottom: 15px;
+					.txt{display: inline-block; padding: 0 1px; color: $gray-dark; position: relative;
+						&:before{content: ''; display: block; width: 100%; height: 10px; background: rgba(255,212,127, 0.4); position: absolute; bottom: -2px; left: 0; z-index: -1;}
+					}
+				}
+				.tit1{display: block; margin-bottom: 12px; font-size: $fz-lg; font-weight: 700; color: #091b34; @include ell1;}
+				.class_attr{margin-bottom: -7px;
+					>li{margin-bottom: 7px; font-size: $fz-sm;
+						&.sm{display: inline-block; margin-right: 25px;}
+					}
+					.tit2{display: inline-block; margin-right: 5px; color: #8b8b8b;}
+				}
+			}
+			.pay_label_box{display: table-cell; width: 165px; padding-top: 55px; vertical-align: top;
+				.pay_label{display: inline-block; min-width: 150px; padding: 9px 15px; text-align: center;  color: $point-color1; border: 1px solid $point-color1; border-radius: 5px;
+					&.orange{color: $white; border-color: #ffa900; background-color: #ffa900;}
+				}
+			}
+		}
+	}
+	@include mobile{
+		>li>a{display: block; padding: 20px 0; position: relative;
+			.num1{display: block; width: auto; margin-bottom: 4px; text-align: left; font-size: $fz-xs;}
+			.txt_box{display: block; padding: 0;
+				.class_label{margin-bottom: 10px; font-size: $fz-xs;}
+				.tit1{font-size: $fz-md;}
+				.class_attr{margin-bottom: -3px;
+					>li{margin-bottom: 3px; font-size: $fz-xs;}
+				}
+			}
+			.pay_label_box{display: block; width: auto; padding-top: 0;
+				.pay_label{min-width: inherit; padding: 4px 10px; font-size: $fz-xxs; position: absolute; top: 20px; right: 0;}
+			}
+		}
+	}
+}
+
+/* 관심대여목록 */
+.favo_list{border-top: $border-base;
+	.chk_each{display: block; margin: 0; padding: 0 12px; border-bottom: $border-base;
+		.vchkbox{top: 50%; margin-top: -9px;}
+		label{display: block; padding: 15px 0;}
+		.fav_label{display: inline-block; width: 150px; padding-left: 20px;	text-align: center; vertical-align: middle;
+			.txt{display: inline-block; min-width: 55px; color: #33a480; position: relative; vertical-align: text-top;
+				&:before{content: '['; position: absolute; top: 0; left: 0;}
+				&:after{content: ']'; position: absolute; top: 0; right: 0;}
+			}
+			&.blue .txt{color: #1a4f9a;}
+		}
+		.tit1{display: inline-block; width: calc(100% - 155px); vertical-align: middle;}
+	}
+	@include mobile{
+		.chk_each{font-size: $fz-sm;
+			.fav_label{width: 85px;}
+			.tit1{width: calc(100% - 90px);}
+		}
+	}
+}

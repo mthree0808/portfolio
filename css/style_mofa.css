@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 외교부 */
+.mofa .svisual > span:before { background-image: url(../images/sub/mofa/bg.jpg); }
+.mofa .main_area { position: relative; z-index: 3; padding: 140px 0 180px; }
+.mofa .main_area:before { content: ''; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 2092px; background-color: #f5f5f5; }
+.mofa .main_area .frame { height: 2630px; background-size: 1400px auto; } 
+.mofa .main_area .frame:before { content: ''; position: absolute; left: -355px; top: 46px; z-index: inherit; width: 390px; height: 495px; background: url(../images/sub/mofa/l_img.jpg) no-repeat center top; background-size: cover; } 
+.mofa .main_area .frame:after { content: ''; position: absolute; right: -355px; top: 46px; z-index: inherit; width: 390px; height: 495px; background: url(../images/sub/mofa/r_img.jpg) no-repeat center top; background-size: cover; } 
+.mofa .main_area .frame_top { height: 830px; background-size: 1400px auto; }
+.mofa .sub_tit { margin-bottom: 40px; }
+.mofa .section1 { position: relative; }
+.mofa .section1 .sub_tit { padding-left: 90px; }
+.mofa .section1 .wrap { position: relative; z-index: 3; }
+.mofa .section1:before { content: ''; position: absolute; left: 0; top: -645px; z-index: 1; width: 2000px; height: 1291px; background: url(../images/sub/mofa/map.png) no-repeat center top; background-size: cover; }
+.mofa .section1 .mock_list > li:first-child { margin-left: -355px; }
+.mofa .section1 .mock_list > li { margin-left: 70px; }
+.mofa .section2 .map { position: relative; z-index: 3; display: block; width: 100%; height: 565px; background: url(../images/sub/mofa/search.png) no-repeat center top; margin: 180px 0 60px; }
+.mofa .section2 .mock_list > li:last-child { margin-top: 100px; }
+.mofa .section3 { margin: -200px 0 180px 0; }
+.mofa .section3 .sub_tit { padding: 110px 0 154px 405px; margin-top: 50px; margin-bottom: 0; text-align: right; }
+.mofa .section3 .sub_tit:before { content: 'MOFA'; position: absolute; left: 95px; top: 0; z-index: -1; font-family: montB; font-size: 280px; color: #f9f9f9; }
+.mofa .section3 .mock_list { left: 50%; top: 380px; width: 1910px; margin-left: -955px; }
+.mofa .section3 .mock_list > li { margin-left: 80px; }
+.mofa .section3 .mock_list > li:first-child { margin-left: 0; }
+.mofa .section3 .mock_list > li.issue1 { position: relative; z-index: 3; }
+.mofa .section3 .mock_list > li.issue1:before { content: ''; display: block; width: 957px; height: 669px; background: url(../images/sub/mofa/c_img.jpg) no-repeat center top; background-size: cover; margin-bottom: 80px; }
+.mofa .section3 .mock_list > li.issue2 { position: relative; left: 0; top: -380px; margin-left: -900px; }
+.mofa .section3 > div { text-align: center; margin-top: 140px; }
+.mofa .section4 { position: relative; padding: 180px 0 414px; }
+.mofa .section4:before { content: ''; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; background: url(../images/sub/mofa/m_img.jpg) no-repeat center top; }
+.mofa .section4 .sub_tit { color: #fff; text-align: center; margin-bottom: 60px; }
+.mofa .section4 .wrap { position: relative; }
+.mofa .section4 .mock_list > li.issue2 .frame { height: 2092px; }
+.mofa .section4 .mock_list > li.issue2 .frame_top { height: 610px; }
+.mofa .section4 .mock_list > li.issue1, .mofa .section4 .mock_list > li.issue4, .mofa .section4 .mock_list > li.issue6 { position: absolute; left: 50%; margin-left: -577px; z-index: 2; }
+.mofa .section4 .mock_list > li.issue3, .mofa .section4 .mock_list > li.issue5 { position: absolute; right: 50%; margin-right: -577px; z-index: 2; }
+.mofa .section4 .mock_list > li.issue1 { top: 100px; }
+.mofa .section4 .mock_list > li.issue3 { top: 340px; }
+.mofa .section4 .mock_list > li.issue4 { top: 802px; }
+.mofa .section4 .mock_list > li.issue5 { top: 1137px; }
+.mofa .section4 .mock_list > li.issue6 { top: 1604px; }
+.mofa .info dl { display: table; text-align: left; margin-top: 120px; }
+.mofa .info dl:first-child { margin-top: 0; }
+.mofa .info dl > dt { display: table-cell; vertical-align: middle; width: 25%; }
+.mofa .info dl > dd { display: table-cell; vertical-align: middle; width: 75%; }
+.mofa .info dl > dd ul:after { content: ''; display: block; clear: both; }
+.mofa .info dl:first-child > dd ul > li { float: left; margin-left: 40px; }
+.mofa .info dl:last-child > dd ul > li { float: left; margin-left: 70px; }
+.mofa .info dl > dd ul > li:first-child { margin-left: 0; }
+.mofa .info dl:first-child > dd ul > li { position: relative; overflow: hidden; width: 290px; height: 160px; box-shadow: 18px 18px 50px rgba(0,0,0,0.1); }
+.mofa .info dl:first-child > dd ul > li.st1 { background-color: #0b3974; }
+.mofa .info dl:first-child > dd ul > li.st2 { background-color: #9c1d1d; }
+.mofa .info dl:first-child > dd ul > li.st3 { background-color: #b89e7d; }
+.mofa .info dl:first-child > dd ul > li span { position: absolute; left: 0; bottom: 0; z-index: 1; width: 100%; padding: 20px; background-color: #fff; }
+
+/* 외교부 이미지 */
+.mofa .main { background-image: url(../images/sub/mofa/main.jpg); background-position: center top; }
+.mofa .main_m_1 { background-image: url(../images/sub/mofa/main_m_1_th.jpg); height: 589px; }
+.mofa .main_m_2 { background-image: url(../images/sub/mofa/main_m_2_th.jpg); }
+.mofa .intro { background-image: url(../images/sub/mofa/intro_th.jpg); height: 589px; background-position: center top; }
+.mofa .intro_m { background-image: url(../images/sub/mofa/intro_m_th.jpg); height: 589px; }
+.mofa .sub_w_1 { background-image: url(../images/sub/mofa/sub_w_1_th.jpg); background-position: center top; position: relative; width: 1080px; height: 1594px; }
+.mofa .sub_w_1:before { content: ''; position: absolute; left: -1075px; top: 62px; z-index: 1; width: 1080px; height: 437px; background: url(../images/sub/mofa/l_nation.jpg) no-repeat center top; }
+.mofa .sub_w_1:after { content: ''; position: absolute; right: -1110px; top: 62px; z-index: 1; width: 1080px; height: 437px; background: url(../images/sub/mofa/r_nation.jpg) no-repeat center top; }
+.mofa .sub_w_2 { background-image: url(../images/sub/mofa/sub_w_2.jpg); background-position: center -115px; height: 2281px; }
+.mofa .sub_w_3 { background-image: url(../images/sub/mofa/sub_w_3_th.jpg); background-position: center top; height: 1461px; }
+.mofa .sub_w_4 { background-image: url(../images/sub/mofa/sub_w_4_th.jpg); background-position: center top; height: 1630px; }
+.mofa .sub_w_5 { background-image: url(../images/sub/mofa/sub_w_5_th.jpg); background-position: center -82px; height: 1276px; }
+.mofa .sub_m_1 { background-image: url(../images/sub/mofa/sub_m_1_th.jpg); height: 610px; }
+.mofa .sub_m_2 { background-image: url(../images/sub/mofa/sub_m_2_th.jpg); height: 705px; }
+.mofa .sub_m_3 { background-image: url(../images/sub/mofa/sub_m_3_th.jpg); height: 710px; }
+.mofa .sub_m_4 { background-image: url(../images/sub/mofa/sub_m_4_th.jpg); height: 715px; }
+.mofa .sub_m_5 { background-image: url(../images/sub/mofa/sub_m_5_th.jpg); height: 710px; }
+.mofa .icon_area { position: absolute; right: -780px; top: 550px; z-index: 1; overflow: hidden; margin: -70px 0 0 -70px; width: 800px; }
+.mofa .icon_area > li { float: left; width: 95px; height: 95px; margin: 70px 0 0 70px; background-repeat: no-repeat; background-position: center top; }
+.mofa .icon_area > li.st1 { background-image: url(../images/sub/mofa/icon1.png); }
+.mofa .icon_area > li.st2 { background-image: url(../images/sub/mofa/icon2.png); }
+.mofa .icon_area > li.st3 { background-image: url(../images/sub/mofa/icon3.png); }
+.mofa .icon_area > li.st4 { background-image: url(../images/sub/mofa/icon4.png); }
+.mofa .icon_area > li.st5 { background-image: url(../images/sub/mofa/icon5.png); }
+.mofa .icon_area > li.st6 { background-image: url(../images/sub/mofa/icon6.png); }
+.mofa .icon_area > li.st7 { background-image: url(../images/sub/mofa/icon7.png); }
+.mofa .icon_area > li.st8 { background-image: url(../images/sub/mofa/icon8.png); }
+.mofa .icon_area > li.st9 { background-image: url(../images/sub/mofa/icon9.png); }
+.mofa .icon_area > li.st10 { background-image: url(../images/sub/mofa/icon10.png); }
+.mofa .icon_area > li.st11 { background-image: url(../images/sub/mofa/icon11.png); }
+.mofa .icon_area > li.st12 { background-image: url(../images/sub/mofa/icon12.png); }
+.mofa .icon_area > li.st13 { background-image: url(../images/sub/mofa/icon13.png); }
+.mofa .icon_area > li.st14 { background-image: url(../images/sub/mofa/icon14.png); }
+.mofa .icon_area > li.st15 { background-image: url(../images/sub/mofa/icon15.png); }
+.mofa .icon_area > li.st16 { background-image: url(../images/sub/mofa/icon16.png); }
+.mofa .common { overflow: hidden; }
+.mofa .common ul:before { content: ''; position: absolute; left: 0; top: 0; z-index: 2; width: 100%; height: 100%; background: rgba(0,0,0,0.2); transition: 0.4s; }
+.mofa .common ul:after { content: ''; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center -160px; background-image: url(../images/sub/kesco/bg.jpg); transition: 0.4s; }
+.mofa .common ul > li:first-child:after { background: none; }
+.mofa .common ul > li:last-child:after { background: none; }
+.mofa .common ul > li:before { background: none; }
+.mofa .common ul > li:first-child > a > span { cursor:default; opacity: 0.3; }
+
+@media screen and (max-width: 1480px){
+    .sub .wrap { width: auto; }
+    .type1388, .type1340, .type1920 { width: 100%; }
+    .mofa .sub_w_1 { width: 100%; }
+    .mofa .main_area { padding: 120px 60px 100px; }
+    .mofa .main_area .frame:before, .mofa .main_area .frame:after { display: none; }
+    .mofa .intro { background-image: url(../images/sub/mofa/intro.jpg); background-size: cover; }
+    .mofa .section1 .mock_list > li:first-child { margin-left: 0; margin-bottom: 80px; }
+    .mofa .section1 .sub_tit { padding-left: 105px; }
+    .mofa .section2 .mock_list > li { display: block; }
+    .mofa .sub_w_1:before, .mofa .sub_w_1:after { display: none; }
+    .mofa .sub_w_2 { background-position: 73% -115px; }
+    .mofa .section3 > div { margin-top: 100px; }
+    .mofa .info dl > dt { display: block; width: 100%; margin-bottom: 30px; }
+    .mofa .info dl > dd { display: block; width: 100%; }
+}
+
+@media screen and (min-width: 1231px){
+    .mofa .common ul > li:hover:before { background: none; } 
+    .mofa .common ul:hover:before { background: rgba(0,0,0,0.6); transition: 0.4s; }
+    .mofa .common ul > li:first-child:hover > a > span:before { animation: none; }
+}
+
+@media screen and (max-width: 1230px){
+    .mofa .main_area .frame_top { height: auto; padding-bottom: 55%; background-size: cover; image-rendering: -webkit-optimize-contrast; }
+    .mofa .main_area .frame { height: auto; padding-bottom: 135%; background-size: cover; image-rendering: -webkit-optimize-contrast; }
+    .type810 { width: 100%; background-size: 1500px auto; }
+    .type1200_1 { width: 100%; }
+    .mofa .section2 .map { height: auto; padding-bottom: 54%; background-size: 90%; image-rendering: -webkit-optimize-contrast; margin: 100px 0 100px; }
+    .mofa .intro { height: auto; padding-bottom: 55%; background-size: cover; }
+    .mofa .sub_w_1 { height: auto; padding-bottom: 133%; background-size: 130%; background-position: center 13%; image-rendering: -webkit-optimize-contrast; background-image: url(../images/sub/mofa/sub_w_1.jpg); box-shadow: 15px 15px 50px rgba(0,0,0,0.08); }
+    .mofa .sub_w_2 { height: auto; padding-bottom: 148%; background-size: 120%; background-position: center top; image-rendering: -webkit-optimize-contrast; box-shadow: 15px 15px 50px rgba(0,0,0,0.08); }
+    .mofa .sub_w_3 { height: auto; padding-bottom: 184%; background-size: 120%; background-position: center top; image-rendering: -webkit-optimize-contrast; background-image: url(../images/sub/mofa/sub_w_3.jpg); }
+    .mofa .sub_w_4 { height: auto; padding-bottom: 164%; background-size: 120%; background-position: center top; image-rendering: -webkit-optimize-contrast; background-image: url(../images/sub/mofa/sub_w_4.jpg); }
+    .mofa .sub_w_5 { height: auto; padding-bottom: 134%; background-size: 120%; background-position: center top; image-rendering: -webkit-optimize-contrast; background-image: url(../images/sub/mofa/sub_w_5.jpg); box-shadow: 15px 15px 50px rgba(0,0,0,0.08); }
+    .mofa .section2 { padding: 0 60px; }
+    .mofa .section3 { margin: 0 0 140px 0; }
+    .mofa .section3 .mock_list { padding: 0 60px; left: 0; top: 0; width: auto; margin-left: 0; }
+    .mofa .section3 .mock_list > li { display: block; margin-left: 0; margin-top: 100px; }
+    .mofa .section3 .mock_list > li :first-child{ margin-top: 0; }
+    .mofa .section3 .mock_list > li.issue2 { top: 0; margin-left: 0; margin-top: 100px; }
+    .mofa .section3 .sub_tit { padding: 90px 0 154px; text-align: center; margin-top: 100px; }
+    .mofa .section3 .sub_tit:before { left: 50%; transform: translateX(-50%); font-size: 240px; }
+    .mofa .section3 .mock_list > li.issue1:before { display: none; }
+    .mofa .section3 .icon_area { width: 80%; position: relative; right: 0; top: 0; margin: 100px auto 0; display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 100px; }
+    .mofa .section3 .icon_area > li { width: calc(25% - 30px); margin: 0 0 60px 0; }
+    .mofa .section3 .icon_area > li.st1 { margin-top: 0; }
+    .mofa .section3 > div { margin-top: 40px; }
+    .mofa .section4 { padding: 140px 60px 435px; }
+    .mofa .section4 .mock_list > li.issue1 { margin-right: 100px; }
+    .mofa .section4 .mock_list > li.issue1, .mofa .section4 .mock_list > li.issue4, .mofa .section4 .mock_list > li.issue6 { position: relative; left: 0; margin-left: 0; }
+    .mofa .section4 .mock_list > li.issue3, .mofa .section4 .mock_list > li.issue5 { position: relative; right: 0; margin-right: 0; }
+    .mofa .section4 .mock_list > li.issue2 .frame { height: 0; }
+    .mofa .section4 .mock_list > li.issue3 { top: 200px; margin-right: 100px; }
+    .mofa .section4 .mock_list > li.issue4 { top: 100px; }
+    .mofa .section4 .mock_list > li.issue5 { top: 295px; margin-right: 100px; }
+    .mofa .section4 .mock_list > li.issue6 { top: 200px; }
+    .mofa .info dl:first-child > dd ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+    .mofa .info dl:first-child > dd ul > li { width: calc(33.33% - 40px); margin-left: 20px; }
+    .mofa .info dl:first-child > dd ul > li:first-child { margin-left: 0; }
+}
+
+@media screen and (max-width: 960px){
+    .mofa .main_area { padding: 70px 30px 100px; }
+    .mofa .main_area .frame { border-radius: 15px 15px 0 0; }
+    .mofa .section1{ padding: 0 30px; }
+    .mofa .section1 .mock_list > li:first-child { display: block; margin-bottom: 50px; }
+    .mofa .section1 .mock_list > li { margin-left: 40px; }
+    .mofa .section1 .mock_list > li:nth-child(2) { margin-left: 0; }
+    .mofa .section1 .sub_tit { padding-left: 0; margin-bottom: 20px; }
+    .mofa .intro { width: 100%; }
+    .mofa .intro_m, .mofa .main_m_1 { width: 280px; height: 490px; background-size: cover; image-rendering: -webkit-optimize-contrast; }
+    .mofa .section2 .map { margin: 100px 0 50px; }
+    .mofa .section2 a, .mofa .section3 a { border-radius: 0; }
+    .mofa .section3 .mock_list > li { margin-top: 50px; }
+    .mofa .section2 .mock_list > li:last-child { margin-top: 50px; }
+    .mofa .section3 { margin: 0 0 100px 0; }
+    .mofa .section3 .sub_tit { padding: 80px 0 100px; }
+    .mofa .section3 .sub_tit:before { font-size: 180px; }
+    .mofa .section3 .icon_area { width: 100%; }
+    .mofa .section3 > div { padding: 0 30px; }
+    .mofa .section3 .mock_list > li.issue2 { margin-top: 50px; }
+    .mofa .section3 .icon_area { margin-top: 80px; }
+    .mofa .section4 { padding: 100px 30px 95px; }
+    .mofa .section4 .sub_tit { margin-bottom: 50px; }
+    .mofa .section4 .mock_list { display: flex; flex-wrap: wrap; justify-content: space-between; }
+    .mofa .section4 .mock_list a { border-radius: 15px; }
+    .mofa .section4 .mock_list > li { display: block; width: calc(50% - 15px); margin-bottom: 30px; }
+    .mofa .section4 .mock_list > li.issue1 { top: 0; margin-right: 0; }
+    .mofa .section4 .mock_list > li.issue2 .frame_top, .mofa .section4 .mock_list a { height: 550px; background-size: cover; image-rendering: -webkit-optimize-contrast; }
+    .mofa .section4 .mock_list > li.issue2 .frame_top { width: 100%; }
+    .mofa .section4 .mock_list > li.issue3 { top: 0; margin-right: 0; }
+    .mofa .section4 .mock_list > li.issue4 { top: 0; }
+    .mofa .section4 .mock_list > li.issue5 { top: 0; margin-right: 0; }
+    .mofa .section4 .mock_list > li.issue6 { top: 0; }
+    .mofa .section4 .mock_list a { width: 100%; background-size: cover; image-rendering: -webkit-optimize-contrast; }
+    .mofa .section3 .icon_area > li { width: calc(33.33% - 30px); }
+    .mofa .info dl { margin-top: 60px; }
+}
+
+@media screen and (max-width: 720px){
+    .mofa .main_area:before { height: auto; padding-bottom: 100%; }
+    .mofa .section1 .mock_list:after { content: ''; display: block; clear: both; }
+    .mofa .section1 .mock_list > li a { width: 100%; }
+    .mofa .section1 .mock_list > li:nth-child(2) { width: 48%; float: left; }
+    .mofa .section1 .mock_list > li:nth-child(3) { width: 48%; float: right; margin-left: 0; }
+    .mofa .section3 { margin: 0 0 80px 0; }
+    .mofa .section4 { padding: 80px 30px 90px; }
+    .mofa .section4 .sub_tit { margin-bottom: 30px; }
+    .mofa .wrap { padding: 0; }
+    .mofa .info dl:first-child > dd ul > li { width: calc(33.33% - 30px); margin-left: 0; }
+}
+
+@media screen and (max-width: 580px){
+    .mofa .main_area { padding: 50px 30px 80px; }
+    .mofa .sub_tit { font-size: 24px; }
+    .mofa .section1 .wrap { padding: 0; }
+    .mofa .section1 .mock_list > li:first-child { margin-bottom: 30px; }
+    .mofa .section1 .mock_list > li:nth-child(2), .mofa .section1 .mock_list > li:nth-child(3) { float: none; width: 100%; }
+    .mofa .section1 .mock_list > li:nth-child(2) a, .mofa .section1 .mock_list > li:nth-child(3) a { width: 220px; display: inline-block; }
+    .mofa .section1 .mock_list > li:nth-child(3) { margin-top: 30px; }
+    .mofa .intro_m, .mofa .main_m_1 { height: 400px; }
+    .mofa .section2, .mofa .section3 .mock_list { padding: 0 30px; }
+    .mofa .section2 .map { margin: 80px 0 50px; }
+    .mofa .section3 .sub_tit { padding: 50px 0 60px; }
+    .mofa .section3 .sub_tit:before { font-size: 120px; }
+    .mofa .section3 .icon_area, .mofa .section3 > div { display: none; }
+    .mofa .section4:before { background-size: cover; }
+    .mofa .section4 .mock_list > li { width: 100%; }
+    .mofa .section4 .mock_list > li a, .mofa .section4 .mock_list > li.issue2 .frame_top a { width: 220px; display: inline-block; }
+    .mofa .section4 .mock_list > li.issue2 .frame_top { box-sizing: border-box; }
+    .mofa .section4 .mock_list a { height: 400px; }
+    .mofa .section4 .mock_list > li.issue2 .frame { height: auto; }
+    .mofa .section4 .mock_list > li.issue6 { margin-bottom: 0; }
+    .mofa .info dl:first-child > dd ul > li { height: 140px; }
+    .mofa .info dl:first-child > dd ul > li span { padding: 15px; }
+    /* 공통 */
+    .mofa .info dl:first-child > dd ul > li { width: 100%; margin-top: 30px; }
+    .mofa .info dl:first-child > dd ul > li:first-child { margin-top: 0; }
+    .mofa .info dl:last-child > dd ul > li:first-child { margin-top: 0; }
+    .mofa .info dl:last-child > dd ul > li { width: 100%; margin-top: 30px; margin-left: 0; }
+}

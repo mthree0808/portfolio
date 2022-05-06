@@ -1,0 +1,65 @@
+/* table */
+.tableA{@include table-reset; border-top: $table-border-top;
+	&.ta_l td{text-align: left;}
+	&.tl_reset{table-layout: inherit;}
+	th{padding: 12px; text-align: center; font-weight: 500; background: $table-bg; border-right: $table-border; border-bottom: $table-border;
+		&:last-child{border-right-width: 0;}
+		@include mobile{font-size: $fz-xs;}
+	}
+	td{padding: 12px; text-align: center; border-right: $table-border; border-bottom: $table-border;
+		&:last-child{border-right-width: 0;}
+		@include mobile{font-size: $fz-xs;}
+		.dot_list, .num_list{text-align: left;}
+	}
+	tfoot td{background-color: $table-bg; font-weight: 500;}
+	.tbl_point{background-color: #edeff3;}
+}
+
+/* tab */
+.tab_wrapA{position: relative;
+	.btn_select{display: none; @include mobile{display: block; width: 100%; margin-bottom: 25px; padding: 12px 15px 11px; color: $tab-active-color; font-size: $fz-sm; font-weight: 700; text-align: left; border: 1px solid $tab-active-color; position: relative;
+		&:after{content: ''; display: block; width: auto; height: auto; border-top: 8px solid $tab-active-color; border-left: 6px solid transparent; border-right: 6px solid transparent; position: absolute; top: 50%; margin-top: -3px; right: 15px; @include trans-speed;}
+		&.active:after{@include transform(rotate(-180deg));}
+	}}
+	.tab_list{margin-bottom: 30px; @include clearfix; border-top: $border-base; border-left: $border-base; 
+		&.pcs2>li{width: 50%;
+			@include mobile{width: auto;}
+		}
+		@include mobile{display: none; max-height: 150px; margin-bottom: 0; overflow-y: auto; background: #fff; border: 1px solid $tab-active-color; box-shadow: 0 0 5px rgba(0,0,0,0.25); position: absolute; top: 44px; left: 0; right: 0; z-index: 30;}
+		>li{float: left; width: 33.33%; @include mobile{float: none; width: 100%;}
+			>a{display: block; padding: 15px 20px; font-size: $fz-sm; color: $gray-dark; border-right: $border-base; border-bottom: $border-base; position: relative; 
+				@include underline{color: $point-color1;}
+				@include mobile{padding: 10px 15px; color: $gray-black; font-weight: 500; border: 0 none;}
+				&:after{content: ''; display: block; width: 12px; height: 2px; background: #99a3b7; position: absolute; top: 50%; margin-top: -1px; right: 20px; @include mobile{display: none;}}
+			}
+			&.active>a{font-weight: 700; color: $tab-active-color; @include mobile{font-weight: 500; color: $gray-black;}
+				&:before{content: ''; display: block; width: calc(100% - 2px); height: calc(100% - 2px); border: 2px solid $tab-active-color; position: absolute; top: -1px; left: -1px; @include mobile{display: none;}}
+				&:after{width: auto; height: auto; background: 0 none; margin-top: -3px; border-top: 6px solid $tab-active-color; border-left: 6px solid transparent; border-right: 6px solid transparent;}
+			}
+		}
+	}
+}
+
+.tab_con{display: none;
+	&.active{display: block;}
+}
+
+.tab_onoff{float: right; margin-bottom: 10px; border: $border-base; @include clearfix;
+	>li{float: left; text-align: center;
+		&:last-child a{border-right-width: 0;}
+		>a{display: block; min-width: 100px; padding: 8px 15px; background: $white; border-right: $border-base; position: relative;
+			.txt{display: inline-block; font-size: $fz-sm; position: relative;
+				@include mobile{font-size: $fz-sm;}
+				&:after{content: ''; display: block; width: 0; height: 2px; background-color: $point-color1; position: absolute; bottom: -4px; left: calc(50% + 1px); @include trans-speed; @include transform(translateX(-50%)); overflow: hidden;}
+			}
+		}
+		&.active>a{background: #eff2f6;}
+	}
+	@include mobile{float: none;
+		>li{width: 33.33%;
+			&:last-child a{border-right-width: 1px;}
+			&:nth-child(3n) a{border-right-width: 0;}
+			>a{min-width: 75px; border-bottom: $border-base; margin-bottom: -1px;}
+		}
+	}
+}

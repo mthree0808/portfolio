@@ -1,0 +1,146 @@
+/* form */
+.form_table{@include table-reset; border-collapse: separate; border-top: $table-border-top;
+	th, td{min-height: 60px; border-bottom: $table-border; vertical-align: middle; @include mobile{min-height: 50px; font-size: $fz-xs;}}
+	th{padding: 15px; font-weight: 500; background-color: $table-bg; @include mobile{padding: 10px;}
+		.txt_star{vertical-align: middle; color: #ff0042;}
+	}
+	td{padding: 12px 15px; @include mobile{padding: 10px;}}
+	@include mobile{table-layout: inherit;
+		colgroup{display: none;}
+		tbody th{width: 100px;}
+	}
+}
+.form_box{
+	.form_inp, .form_sel, .form_txt{border: $input-border;
+		&::placeholder{color: #969696; font-weight: 300;}
+	}
+	.form_inp{width: 100%; height: $input-height; max-width: 395px; line-height: 1.3; padding: $input-padding; text-indent: 0; @include input-reset; @include mobile{height: 30px; font-size: $fz-xs; max-width: inherit;}
+		&.W100{max-width: inherit;}
+		&.date{max-width: 180px; padding-right: 35px; background: $white url($img-sub+"icon_cal.png") no-repeat right 10px center;}
+	}
+	.form_sel{width: 100%; height: $input-height; max-width: 180px; min-height: auto; line-height: 1.3; padding: $select-padding; background: #fff url($img-common+"icon_select.png") no-repeat right 12px center; @include input-reset; @include mobile{max-width: inherit; height: 30px; font-size: $fz-xs;}
+		&.W100{max-width: inherit;}
+		&::-ms-expand{display: none;}
+	}
+	.form_txt{width: 100%; height: 220px; padding: 10px; resize: none; @include mobile{height: 140px;}}
+
+	.inp_txt{display: inline-block; margin-left: 15px; font-size: $fz-sm; color: $gray-dark; vertical-align: middle; @include mobile{margin-left: 0; font-size: $fz-xs;}}
+	.btn_form{display: inline-block; width: 130px; padding: 0 15px; height: $input-height; font-size: $fz-sm; color: $white; background: $button-bg-form; border: $input-border; vertical-align: middle; @include mobile{height: 30px; border-color: $button-bg-form;} @include trans-speed;
+		&:hover{@include desktop{background: darken($button-bg-form, 10%);}}
+	}
+
+	.form_phone{width: 100%; max-width: 395px; font-size: 0;
+		* {font-size: $fz-base; @include mobile{font-size: 14px;}}
+		.dash{display: inline-block; width: 14px; text-align: center; color: #dadbdd; vertical-align: middle;}
+		.form_sel, .form_inp{width: calc(33.33% - 10px);}
+	}
+	.form_addr{width: 100%; font-size: 0; position: relative;
+		* {font-size: $fz-base; @include mobile{font-size: 14px;}}
+		.addr1{width: 180px; margin-right: $input-margin; @include mobile{width: calc(100% - 84px);  margin-right: 0;}}
+		.addr2{width: calc(100% - 320px); margin-right: $input-margin; @include mobile{width: 100%; margin-top: $input-margin; margin-right: 0;}}
+		.btn_form{font-size: 15px; @include mobile{width: 80px; padding: 0 5px; font-size: 14px; position: absolute; top: 0; right: 0;}}
+		.addr3{max-width: inherit; margin-top: $input-margin;}
+	}
+
+	.form_date{
+		@include mobile{text-align: center;
+			.date{max-width: inherit;
+				&:last-child{width: calc(100% - 13px); margin-top: $input-margin;}
+			}
+		}
+	}
+
+	.form_park{width: 100%; font-size: 0; position: relative;
+		* {font-size: $fz-base; @include mobile{font-size: 14px;}}
+		.btn_form{@include mobile{width: 100px; padding: 0 5px; position: absolute; top: 0; right: 0;}}
+		.park1{width: calc(100% - 135px); max-width: inherit; margin-left: $input-margin; @include mobile{width: calc(100% - 105px); margin-left: 0; margin-right: $input-margin;}}
+		.park2{width: calc(100% - 205px); max-width: inherit; margin-top: $input-margin; margin-right: $input-margin; @include mobile{width: 100%;}}
+		.park3{width: 200px; max-width: inherit; margin-top: $input-margin; @include mobile{width: 100%;}}
+	}
+
+	.form_car{width: 100%; font-size: 0;
+		* {font-size: $fz-base; @include mobile{font-size: 14px;}}
+		.form_inp{width: calc(50% - 70px); margin-right: $input-margin; 
+			@include mobile{ width: calc(50% - 40px); }
+		}
+		.btn_form{ @include mobile{width: 70px;} }
+		.inp_txt{display: block; margin-top: $input-margin; margin-left: 0;}
+	}
+
+	.form_bd_box{margin-top: $input-margin; padding: 12px 15px; border: 2px dotted #dadbdd; font-size: $fz-sm; line-height: 1.6;}
+
+	.form_chk_box{margin-bottom: -10px; @include mobile{margin-bottom: -5px;}
+		.chk_each{width: calc(33.33% - 9px); margin-right: 10px; margin-bottom: 10px; @include mobile{width: 100%; margin-right: 0; margin-bottom: 5px;}
+			&:nth-child(3n){margin-right: 0;}
+			label{font-size: $fz-sm; @include mobile{font-size: 1em;}}
+		}
+	}
+
+	.sel_btn_box{
+		@include mobile{
+			.form_sel{width: calc(100% - 95px);}
+			.btn_form{width: 90px;}
+		}
+	}
+
+	.attach_box{max-width: 535px; position: relative; z-index: 1; @include clearfix;
+		.attach_input{position: absolute; left: 0; top: 0; z-index: 1; visibility: hidden; width: 1px; height: 1px; font-size: 1px;}
+		.attach_vbox{vertical-align: middle;}
+		.attach_vinput {float: left; width: calc(100% - 135px); max-width: inherit; background-color: $white; cursor: pointer; padding: 0 5px; cursor: pointer; 
+			@include mobile{width: calc(100% - 105px);}
+		}
+		.attach_btn{float: left; width: 125px; height: 36px; line-height: 36px; margin-left: 10px; color: $white; background-color: $button-bg-form; text-align: center; font-size: $fz-sm; font-weight: 300; cursor: pointer; vertical-align: middle; @include trans-speed;
+			@include desktop{&:hover{background: darken($button-bg-form, 10%);}}
+			@include mobile{width: 100px; height: 30px; line-height: 30px; margin-left: 5px;}
+		}
+	}
+	.attach_list{margin-top: 10px;
+		.file{margin-bottom: 8px; padding-left: 30px; @include file-icon;
+			&:last-child{margin-bottom: 0;}
+			a{display: inline-block; margin-right: 10px; font-size: $fz-sm; @include underline;}
+			.file_del{display: inline-block; width: 22px; height: 22px; background: url($img-sub+"icon_file_x.png") no-repeat center; border: $border-base; vertical-align: middle; @include trans-speed;
+				@include desktop{ &:hover{border-color: $point-color1;} }
+			}
+		}
+	}
+
+	.form_captcha{
+		.txt{display: block; margin-bottom: 5px; font-size: $fz-sm;}
+		.img_box{display: inline-block; width: 125px; height: 35px; border: $border-base; vertical-align: middle;}
+		.btn_box{display: inline-block; margin: 0 7px; font-size: 0; vertical-align: middle; border: $border-base;
+			button{display: inline-block; width: 34px; height: 34px; background-repeat: no-repeat; background-position: center;}
+			.btn_refresh{background-image: url($img-sub+"icon_refresh.png");}
+			.btn_audio{background-image: url($img-sub+"icon_audio.png"); border-left: $border-base;}
+		}
+		.form_inp{width: calc(100% - 220px); @include mobile{display: block; width: 100%; max-width: 220px; margin-top: 10px;}}
+	}
+
+	.form_account{
+		>li{margin-bottom: 5px; @include mobile{margin-bottom: 8px;}
+			&:last-child{margin-bottom: 0;}
+		}
+		label{display: inline-block; min-width: 80px; vertical-align: middle; @include mobile{margin-bottom: 3px;}}
+		.form_inp{max-width: 180px; @include mobile{max-width: inherit;}}
+	}
+}
+
+.radio_each{display: inline-block; margin: 2px 20px 2px 0; vertical-align: middle;
+	&.one, &:last-of-type{margin-right: 0;}
+	label{display: inline-block; position: relative; padding-left: 28px; cursor: pointer; @include mobile{padding-left: 18px;}}
+	.vradio{display: block; position: absolute; left: 0; top: 0; width: 20px; height: 20px; border: 1px solid $radio-color; border-radius: 50%; @include mobile{width: 14px; height: 14px; top: 3px;}
+		&:after{content: ''; display: block; position: absolute; left: 50%; top: 50%; width: 8px; height: 8px; margin-left: -4px; margin-top: -4px; background-color: transparent; border-radius: 50%; transition: all 0.2s; @include mobile{width: 6px; height: 6px; margin-top: -3px; margin-left: -3px;}}
+	}
+	input:checked + label .vradio{border-color: $gray-black;
+		&:after{background-color: $radio-active-color;}
+	}
+	input:focus + label .vradio{outline:1px dotted #000; outline:-webkit-focus-ring-color auto 5px;}
+}
+
+.chk_each{display: inline-block; margin: 2px 20px 2px 0; vertical-align: middle;
+	&.one, &:last-of-type{margin-right: 0;}
+	label{display: inline-block; position: relative; z-index: 1; padding-left: 25px; cursor:pointer; vertical-align: top;}
+	.vchkbox{display: block; position: absolute; left: 0; top: 1px; z-index: 1; width: 18px; height: 18px; background: #fff no-repeat center / 11px auto; border: 1px solid $radio-color; border-radius: 3px; transition: all 0.2s;}
+	input:checked + label .vchkbox {background-image: url($img-common+"icon_chk.png"); border-color: $gray-black;}
+	input:focus + label .vchkbox {outline:1px dotted #000; outline:-webkit-focus-ring-color auto 5px;}
+}
+

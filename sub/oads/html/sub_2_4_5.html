@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <title>해외농업개발서비스 홈페이지에 오신것을 환영합니다.</title>
+  <link rel="stylesheet" href="../common/css/default.css">
+  <link rel="stylesheet" href="../common/css/slick.css">
+  <link rel="stylesheet" href="../common/css/_board.css">
+  <link rel="stylesheet" href="../common/css/jquery-ui.min.css">
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/slick.js"></script>
+  <script src="../common/js/common.js"></script>
+  <script src="../common/js/datepicker-ko.js"></script>
+  <script src="../common/js/jquery-ui.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/favicon.ico">
+
+  <!-- //공통 js -->
+  <!--[if lt IE 10]>
+  <script src="../common/js/html5shiv.js"></script>
+  <script src="../common/js/placeholders.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- 스킵내비게이션 -->
+    <div class="skip_navi">
+      <strong class="hide">바로가기 메뉴</strong>
+      <a href="#contents">본문 바로가기</a>
+      <a href="#gnb">주메뉴 바로가기</a>
+    </div>
+    <!--//스킵내비게이션 -->
+    <!-- 헤더 -->
+    <div class="header">
+      <div class="hd_md">
+        <div class="container">
+          <h1 class="logo"><a href="../html/index.html"><img src="../common/images/hd_logo.png" alt="해외농업개발서비스 로고"></a>
+          </h1>
+          <div class="hd_sch">
+            <form action="#" name="#" method="POST">
+              <fieldset>
+                <legend>검색어입력</legend>
+                <input type="text" name="#" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요.">
+                <button type="button" onclick="location.href='search.html'"><span class="hide">검색</span></button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="util">
+            <ul>
+              <li><a href="index.html" class="active" title="선택됨">KOR</a></li>
+              <li><a href="#" onclick="alert('준비중입니다.')">ENG</a></li>
+            </ul>
+            <a href="sub_5_8_1.html" class="more">신청서 내역 조회<span>바로가기</span></a>
+          </div>
+          <div class="m_btn">
+            <button type="button" class="open_sch"><span class="hide">검색</span></button>
+            <button type="button" class="open_gnb"><span class="hide">메뉴</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="gnb">
+        <div class="container">
+          <div class="gnb_hd">
+            <button type="button" class="close_gnb"><span class="hide">닫기</span></button>
+          </div>
+          <ul class="m_util">
+            <li><a href="#" onclick="alert('준비중입니다.')">ENG</a></li>
+            <li><a href="sub_5_8_1.html">신청서 내역 조회</a></li>
+          </ul>
+          <ul class="dep1">
+            <li><a href="sub_1_1_1.html"><span>주요사업</span></a>
+              <div>
+                <div>
+                  <strong>
+                    <span>KOREA OADS</span> 주요사업
+                  </strong>
+                  <p>세계 속의 우리농업! <br>
+                    해외농업자원개발협회가 함꼐 합니다.
+                  </p>
+                </div>
+                <ul class="dep2">
+                  <li><a href="sub_1_1_1.html">인재양성</a>
+                    <ul class="dep3">
+                      <li><a href="sub_1_1_1.html">지역분야별 특화교육</a></li>
+                      <li><a href="sub_1_1_2.html">국제곡물 전문가 교육</a></li>
+                      <li><a href="sub_1_1_3.html">온라인교육</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="sub_1_2_1.html">해외인턴</a></li>
+                  <li><a href="sub_1_3_1.html">조사지원</a>
+                    <ul class="dep3">
+                      <li><a href="sub_1_3_1.html">민간환경조사</a></li>
+                      <li><a href="sub_1_3_2.html">컨설팅</a></li>
+                      <li><a href="sub_1_3_3.html">해외농업개척조사</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="sub_1_4_1.html">워크샵/세미나</a></li>
+                  <li><a href="sub_1_5_1.html">비즈니스 다이얼로그</a>
+                    <ul class="dep3">
+                      <li><a href="sub_1_5_1.html">행사소개</a></li>
+                      <li><a href="sub_1_5_2.html">행사소식</a></li>
+                      <li><a href="sub_1_5_3.html">행사영상 및 사진</a></li>
+                      <li><a href="sub_1_5_4.html">지난행사 결과</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="sub_2_1_1.html" class="active"><span>해외시장정보</span></a>
+              <div>
+                <div>
+                  <strong>
+                    <span>KOREA OADS</span> 해외시장정보
+                  </strong>
+                  <p>세계 속의 우리농업! <br>
+                    해외농업자원개발협회가 함꼐 합니다.
+                  </p>
+                </div>
+                <ul class="dep2">
+                  <li><a href="sub_2_1_1.html">국가정보</a></li>
+                  <li><a href="sub_2_2_1.html">동향정보</a>
+                    <ul class="dep3">
+                      <li><a href="sub_2_2_1.html">해외시장뉴스</a></li>
+                      <li><a href="sub_2_2_2.html">진출전략보고서</a></li>
+                      <li><a href="sub_2_2_3.html">해외투자법규</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="sub_2_3_1.html">가격정보</a>
+                    <ul class="dep3">
+                      <li><a href="sub_2_3_1.html">곡물가격</a></li>
+                      <li><a href="sub_2_3_2.html">가격지수</a></li>
+                      <li><a href="sub_2_3_3.html">선물포지션</a></li>
+                      <li><a href="sub_2_3_4.html">환율정보</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="sub_2_4_1.html">통계정보</a>
+                    <ul class="dep3">
+                      <li><a href="sub_2_4_1.html">연도별 생산량 및 재배면적</a></li>
+                      <li><a href="sub_2_4_2.html">국제곡물 수급현황</a></li>
+                      <li><a href="sub_2_4_3.html">수출입무역 통계정보</a></li>
+                      <li><a href="sub_2_4_4.html">농축산물 관세율 현황</a></li>
+                      <li><a href="sub_2_4_5.html">수출입 실적</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="sub_3_1_1.html"><span>자료실</span></a>
+              <div>
+                <div>
+                  <strong>
+                    <span>KOREA OADS</span> 자료실
+                  </strong>
+                  <p>세계 속의 우리농업! <br>
+                    해외농업자원개발협회가 함꼐 합니다.
+                  </p>
+                </div>
+                <ul class="dep2">
+                  <li><a href="sub_3_1_1.html">환경조사 및 컨설팅 보고서</a></li>
+                  <li><a href="sub_3_2_1.html">농업투자정보</a></li>
+                  <li><a href="sub_3_3_1.html">저널/칼럼</a></li>
+                  <li><a href="sub_3_4_1.html">해외진출사례</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="sub_4_1_1.html"><span>자원개발신고</span></a>
+              <div>
+                <div>
+                  <strong>
+                    <span>KOREA OADS</span> 자원개발신고
+                  </strong>
+                  <p>세계 속의 우리농업! <br>
+                    해외농업자원개발협회가 함꼐 합니다.
+                  </p>
+                </div>
+                <ul class="dep2">
+                  <li><a href="sub_4_1_1.html">신고안내</a></li>
+                  <li><a href="sub_4_2_1.html">활동기업현황</a></li>
+                  <li><a href="sub_4_3_1.html">진행현황 보고</a></li>
+                  <li><a href="sub_4_4_1.html">사전등록회원</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="sub_5_1_1.html"><span>소통알림</span></a>
+              <div>
+                <div>
+                  <strong>
+                    <span>KOREA OADS</span> 소통알림
+                  </strong>
+                  <p>세계 속의 우리농업! <br>
+                    해외농업자원개발협회가 함꼐 합니다.
+                  </p>
+                </div>
+                <ul class="dep2">
+                  <li><a href="sub_5_1_1.html">공지사항</a></li>
+                  <li><a href="sub_5_2_1.html">사업공고</a></li>
+                  <li><a href="sub_5_3_1.html">해외진출 상담문의</a></li>
+                  <li><a href="sub_5_4_1.html">해외농업전문가 등록</a></li>
+                  <li><a href="sub_5_5_1.html">사이버 홍보</a>
+                    <ul class="dep3">
+                      <li><a href="sub_5_5_1.html">포토뉴스</a></li>
+                      <li><a href="sub_5_5_2.html">홍보자료</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="sub_5_6_1.html">Q&A</a></li>
+                  <li><a href="sub_5_7_1.html">FAQ</a></li>
+                  <li><a href="sub_5_8_1.html">신청/등록이력 조회</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="sub_6_1_1.html"><span>협회소개</span></a>
+              <div>
+                <div>
+                  <strong>
+                    <span>KOREA OADS</span> 협회소개
+                  </strong>
+                  <p>세계 속의 우리농업! <br>
+                    해외농업자원개발협회가 함꼐 합니다.
+                  </p>
+                </div>
+                <ul class="dep2">
+                  <li><a href="sub_6_1_1.html">인사말</a></li>
+                  <li><a href="sub_6_2_1.html">설립목적 및 연혁</a></li>
+                  <li><a href="sub_6_3_1.html">조직도</a></li>
+                  <li><a href="sub_6_4_1.html">회원사 소개</a>
+                    <ul class="dep3">
+                      <li><a href="sub_6_4_1.html">가입안내</a></li>
+                      <li><a href="sub_6_4_2.html">회원사 현황</a></li>
+                      <li><a href="sub_6_4_3.html">회원사 소식</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="sub_6_5_1.html">찾아오시는 길</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="btn_sitemap"><span class="hide">사이트맵</span></button>
+        </div>
+      </div>
+      <div class="sitemap">
+        <div>
+          <img src="../common/images/logo_sitemap.png" alt="해외농업개발서비스 All MENU">
+          <ul>
+            <li><a href="sub_1_1_1.html"><span>주요사업</span></a>
+              <ul>
+                <li><a href="sub_1_1_1.html">인재양성</a>
+                  <ul class="dep3">
+                    <li><a href="sub_1_1_1.html">지역분야별 특화교육</a></li>
+                    <li><a href="sub_1_1_2.html">국제곡물 전문가 교육</a></li>
+                    <li><a href="sub_1_1_3.html">온라인교육</a></li>
+                  </ul>
+                </li>
+                <li><a href="sub_1_2_1.html">해외인턴</a></li>
+                <li><a href="sub_1_3_1.html">조사지원</a>
+                  <ul class="dep3">
+                    <li><a href="sub_1_3_1.html">민간환경조사</a></li>
+                    <li><a href="sub_1_3_2.html">컨설팅</a></li>
+                    <li><a href="sub_1_3_3.html">해외농업개척조사</a></li>
+                  </ul>
+                </li>
+                <li><a href="sub_1_4_1.html">워크샵/세미나</a></li>
+                <li><a href="sub_1_5_1.html">비즈니스 다이얼로그</a>
+                  <ul class="dep3">
+                    <li><a href="sub_1_5_1.html">행사소개</a></li>
+                    <li><a href="sub_1_5_2.html">행사소식</a></li>
+                    <li><a href="sub_1_5_3.html">행사영상 및 사진</a></li>
+                    <li><a href="sub_1_5_4.html">지난행사 결과</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="sub_2_1_1.html"><span>해외시장정보</span></a>
+              <ul>
+                <li><a href="sub_2_1_1.html">국가정보</a></li>
+                <li><a href="sub_2_2_1.html">동향정보</a>
+                  <ul>
+                    <li><a href="sub_2_2_1.html">해외시장뉴스</a></li>
+                    <li><a href="sub_2_2_2.html">진출전략보고서</a></li>
+                    <li><a href="sub_2_2_3.html">해외투자법규</a></li>
+                  </ul>
+                </li>
+                <li><a href="sub_2_3_1.html">가격정보</a>
+                  <ul>
+                    <li><a href="sub_2_3_1.html">곡물가격</a></li>
+                    <li><a href="sub_2_3_2.html">가격지수</a></li>
+                    <li><a href="sub_2_3_3.html">선물포지션</a></li>
+                    <li><a href="sub_2_3_4.html">환율정보</a></li>
+                  </ul>
+                </li>
+                <li><a href="sub_2_4_1.html">통계정보</a>
+                  <ul>
+                    <li><a href="sub_2_4_1.html">연도별 생산량 및 재배면적</a></li>
+                    <li><a href="sub_2_4_2.html">국제곡물 수급현황</a></li>
+                    <li><a href="sub_2_4_3.html">수출입무역 통계정보</a></li>
+                    <li><a href="sub_2_4_4.html">농축산물 관세율 현황</a></li>
+                    <li><a href="sub_2_4_5.html">수출입 실적</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="sub_3_1_1.html"><span>자료실</span></a>
+              <ul>
+                <li><a href="sub_3_1_1.html">환경조사 및 컨설팅 보고서</a></li>
+                <li><a href="sub_3_2_1.html">농업투자정보</a></li>
+                <li><a href="sub_3_3_1.html">저널/칼럼</a></li>
+                <li><a href="sub_3_4_1.html">해외진출사례</a></li>
+              </ul>
+            </li>
+            <li><a href="sub_4_1_1.html"><span>자원개발신고</span></a>
+              <ul>
+                <li><a href="sub_4_1_1.html">신고안내</a></li>
+                <li><a href="sub_4_2_1.html">활동기업현황</a></li>
+                <li><a href="sub_4_3_1.html">진행현황 보고</a></li>
+                <li><a href="sub_4_4_1.html">사전등록회원</a></li>
+              </ul>
+            </li>
+            <li><a href="sub_5_1_1.html"><span>소통알림</span></a>
+              <ul class="dep2">
+                <li><a href="sub_5_1_1.html">공지사항</a></li>
+                <li><a href="sub_5_2_1.html">사업공고</a></li>
+                <li><a href="sub_5_3_1.html">해외진출 상담문의</a></li>
+                <li><a href="sub_5_4_1.html">해외농업전문가 등록</a></li>
+                <li>
+                  <a href="sub_5_5_1.html">사이버 홍보</a>
+                  <ul class="dep3">
+                    <li><a href="sub_5_5_1.html">포토뉴스</a></li>
+                    <li><a href="sub_5_5_2.html">홍보자료</a></li>
+                  </ul>
+                </li>
+                <li><a href="sub_5_6_1.html">Q&A</a></li>
+                <li><a href="sub_5_7_1.html">FAQ</a></li>
+                <li><a href="sub_5_8_1.html">신청/등록이력 조회</a></li>
+              </ul>
+            </li>
+            <li><a href="sub_6_1_1.html"><span>협회소개</span></a>
+              <ul>
+                <li><a href="sub_6_1_1.html">인사말</a></li>
+                <li><a href="sub_6_2_1.html">설립목적 및 연혁</a></li>
+                <li><a href="sub_6_3_1.html">조직도</a></li>
+                <li><a href="sub_6_4_1.html">회원사 소개</a>
+                  <ul>
+                    <li><a href="sub_6_4_1.html">가입안내</a></li>
+                    <li><a href="sub_6_4_2.html">회원사 현황</a></li>
+                    <li><a href="sub_6_4_3.html">회원사 소식</a></li>
+                  </ul>
+                </li>
+                <li><a href="sub_6_5_1.html">찾아오시는 길</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button type="button" class="close_sitemap"><span class="hide">사이트맵 닫기</span></button>
+        </div>
+      </div>
+    </div>
+    <!-- //헤더 -->
+    <div class="page_spot sub2">
+      <!-- 주요사업(.sub1) ~ 협회소개(.sub7) -->
+      KOREA OADS
+      <span>해외농업개발사업자의 권익보호 및 해외농업자원개발의 건전한 발전</span>
+    </div>
+    <!-- 컨텐츠 -->
+    <div class="sub container">
+      <div id="lnb">
+        <strong>해외시장정보</strong>
+        <ul class="dep2">
+          <li><a href="sub_2_1_1.html">국가정보</a></li>
+          <li><a href="sub_2_2_1.html">동향정보</a>
+            <ul class="dep3">
+              <li><a href="sub_2_2_1.html">해외시장뉴스</a></li>
+              <li><a href="sub_2_2_2.html">진출전략보고서</a></li>
+              <li><a href="sub_2_2_3.html">해외투자법규</a></li>
+            </ul>
+          </li>
+          <li><a href="sub_2_3_1.html">가격정보</a>
+            <ul class="dep3">
+              <li><a href="sub_2_3_1.html">곡물가격</a></li>
+              <li><a href="sub_2_3_2.html">가격지수</a></li>
+              <li><a href="sub_2_3_3.html">선물포지션</a></li>
+              <li><a href="sub_2_3_4.html">환율정보</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="sub_2_4_1.html">통계정보</a>
+            <ul class="dep3">
+              <li><a href="sub_2_4_1.html">연도별 생산량 및 재배면적</a></li>
+              <li><a href="sub_2_4_2.html">국제곡물 수급현황</a></li>
+              <li><a href="sub_2_4_3.html">수출입무역 통계정보</a></li>
+              <li><a href="sub_2_4_4.html">농축산물 관세율 현황</a></li>
+              <li class="active"><a href="sub_2_4_5.html">수출입 실적</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="contents">
+        <div class="sub_top">
+          <h2>수출입실적</h2>
+          <ol>
+            <li><a href="index.html" title="홈으로 이동"><img src="../common/images/icon_bc_home.png" alt=""></a></li>
+            <li><a href="sub_2_1_1.html">해외시장정보</a></li>
+            <li><a href="sub_2_4_1.html">통계정보</a></li>
+            <li><a href="sub_2_4_5.html">수출입실적</a></li>
+            <li class="share dropdown">
+              <button type="button" title="열기"><span class="hide">SNS 공유</span></button>
+              <ul>
+                <li><a href="https://twitter.com/KoaaOffice" target="_blank" title="트위터"><img src="../common/images/share_twitter.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/koaaoffice/" target="_blank" title="페이스북"><img src="../common/images/share_facebook.png" alt=""></a></li>
+                <li><a href="#" onclick="alert('준비중입니다.')" title="네이버 블로그"><img src="../common/images/share_blog.png" alt=""></a></li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="tb_info">
+          <h3 class="tit_md lt">월별 품목별 실적</h3>
+          <div class="rt point_txt">표기 항목은 하단에서 선택하신 내역을 확인하실 수 있습니다.</div>
+        </div>
+        <ul class="chk_list">
+          <li>
+            <div>
+              <span>수출입기준</span>
+              <ul class="form_list">
+                <li>
+                  <input type="radio" name="radio_01" id="radio_01" value="#" class="hide" checked="checked" />
+                  <label for="radio_01"><span class="radio"></span>수출</label>
+                </li>
+                <li>
+                  <input type="radio" name="radio_01" id="radio_02" value="#" class="hide" />
+                  <label for="radio_02"><span class="radio"></span>수입</label>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span>식품조회<span class="point"><span class="hide">필수</span></span></span>
+              <ul class="form_list">
+                <li>
+                  <input type="radio" name="radio_03" id="radio_03" value="#" class="hide" checked="checked" />
+                  <label for="radio_03"><span class="radio"></span>전체</label>
+                </li>
+                <li>
+                  <input type="radio" name="radio_03" id="radio_04" value="#" class="hide" />
+                  <label for="radio_04"><span class="radio"></span>식품</label>
+                </li>
+                <li>
+                  <input type="radio" name="radio_03" id="radio_05" value="#" class="hide" />
+                  <label for="radio_05"><span class="radio"></span>비식품</label>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span>품목조회<span class="point"><span class="hide">필수</span></span></span>
+              <ul class="form_list">
+                <li>
+                  <input type="radio" name="radio_06" id="radio_06" value="#" class="hide" checked="checked" />
+                  <label for="radio_06"><span class="radio"></span>국가</label>
+                  <button type="button" class="btn1">품목조회</button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span>국가조회<span class="point"><span class="hide">필수</span></span></span>
+              <ul class="form_list">
+                <li>
+                  <input type="radio" name="radio_07" id="radio_07" value="#" class="hide" checked="checked" />
+                  <label for="radio_07"><span class="radio"></span>국가</label>
+                  <button type="button" class="btn1">국가조회</button>
+                </li>
+                <li>
+                  <input type="radio" name="radio_07" id="radio_08" value="#" class="hide" />
+                  <label for="radio_08"><span class="radio"></span>국가그룹</label>
+                  <button type="button" class="btn1">국가그룹조회</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span>조회기준 년월</span>
+              <div>
+                <div class="select">
+                  <select name="#" title="품목 선택">
+                    <option value="">선택해주세요</option>
+                    <option value="">-</option>
+                    <option value="">-</option>
+                  </select>
+                </div>
+                <div class="select">
+                  <select name="#" title="품목 선택">
+                    <option value="">선택해주세요</option>
+                    <option value="">-</option>
+                    <option value="">-</option>
+                  </select>
+                </div>
+                <ul class="txt_list">
+                  <li>※ 월데이터 확정 : 다음달 15일 / 연도데이터 확정 : 다음해 2월말</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span>기준비교</span>
+              <ul class="form_list">
+                <li>
+                  <input type="checkbox" name="chk_01" id="chk_01" value="#" class="hide" />
+                  <label for="chk_01"><span class="checkbox"></span>연누계</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chk_02" id="chk_02" value="#" class="hide" />
+                  <label for="chk_02"><span class="checkbox"></span>월누계</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chk_03" id="chk_03" value="#" class="hide" />
+                  <label for="chk_03"><span class="checkbox"></span>당월</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chk_04" id="chk_04" value="#" class="hide" />
+                  <label for="chk_04"><span class="checkbox"></span>전월</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chk_05" id="chk_05" value="#" class="hide" />
+                  <label for="chk_05"><span class="checkbox"></span>전월누계</label>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span>자료조회단위</span>
+              <ul class="form_list">
+                <li>
+                  <input type="radio" name="radio_09" id="radio_09" value="#" class="hide" />
+                  <label for="radio_09"><span class="radio"></span>$/KG</label>
+                </li>
+                <li>
+                  <input type="radio" name="radio_09" id="radio_10" value="#" class="hide" />
+                  <label for="radio_10"><span class="radio"></span>1천$/T</label>
+                </li>
+                <li>
+                  <input type="radio" name="radio_09" id="radio_11" value="#" class="hide" />
+                  <label for="radio_11"><span class="radio"></span>1백만$/1천T</label>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span>대/중/소 선택</span>
+              <ul class="form_list">
+                <li>
+                  <input type="checkbox" name="chk_06" id="chk_06" value="#" class="hide" />
+                  <label for="chk_06"><span class="checkbox"></span>전체</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chk_07" id="chk_07" value="#" class="hide" />
+                  <label for="chk_07"><span class="checkbox"></span>대분류</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chk_08" id="chk_08" value="#" class="hide" />
+                  <label for="chk_08"><span class="checkbox"></span>중분류</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chk_09" id="chk_09" value="#" class="hide" />
+                  <label for="chk_09"><span class="checkbox"></span>소분류</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chk_10" id="chk_10" value="#" class="hide" />
+                  <label for="chk_10"><span class="checkbox"></span>품목</label>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="scroll_box">
+          <div class="scroll type2">
+            <ul class="t_list">
+              <li>품목 선택 내역 : 품목전체</li>
+              <li>국가 선택 내역 : 국가전체</li>
+              <li>식품/비식품 선택 내역 : 전체</li>
+              <li>품목 선택 내역 : 품목전체</li>
+              <li>국가 선택 내역 : 국가전체</li>
+              <li>식품/비식품 선택 내역 : 전체</li>              
+            </ul>
+          </div>
+          <ul class="t_list mt10 fc_gray">
+            <li>※ 통계제공 : 한국무역통계진흥원</li>
+            <li>※ 각 분류별 계(농수산식품-계, 농산물-계 등)는 선택품목이 아니라 전체품목에 대한 합계이므로 이용에 착오 없으시기 바랍니다.
+              <ul>
+                <li class="fc_red">* '18~'20년 쌀 무상원조 실적은 수출실적 집계대상에서 제외(’18년 對베트남·미얀마·태국, ’19년 對태국·미얀마, ’20년 對필리핀·미얀마)
+                </li>
+                <li class="fc_red">** '21년 쌀 무상원조실적은 수출입통계 연 확정치 발표 이후('22년 2월 말) 반영 예정</li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div class="btn_box">
+          <button type="button" class="green">초기화</button>
+          <button type="button" class="gray">검색</button>
+        </div>
+        <div class="tb_info">
+          <span class="date lt">(단위 : Kg, $)</span>
+          <div class="dwn rt">
+            <a href="#" class="green"><span>엑셀다운로드</span></a>
+            <a href="#"><span>CSV다운로드</span></a>
+          </div>
+        </div>
+        <div class="table lg">
+          <table class="center">
+            <caption>AGCODE,HSCODE,식품/비식품/명칭/국가별 상세보기, 월누계(중량,금액)</caption>
+            <thead>
+              <tr>
+                <th rowspan="4"><button type="button" title="오름차순 정렬" class="sort active">AGCODE</button></th>
+                <th rowspan="4"><button type="button" title="오름차순 정렬" class="sort">HSCODE</button></th>
+                <th rowspan="4"><button type="button" title="오름차순 정렬" class="sort">식품/비식품</button></th>
+                <th rowspan="4"><button type="button" title="오름차순 정렬" class="sort">명칭</button></th>
+                <th rowspan="4">국가별<br>상세보기</th>
+                <th colspan="2">2020년 12월</th>
+                <th colspan="2">2021년 12월</th>
+                <th colspan="2">월누계전년대비</th>
+              </tr>
+              <tr>
+                <th colspan="2">월누계</th>
+                <th colspan="2">월누계</th>
+                <th colspan="2">수출</th>
+              </tr>
+              <tr>
+                <th colspan="2">수출</th>
+                <th colspan="2">수출</th>
+                <th rowspan="2"><button type="button" title="오름차순 정렬" class="sort">중량(%)</button></th>
+                <th rowspan="2"><button type="button" title="오름차순 정렬" class="sort">금액(%)</button></th>
+              </tr>
+              <tr>
+                <th><button type="button" title="오름차순 정렬" class="sort">중량</button></th>
+                <th><button type="button" title="오름차순 정렬" class="sort">금액</button></th>
+                <th><button type="button" title="오름차순 정렬" class="sort">중량</button></th>
+                <th><button type="button" title="오름차순 정렬" class="sort">금액</button></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>413120301</td>
+                <td>0307431010</td>
+                <td>비식품</td>
+                <td class="left">포장용의 목재블록(대나무로 만든 것)</td>
+                <td><button type="button" class="btn3">상세보기</button></td>
+                <td>225.0</td>
+                <td>1,010.0</td>
+                <td>1,022.4</td>
+                <td>28,896.0</td>
+                <td>354.4</td>
+                <td>2,761.0</td>
+              </tr>
+              <tr>
+                <td>413120301</td>
+                <td>0307431010</td>
+                <td>비식품</td>
+                <td class="left">포장용의 목재블록(대나무로 만든 것)</td>
+                <td><button type="button" class="btn3">상세보기</button></td>
+                <td>225.0</td>
+                <td>1,010.0</td>
+                <td>1,022.4</td>
+                <td>28,896.0</td>
+                <td>354.4</td>
+                <td>2,761.0</td>
+              </tr>
+              <tr>
+                <td>413120301</td>
+                <td>0307431010</td>
+                <td>비식품</td>
+                <td class="left">포장용의 목재블록(대나무로 만든 것)</td>
+                <td><button type="button" class="btn3">상세보기</button></td>
+                <td>225.0</td>
+                <td>1,010.0</td>
+                <td>1,022.4</td>
+                <td>28,896.0</td>
+                <td>354.4</td>
+                <td>2,761.0</td>
+              </tr>
+              <tr>
+                <td>413120301</td>
+                <td>0307431010</td>
+                <td>비식품</td>
+                <td class="left">포장용의 목재블록(대나무로 만든 것)</td>
+                <td><button type="button" class="btn3">상세보기</button></td>
+                <td>225.0</td>
+                <td>1,010.0</td>
+                <td>1,022.4</td>
+                <td>28,896.0</td>
+                <td>354.4</td>
+                <td>2,761.0</td>
+              </tr>
+              <tr>
+                <td>413120301</td>
+                <td>0307431010</td>
+                <td>비식품</td>
+                <td class="left">포장용의 목재블록(대나무로 만든 것)</td>
+                <td><button type="button" class="btn3">상세보기</button></td>
+                <td>225.0</td>
+                <td>1,010.0</td>
+                <td>1,022.4</td>
+                <td>28,896.0</td>
+                <td>354.4</td>
+                <td>2,761.0</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="f_banner">
+        <div class="container">
+          <div class="control">
+            <strong>배너모음</strong>
+            <button type="button" class="prev">이전</button>
+            <button type="button" class="pause">자동재생 정지</button>
+            <button type="button" class="next">다음</button>
+          </div>
+          <div class="slide">
+            <a href="https://www.koica.go.kr/sites/koica_kr/index.do" target="_blank" title="새창" class="item"><img src="../common/images/sample_f_banner_1.png"
+                alt="한국국제협력단"></a>
+            <a href="http://www.ekr.or.kr" target="_blank" title="새창" class="item"><img src="../common/images/sample_f_banner_2.png"
+                alt="한국농어촌공사"></a>
+            <a href="https://www.mafra.go.kr/sites/mafra/index.do" target="_blank" title="새창" class="item"><img src="../common/images/sample_f_banner_3.png"
+                alt="농림축산식품부"></a>
+            <a href="https://www.at.or.kr/home/apko000000/index.action" target="_blank" title="새창" class="item"><img src="../common/images/sample_f_banner_4.png"
+                alt="한국농수산식품유통공사"></a>
+            <a href="https://www.rda.go.kr/main/mainPage.do" target="_blank" title="새창" class="item"><img src="../common/images/sample_f_banner_5.png"
+                alt="농촌진흥청"></a>
+          </div>
+        </div>
+      </div>
+      <div class="ft">
+        <div class="ft_top">
+          <div class="container">
+            <ul class="fnb">
+              <li><a href="policy.html">이용약관</a></li>
+              <li><a href="privacy.html">개인정보처리방침</a></li>
+              <li><a href="sub_6_5_1.html">찾아오시는 길</a></li>
+            </ul>
+            <div class="f_link dropdown">
+              <button type="button" title="열기">회원사 바로가기</button>
+              <ul>
+                <li><a href="http://www.ekr.or.kr" target="_blank" title="새창열기">한국농어촌공사</a></li>
+                <li><a href="http://www.daewoo.com" target="_blank" title="새창열기">(주)대우인터내서널</a></li>
+                <li><a href="http://www.seoulfeed.com" target="_blank" title="새창열기">(주)서울사료</a></li>
+                <li><a href="http://www.singsongindustry.com" target="_blank" title="새창열기">신송산업(주)</a></li>
+                <li><a href="http://www.doalnaratrade.com" target="_blank" title="새창열기">돌나라통상(주)</a></li>
+                <li><a href="http://www.dwlogistics.co.kr" target="_blank" title="새창열기">(주)대우로지스틱스</a></li>
+                <!-- <li><a href="http://www.hanjin.com" target="_blank" title="새창열기">(주)한진해운</a></li> -->
+                <li><a href="http://www.hanjinsc.com" target="_blank" title="새창열기">(주)한진중공업</a></li>
+                <li><a href="http://www.farmsco.com" target="_blank" title="새창열기">(주)팜스코</a></li>
+                <!-- <li><a href="http://www.hhi.co.kr" target="_blank" title="새창열기">현대중공업(주)</a></li> -->
+                <li><a href="http://kr.univera.com" target="_blank" title="새창열기">(주)남양 유니베라</a></li>
+                <!-- <li><a href="http://www.dongahfood.com/index.asp" target="_blank" title="새창열기">(주)코지드</a></li> -->
+                <li><a href="http://www.ecoprime.kr" target="_blank" title="새창열기">(주)에코프라임</a></li>
+                <!-- <li><a href="http://www.daewonplus.co.kr" target="_blank" title="새창열기">(주)대원플러스건설</a></li> -->
+                <li><a href="http://www.baridream.co.kr" target="_blank" title="새창열기">바리의 꿈</a></li>
+                <li><a href="http://www.fnpco.com" target="_blank" title="새창열기">(주)에프앤피</a></li>
+                <li><a href="http://www.sangseng.kr" target="_blank" title="새창열기">상생복지회</a></li>
+                <li><a href="http://www.arro.co.kr" target="_blank" title="새창열기">아로(주)</a></li>
+                <li><a href="http://www.sjcooking.co.kr" target="_blank" title="새창열기">서정쿠킹(주)</a></li>
+                <!-- <li><a href="http://www.fileaders.com" target="_blank" title="새창열기">퓨처인베스트리더스(주)</a></li> -->
+                <li><a href="http://www.agriculture.co.kr" target="_blank" title="새창열기">(주)동부팜한농</a></li>
+                <li><a href="http://www.daewon.com" target="_blank" title="새창열기">(주)대원지에스아이</a></li>
+                <!-- <li><a href="http://www.ajucorporation.co.kr" target="_blank" title="새창열기">아주산업(주)</a></li> -->
+                <li><a href="http://www.idealsys.co.kr" target="_blank" title="새창열기">(주)iGSP</a></li>
+                <!-- <li><a href="http://www.lottecon.co.kr" target="_blank" title="새창열기">롯데건설(주)</a></li> -->
+                <li><a href="http://www.irrigation.co.kr/" target="_blank" title="새창열기">(주)남경</a></li>
+                <li><a href="http://www.erubberdam.co.kr" target="_blank" title="새창열기">(주)대도엔텍</a></li>
+                <li><a href="http://www.hanshinc.com" target="_blank" title="새창열기">한신공영(주)</a></li>
+                <li><a href="http://fmdoor.com" target="_blank" title="새창열기">(주)신흥강판</a></li>
+                <li><a href="http://www.soosungeng.com" target="_blank" title="새창열기">수성엔지니어링</a></li>
+                <!-- <li><a href="http://irrigation.co.kr" target="_blank" title="새창열기">두드림협동조합</a></li> -->
+                <li><a href="http://www.norooholdings.com" target="_blank" title="새창열기">(주)노루기반</a></li>
+                <li><a href="http://www.hanyangcorp.co.kr" target="_blank" title="새창열기">(주)한양</a></li>
+                <!-- <li><a href="http://www.kccworld.net" target="_blank" title="새창열기">(주)KCC건설</a></li> -->
+                <li><a href="http://www.dk21.co.kr" target="_blank" title="새창열기">동광건설(주)</a></li>
+                <!-- <li><a href="http://www.gesco.kr/" target="_blank" title="새창열기">(주)GSE</a></li> -->
+                <li><a href="http://www.yc.go.kr/ycMain/main.do" target="_blank" title="새창열기">영천시</a></li>
+                <li><a href="http://www.fao.or.kr" target="_blank" title="새창열기">FAO한국협회</a></li>
+                <li><a href="http://www.ekcid.org/new" target="_blank" title="새창열기">한국관개배수위원회</a></li>
+                <li><a href="http://www.at.or.kr" target="_blank" title="새창열기">한국농수산식품유통공사</a></li>
+                <!-- <li><a href="http://www.ygcsut.com" target="_blank" title="새창열기">청산유통</a></li> -->
+                <li><a href="http://www.bizbio.kr" target="_blank" title="새창열기">비즈바이오</a></li>
+                <li><a href="http://www.ecoleaders.kr" target="_blank" title="새창열기">㈜에코리더스인증원</a></li>
+                <li><a href="http://www.hainong.com" target="_blank" title="새창열기">㈜해농상사</a></li>
+                <li><a href="http://www.xn--299a47e6y0aula50bk3l.kr" target="_blank" title="새창열기">㈜신진에너텍</a>
+                </li>
+                <!-- <li><a href="http://www.lgicorp.com" target="_blank" title="새창열기">㈜LG상사</a></li> -->
+                <li><a href="http://www.seowon.com" target="_blank" title="새창열기">서원홀딩스</a></li>
+                <li><a href="http://biz.mk.co.kr" target="_blank" title="새창열기">㈜매경비즈</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ft_add">
+          <div class="container">
+            <div class="address">
+              <ul>
+                <li>(사)해외농업자원개발협회 우14059 경기도 안양시 동안구 흥안대로 427번길 38 (관양동, 인덕원성지스타위드 906호)</li>
+                <li><span>TEL : 031.345.6567~68(총무관리팀), 6569/6571(교육홍보팀), 6570(조사연구팀)</span> FAX : 031.345.6575</li>
+              </ul>
+              <p>Copyright Korea Overseas Agro-Resources-Development Association All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

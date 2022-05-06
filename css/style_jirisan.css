@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 지리산수앱 */
+.jirisan .svisual > span:before { background-image: url(../images/sub/jirisan/t_bg.jpg); }
+.jirisan .ov_area { position: relative; margin: 145px auto 195px; }
+.jirisan .ov_area > ul { position: absolute; right: 50%; top: -595px; z-index: 3; margin-right: -790px; }
+.jirisan .ov_area > ul:after { content: ''; display: block; clear: both; }
+.jirisan .ov_area > ul > li { float: left; width: 391px; height: 521px; background-repeat: no-repeat; background-position: center top; opacity: 0; }
+.jirisan .ov_area > ul > li.pink { background: url(../images/sub/jirisan/pink.png); animation: w_fi 1.5s forwards ease; }
+.jirisan .ov_area > ul > li.blue { background: url(../images/sub/jirisan/blue.png); margin-left: -210px; animation: w_fi 1.5s forwards ease; animation-delay: 550ms; }
+.jirisan .section1 .wrap { position: relative; left: 50%; margin-left: -1000px; width: 2060px; }
+.jirisan .section1 .img_box { position: relative; left: 0; top: 0; z-index: 1; width: 1113px; height: 480px; background: url(../images/sub/jirisan/w_bg.png) no-repeat center top; }
+.jirisan .section1 .img_box > span { position: absolute; right: -590px; top: 85px; z-index: 3; font-family: montEB; font-size: 140px; color: #000; }
+.jirisan .section1 .img_box > span > i { display: block; margin-top: -27px; color: #eef4fb; margin-left: 180px; }
+.jirisan .section1 .mock_list > li { margin-left: 170px; }
+.jirisan .section1 .mock_list > li .sub_tit { font-size: 26px; }
+.jirisan .section1 .mock_list > li.issue1 { position: relative; transform: translateY(-200px); margin-left: 630px; }
+.jirisan .section1 .mock_list > li.issue1 .sub_tit { position: absolute; left: -120px; top: 322px; z-index: 4; transform: rotate(-90deg); }
+.jirisan .section1 .mock_list > li.issue2 .sub_tit { margin-bottom: 20px; text-align: right; }
+.jirisan .section1 .mock_list > li.issue3 { transform: translateY(395px); }
+.jirisan .section1 .mock_list > li.issue4 { transform: translate(-280px,-410px); }
+.jirisan .section1 .mock_list > li.issue5 { transform: translate(-288px,-146px); }
+.jirisan .section1 .mock_list > li.issue6 { transform: translate(-288px,100px); }
+.jirisan .section2 { position: relative; margin-top: 350px; }
+.jirisan .section2 .wrap { position: relative; }
+.jirisan .section2 .wrap:before { content: ''; position: absolute; right: 670px; top: 280px; z-index: 11; width: 206px; height: 216px; background: url(../images/sub/jirisan/deli.jpg) no-repeat; border-radius: 20px; box-shadow: 8px 8px 16px rgba(33,167,233,0.3); }
+.jirisan .section2 .wrap:after { content: ''; position: absolute; right: -150px; top: 480px; z-index: 11; width: 216px; height: 216px; background: url(../images/sub/jirisan/c3.png) no-repeat center top; }
+.jirisan .section2:before { content: ''; position: absolute; left: 50%; top: 0; z-index: 1; width: 244px; height: 244px; background: url(../images/sub/jirisan/c1.png) no-repeat center top; transform: translate(-450px,-180px); }
+.jirisan .section2:after { content: ''; position: absolute; left: 50%; top: 0; z-index: 1; width: 130px; height: 130px; background: url(../images/sub/jirisan/c2.png) no-repeat center top; transform: translate(-700px,100px); }
+.jirisan .section2 .img_box { position: absolute; left: 50%; top: 0; z-index: 10; transform: translateX(0); width: 800px; height: 800px; background-color: #e4f4fc; overflow: hidden; border-radius: 50%; text-align: center; }
+.jirisan .section2 .img_box > a { background-repeat: no-repeat; display: inline-block; margin-top: 160px; }
+.jirisan .section2 .mock_list > li.issue1 { position: relative; margin: 400px 100px 0 0; }
+.jirisan .section2 .mock_list > li.issue2 { margin: 880px 100px 0 0; }
+.jirisan .section2 .mock_list > li.issue3 { margin: 1040px 0 0 0; }
+.jirisan .section3 { padding-bottom: 320px; }
+.jirisan .section3 .wrap { position: relative; width: 1700px; }
+.jirisan .section3 .img_box { position: absolute; left: 90px; top: 0; z-index: 1; width: 500px; height: 1030px; background: url(../images/sub/jirisan/c_img.jpg) no-repeat center top; }
+.jirisan .section3 .mock { display: inline-block; vertical-align: top; position: relative; z-index: 3; left: 400px; margin-top: 195px; }
+.jirisan .section3 .mock:before { content: ''; position: absolute; right: -250px; bottom: -70px; z-index: -1; width: 459px; height: 450px; background: url(../images/sub/jirisan/dot2.png) no-repeat center top; }
+.jirisan .section3 .mock:after { content: ''; position: absolute; right: 400px; bottom: -80px; z-index: -1; width: 105px; height: 143px; background: url(../images/sub/jirisan/dot3.png) no-repeat center top; }
+.jirisan .section4 { position: relative; }
+.jirisan .section4 .bg { position: absolute; left: 0; top: 40%; z-index: -1; width: 100%; height: 2012px; background-color: #e7f3fa; transform: translateY(-50%); }
+.jirisan .section4 .bg:before { content: ''; position: absolute; left: 0; top: -281px; z-index: -1; width: 100%; height: 281px; background: url(../images/sub/jirisan/f_bg_t.png) no-repeat center top; }
+.jirisan .section4 .bg:after { content: ''; position: absolute; left: 0; bottom: -210px; z-index: -1; width: 100%; height: 210px; background: url(../images/sub/jirisan/f_bg_b.png) no-repeat center top; }
+.jirisan .section4 .mock_list { padding: 0 319px; }
+.jirisan .section4 .mock_list:after { content: ''; display: block; clear: both; }
+.jirisan .section4 .mock_list > li { margin-left: 110px; }
+.jirisan .section4 .mock_list > li .frame { height: 1341px; border-radius: 30px; }
+.jirisan .section4 .mock_list > li .frame_top { height: 760px; }
+.jirisan .section4 .mock_list > li.issue1 { margin-left: 0; transform: translateY(140px); }
+.jirisan .section4 .mock_list > li.issue3 { transform: translateY(280px); }
+.jirisan .section4 .mock_list > li.issue4 { margin-left: 0; transform: translateY(-331px); }
+.jirisan .section4 .mock_list > li.issue5 { transform: translateY(93px); }
+.jirisan .section4 .mock_list > li.issue6 { transform: translateY(-218px); }
+.jirisan .section4 .mock_list > li.issue7 { margin-left: 0; float: left; transform: translateY(-333px); }
+.jirisan .section4 .mock_list > li.issue8 { margin-left: 0; float: right; transform: translateY(-374px); }
+.jirisan .section5 .mock_list { left: 50%; top: -133px; width: 1860px; transform: translateX(-50%); }
+.jirisan .section5 .mock_list > li { margin-left: 60px; vertical-align: middle; }
+.jirisan .section5 .mock_list > li:first-child { margin-left: 0; }
+.jirisan .info { padding: 108px 0 240px; }
+.jirisan .info:after { content: ''; display: block; clear: both; }
+.jirisan .info .wrap { width: 1512px; }
+.jirisan .info dt { margin-bottom: 50px; }
+.jirisan .info dl:first-child ul:after { content: ''; display: block; clear: both; }
+.jirisan .info dl:first-child li { position: relative; float: left; display: table; margin-left: -30px; width: 220px; height: 220px; border-radius: 50%; overflow: hidden; }
+.jirisan .info dl:first-child li:first-child { margin-left: 0; }
+.jirisan .info dl:first-child li > span { position: relative; z-index: 3; display: table-cell; vertical-align: middle; text-align: center; font-family: montM; font-size: 20px; color: #fff; }
+.jirisan .info dl:first-child li:after { content: ''; position: absolute; left: 10px; top: 10px; z-index: 1; width: 200px; height: 200px; border-radius: 50%; }
+.jirisan .info dl:first-child li.st1 { background-color: #0086d6; }
+.jirisan .info dl:first-child li.st2 { background-color: #005a8f; }
+.jirisan .info dl:first-child li.st3 { background-color: #5e6e7d; }
+.jirisan .info dl:first-child li.st4 { background-color: #e8f1f8; }
+.jirisan .info dl:first-child li.st4 > span { color: #222; }
+.jirisan .info dl:first-child li.st5 { background-color: #ff8400; }
+.jirisan .info dl:last-child { margin-top: 100px; }
+.jirisan .info dl:last-child li { margin-top: 45px; }
+.jirisan .info dl:last-child li:first-child { margin-left: 0; }
+
+/* 지리산수앱 이미지 */
+.jirisan .main_m { background-image: url(../images/sub/jirisan/main_m_th.jpg); height: 747px; }
+.jirisan .intro_m { background-image: url(../images/sub/jirisan/intro_m_th.jpg); height: 747px; }
+.jirisan .sub_m_1 { background-image: url(../images/sub/jirisan/sub_m_1_th.jpg); height: 719px; }
+.jirisan .sub_m_2 { background-image: url(../images/sub/jirisan/sub_m_2_th.jpg); height: 775px; }
+.jirisan .sub_m_3_1 { background-image: url(../images/sub/jirisan/sub_m_3_1_th.jpg); height: 747px; }
+.jirisan .sub_m_3_2 { background-image: url(../images/sub/jirisan/sub_m_3_2_th.jpg); height: 747px; }
+.jirisan .sub_m_4 { background-image: url(../images/sub/jirisan/sub_m_4_th.jpg); height: 747px; }
+.jirisan .sub_m_5 { background-image: url(../images/sub/jirisan/sub_m_5_th.jpg); height: 760px; }
+.jirisan .sub_m_6 { background-image: url(../images/sub/jirisan/sub_m_6_th.jpg); height: 760px; }
+.jirisan .sub_m_7 { background-image: url(../images/sub/jirisan/sub_m_7_th.jpg); height: 789px; }
+.jirisan .sub_m_8 { background-image: url(../images/sub/jirisan/sub_m_8_th.jpg); height: 768px; }
+.jirisan .sub_m_9 { background-image: url(../images/sub/jirisan/sub_m_9_th.jpg); }
+.jirisan .sub_m_10 { background-image: url(../images/sub/jirisan/sub_m_10_th.jpg); height: 741px; }
+.jirisan .sub_m_11 { background-image: url(../images/sub/jirisan/sub_m_11_th.jpg); height: 768px; }
+.jirisan .sub_m_12 { background-image: url(../images/sub/jirisan/sub_m_12_th.jpg); height: 860px; }
+.jirisan .sub_m_13 { background-image: url(../images/sub/jirisan/sub_m_13_th.jpg); height: 614px; }
+.jirisan .sub_m_14 { background-image: url(../images/sub/jirisan/sub_m_14_th.jpg); height: 786px; }
+.jirisan .sub_m_15 { background-image: url(../images/sub/jirisan/sub_m_15_th.jpg); height: 686px; }
+.jirisan .sub_m_16 { background-image: url(../images/sub/jirisan/sub_m_16_th.jpg); height: 494px; }
+.jirisan .sub_m_17 { background-image: url(../images/sub/jirisan/sub_m_17_th.jpg); height: 494px; }
+.jirisan .sub_m_18 { background-image: url(../images/sub/jirisan/sub_m_18_th.jpg); height: 681px; }
+.jirisan .sub_m_19 { background-image: url(../images/sub/jirisan/sub_m_19_th.jpg); height: 494px; }
+.jirisan .sub_m_20 { background-image: url(../images/sub/jirisan/sub_m_20_th.jpg); height: 494px; }
+
+/* 애니메이션 */
+@keyframes w_fi {
+    0% { transform: translateX(-30px); }
+    100% { transform: translateX(0); opacity: 1; }
+}

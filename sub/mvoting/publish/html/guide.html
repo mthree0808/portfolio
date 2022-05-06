@@ -1,0 +1,792 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="status.css">
+<title>엠보팅 홈페이지 구축 작업현황판</title>
+<style>
+    html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, b, u, i, dl, dt, dd, ul, ol, li,
+    fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,  figure, figcaption, footer, header, menu, nav, section{padding: 0; margin: 0;}
+
+    body{padding: 2em; line-height: 1.7em; font-family: applegothic, "�섎닎怨좊뵓", nanumgothic, "留묒� 怨좊뵓", malgungothic, dotum, "�뗭�"; font-size:13px;}
+    ul,ol{list-style-type:none;}
+    table{border-spacing: 0; border-collapse: collapse; table-layout: fixed;}
+    table caption{padding-bottom: 0.5em;}
+    h1{font-size: 1.45em;}
+    h2{font-size: 1.3em;}
+    h3{font-size: 1.2em;}
+    th{vertical-align: middle; word-break: break-all;}
+    td{vertical-align: middle; word-break: break-all;}
+    .hidden{position:absolute; top:-99999em; left:-99999em;}
+    a{color:#666666;}
+    td span{color:#dc5959;}
+    .info{margin:0px 0px 3em; width: 100%; border:#888 1px solid;}
+    .info th{padding:0.25em 1em; border:1px dashed #aaa; text-align:left; border-right:0; background-color:#dedede;}
+    .info td{padding:0.25em 1em; border:1px dashed #aaa; border-left:0;}
+    .progress{text-align: right; margin-bottom: 5px;}
+    .progress span{margin-left: 10px;}
+    .work{margin:0 0 3em; border:1px solid #888; width:100%; min-width:900px;}
+    .work th{padding:0.25em 0.5em; border:1px solid #aaa; background:#e1e1e1; border-bottom:3px solid #aaa;}
+    .work td{padding:0.25em 0.5em; border:1px solid #aaa; background:#fff;}
+    .work .tit td{border-top:2px solid #333;}
+    .work tr td:nth-child(6){text-align:center;}
+    .yellow td{background:#fff8d0;}
+
+    a{color:#666666;}
+    td span{color:#dc5959;}
+    .info{margin:0px 0px 3em;width:100%;border:#888 1px solid;}
+    .info th{padding:0.25em 1em;border:1px dashed #aaa;text-align:left;border-right:0;background-color:#dedede;}
+    .info td{padding:0.25em 1em;border:1px dashed #aaa;text-align:left;border-left:0;}
+    .work{width:100%;min-width:900px;margin:0 0 3em;width:100%;border:1px solid #888;}
+    .work th{padding:0.25em 0.5em;border:1px solid #aaa;background:#e1e1e1;border-bottom:3px solid #aaa;}
+    .work td{padding:0.25em 0.5em;border:1px solid #aaa;background:#fff;vertical-align:middle;}
+    .tit td{border-top:2px solid #333;}
+    .work td:nth-last-child(2){text-align:center;}
+    .yellow td{background:#fff8d0;}
+    .fc_blue{color: #388cd5;}
+    .hidden{position:absolute;top:-99999em;left:-99999em;}
+    .type1 td{background: #fffdf0;}
+	.em1 {color:red; font-weight:bold;}
+</style>
+</head>
+<body>
+	<h2>프로젝트 정보</h2>
+	<table class="info">
+		<caption>
+			<span class="hidden">프로젝트 기본 정보</span>
+		</caption>
+		<colgroup>
+			<col style="width: 180px;" />
+			<col />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">1. 프로젝트명</th>
+				<td>엠보팅 홈페이지 디자인 리뉴얼</td>
+			</tr>
+			<tr>
+				<th scope="row">2. 기타 사항</th>
+				<td>
+					이 페이지 이외에도 추가로 작업되거나, 공통으로 포함되어 삭제될 페이지가 있을 수 있습니다.
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p style="text-align: right">
+		<span>○ 퍼블 대기중</span> <span>◐ 퍼블 작업중</span> <span>● 퍼블 완료</span>
+	</p>
+	<table class="work">
+		<colgroup>
+			<col style="width: 10%;" />
+			<col style="width: 15%;" />
+			<col style="width: 15%;" />
+			<col style="width: 15%;" />
+			<col style="width: 15%;" />
+			<col style="width: 7%;" />
+			<col style="width: 5%;" />
+			<col />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1Dep</th>
+				<th scope="col">2Dep</th>
+				<th scope="col">3Dep</th>
+				<th scope="col">화면명</th>
+				<th scope="col">FileName</th>
+				<th scope="col">완료날짜</th>
+				<th scope="col">ing</th>
+				<th scope="col">Memo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="tit">
+				<td>기본 레이아웃</td>
+				<td></td>
+				<td></td>
+				<td>목록</td>
+				<td><a href="basic_layout.html" target="_blank">basic_layout.html</a></td>
+				<td><b>2019-10-18</b></td>
+				<td>●</td>
+				<td><span class="em1">※ 공통 레이아웃(header, left_menu , footer 등..) 마크업 변경사항이 생길시 이 페이지에서 확인바랍니다!</span><br><br>
+					<!-- <span>[10/21]</span>
+					<ul>
+						<li>- m_dep2_menu : 2차메뉴가 아닌 1차메뉴가 보여짐</li>
+					</ul>
+					<span>[11/06]</span>
+					<ul>
+						<li>- '.page_back_btn' 모바일용 뒤로가기 버튼 추가</li>
+					</ul>
+					<span>[11/12]</span>
+					<ul>
+						<li>- footer 구조 변경 (txt 추가 및 변경, 서울로고 추가)</li>
+					</ul>
+					<span>[11/14]</span>
+					<ul>
+						<li>- 767px 이하에서도 상세검색이 보이게 하는 'm_on_sch' 클래스 추가 ('btm_header' 에 추가바랍니다. sch_box 자체에 주려했으나 부모의 패딩문제로 부모클래스에 추가함.)</li>
+					</ul>
+					<span>[11/27]</span>
+					<ul>
+						<li>- skip_navi 주메뉴 이동 값 수정, lm id 값 추가</li>
+						<li>- ".head_sch_input" 인풋 태그에 title 값 추가</li>
+					</ul>
+					<span>[12/16]</span>
+					<ul>
+						<li>- 'foot_wa_mark' 접근성 인증마크 추가</li>
+					</ul>
+					<span>[12/18]</span>
+					<ul>
+						<li>- 모바일용 서울로고 추가</li>
+					</ul> -->
+					<span class="em1">[02/24]</span>
+					<ul>
+						<li>- gps icon 추가</li>
+					</ul>
+				</td>
+			</tr>
+			<tr class="tit">
+				<td>투표하기</td>
+				<td></td>
+				<td></td>
+				<td>목록</td>
+				<td><a href="vote_list.html" target="_blank">vote_list.html</a></td>
+				<td><b>2019-10-18</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[10/21]</span>
+					<ul>
+						<li>- 'sub_tit1_box' 에 메인페이지일 경우의 클래스 추가</li>
+						<li>- 'board_util_array' 에 title값 추가</li>
+						<li>- 이미지 없을시, 데이터 없을시, vs투표 유형 추가</li>
+						<li>- 'util_list' → 'ico_info_list' 로 클래스명 변경</li>
+					</ul>
+					<span>[10/22]</span>
+					<ul>
+						<li>- 하단 더보기버튼 추가</li>
+					</ul>
+					<span>[11/04]</span>
+					<ul>
+						<li>- 내가 참여한 투표 표시 추가 ('.join_mark')</li>
+					</ul>
+					<span>[11/06]</span>
+					<ul>
+						<li>- 모바일용 투표만들기 버튼('common_btn regist v_regist') 추가</li>
+					</ul>
+					<span>[11/11]</span>
+					<ul>
+						<li>- 인기투표, 추천투표 마크 추가</li>
+						<li>- 종료된 투표 배경색 태그 추가('.end_bg')(vs형은 이미지영역 각각에 추가됨)</li>
+						<li>- 모바일용 카카오톡 공유하기 버튼 추가 ('.share_layer_box')</li>
+					</ul>
+					<span class="em1">[11/12]</span>
+					<ul>
+						<li>- 신고된 투표 마크 추가 ('.report_mark')</li>
+					</ul> -->
+					<span class="em1">[02/24]</span>
+					<ul>
+						<li>- qr코드 버튼 및 레이어팝업 추가</li>
+					</ul>
+					<span class="em1">[03/05]</span>
+					<ul>
+						<li>- 서울gnb를 고려한 헤더 고정 스크립트 작업 적용</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>투표하기</td>
+				<td></td>
+				<td></td>
+				<td>만든 투표 목록</td>
+				<td><a href="vote_list_my.html" target="_blank">vote_list_my.html</a></td>
+				<td><b>2019-11-11</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/11]</span>
+					<ul>
+						<li>- 만든투표 설정변경 버튼 추가('.my_vote_util_box')(반응형이슈로 pc,모바일용으로 나누어져있으니 참고바랍니다.)</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>투표 전 통계</td>
+				<td><a href="vote_statistics.html" target="_blank">vote_statistics.html</a></td>
+				<td><b>2019-11-04</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>비공개 투표 인증</td>
+				<td><a href="vote_detail_private_pop.html" target="_blank">vote_detail_private_pop.html</a></td>
+				<td><b>2019-11-04</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세(투표 전)</td>
+				<td><a href="vote_detail.html" target="_blank">vote_detail.html</a></td>
+				<td><b>2019-10-28</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[10/28]</span>
+					<ul>
+						<li>- 사용자 입력 해시태그 및 모바일용 해시태그 추가</li>
+					</ul>
+					<span>[11/04]</span>
+					<ul>
+						<li>- 신고하기 레이어팝업 추가</li>
+						<li>- 내가 쓴 댓글 수정, 삭제 버튼 추가</li>
+					</ul>
+					<span>[11/06]</span>
+					<ul>
+						<li>- 슬라이더(".vote_pop_slider") 스크립트 전반적으로 수정</li>
+						<li>- '.top_img_box' 태그 내 이미지 a태그 추가 및 레이어 팝업 추가</li>
+						<li>- '.vote_item_con' 태그 제거</li>
+						<li>- '.vote_dep1_con' 아래로 접근성 관련 타이틀태그('.hide') 추가</li>
+						<li>- '.vote_item_tab' 내 '.count' 태그(답변 선택 갯수) 추가</li>
+					</ul>
+					<span>[11/07]</span>
+					<ul>
+						<li>- 텍스트(레이어 팝업) 항목 추가</li>
+					</ul>
+					<span>[11/08]</span>
+					<ul>
+						<li>- 'vote_hash_mark user' 태그 위치 이동 ('user_hash_area' 참고)</li>
+					</ul>
+					<span class="em1">[11/11]</span>
+					<ul>
+						<li>- 투표결과 공개여부 안내 텍스트 추가('.vote_btm_txt')</li>
+						<li>- 신고된 투표 삭제 안내 추가('.report_info_box')</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>비회원 투표 인증</td>
+				<td><a href="nonmember_certi.html" target="_blank">nonmember_certi.html</a></td>
+				<td><b>2019-10-30</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span class="em1">[11/04]</span>
+					<ul>
+						<li>- 탭에 id값 추가 및 1개짜리 탭 추가</li>
+					</ul>
+					<span class="em1">[11/27]</span>
+					<ul>
+						<li>- ".scroll_box" 태그에 tabindex="0" 추가</li>
+					</ul> -->
+					<span class="em1">[02/24]</span>
+					<ul>
+						<li>- 서울시 통합인증 버튼 추가.</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세(투표 후)</td>
+				<td><a href="vote_detail_my.html" target="_blank">vote_detail_my.html</a></td>
+				<td><b>2019-10-28</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[10/28]</span>
+					<ul>
+						<li>- 사용자 입력 해시태그 및 모바일용 해시태그 추가</li>
+						<li>- 'main_vote_area' 태그에 'my' 클래스 추가</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세(투표 결과)</td>
+				<td><a href="vote_detail_result.html" target="_blank">vote_detail_result.html</a></td>
+				<td><b>2019-10-28</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[10/28]</span>
+					<ul>
+						<li>- 사용자 입력 해시태그 및 모바일용 해시태그 추가</li>
+						<li>- 'main_vote_area' 태그에 'my' 클래스 추가</li>
+					</ul>
+					<span>[11/04]</span>
+					<ul>
+						<li>- 객,주관식 혼합형에서의 주관식 투표 항목 추가</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr class="tit">
+				<td>정책반영</td>
+				<td></td>
+				<td></td>
+				<td>목록</td>
+				<td><a href="policy.html" target="_blank">policy.html</a></td>
+				<td><b>2019-10-21</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[10/22]</span>
+					<ul>
+						<li>- 목록 하단 페이징 추가</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td><a href="policy_detail.html" target="_blank">policy_detail.html</a></td>
+				<td><b>2019-10-22</b></td>
+				<td>●</td>
+				<td>'공지사항 상세페이지'에서 몇가지 요소 추가</td>
+			</tr>
+			<tr class="tit">
+				<td>공지사항</td>
+				<td></td>
+				<td></td>
+				<td>목록</td>
+				<td><a href="notice.html" target="_blank">notice.html</a></td>
+				<td><b>2019-10-22</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td><a href="notice_detail.html" target="_blank">notice_detail.html</a></td>
+				<td><b>2019-10-22</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/06]</span>
+					<ul>
+						<li>- 수정, 삭제 버튼 추가</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr class="tit">
+				<td>마이페이지</td>
+				<td>개인정보설정</td>
+				<td>메인</td>
+				<td></td>
+				<td><a href="mypage_info.html" target="_blank">mypage_info.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/05]</span>
+					<ul>
+						<li>- SNS 인증 비활성화 추가 (전화번호 가입버튼 비활성화는 기존에 되어있음)</li>
+						<li>- 닉네임 중복확인시 안내문구 추가</li>
+					</ul>
+					<span class="em1">[11/19]</span>
+					<ul>
+						<li>- 인증하기 부분 마크업 변경 및 기타 수정 (2019-11-19 주석 참고)</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>인증</td>
+				<td></td>
+				<td><a href="mypage_info_certi.html" target="_blank">mypage_info_certi.html</a></td>
+				<td><b>2019-11-05</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>비밀번호변경</td>
+				<td></td>
+				<td></td>
+				<td><a href="mypage_pwd.html" target="_blank">mypage_pwd.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>회원탈퇴</td>
+				<td></td>
+				<td></td>
+				<td><a href="mypage_out.html" target="_blank">mypage_out.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>서비스안내</td>
+				<td></td>
+				<td></td>
+				<td><a href="service_info.html" target="_blank">service_info.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span class="em1">[11/27]</span>
+					<ul>
+						<li>- ".scroll_box" 태그에 tabindex="0" 추가</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>시민참여단</td>
+				<td>투표참여/등록</td>
+				<td>내역</td>
+				<td><a href="vote_history.html" target="_blank">vote_history.html</a></td>
+				<td><b>2019-11-05</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/12]</span>
+					<ul>
+						<li>- 투표 내역 없을 시 'blank' 클래스 추가</li>
+					</ul>
+					<span>[11/15]</span>
+					<ul>
+						<li>- 등록,등록가이드 버튼 위치 변경</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>등록</td>
+				<td><a href="vote_history_regist.html" target="_blank">vote_history_regist.html</a></td>
+				<td><b>2019-11-05</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>SNS 공유</td>
+				<td></td>
+				<td><a href="sns_share_list.html" target="_blank">sns_share_list.html</a></td>
+				<td><b>2019-11-05</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/15]</span>
+					<ul>
+						<li>- 등록,등록가이드 버튼 위치 변경</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>오류/개선의견</td>
+				<td>목록</td>
+				<td><a href="improvement.html" target="_blank">improvement.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/05]</span>
+					<ul>
+						<li>- 3차메뉴 탭 추가</li>
+						<li>'.sch_bar' 태그에 'normal' 클래스 추가</li>
+						<li>하단 등록가이드 버튼 추가</li>
+					</ul>
+					<span>[11/06]</span>
+					<ul>
+						<li>- 수정버튼 추가</li>
+					</ul>
+					<span>[11/15]</span>
+					<ul>
+						<li>- 등록 버튼 위치 변경</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td><a href="improvement_detail.html" target="_blank">improvement_detail.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>등록</td>
+				<td><a href="freeboard_regist.html" target="_blank">freeboard_regist.html 레이아웃 동일</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>자유게시판</td>
+				<td>목록</td>
+				<td><a href="freeboard.html" target="_blank">freeboard.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/05]</span>
+					<ul>
+						<li>- 3차메뉴 탭 추가</li>
+						<li>'.sch_bar' 태그에 'normal' 클래스 추가</li>
+						<li>하단 등록가이드 버튼 추가</li>
+					</ul>
+					<span>[11/15]</span>
+					<ul>
+						<li>- 등록 버튼 위치 변경</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td><a href="notice_detail.html" target="_blank">notice_detail.html 레이아웃 동일</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>등록</td>
+				<td><a href="freeboard_regist.html" target="_blank">freeboard_regist.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr class="tit">
+				<td>이용문의</td>
+				<td></td>
+				<td></td>
+				<td>목록</td>
+				<td><a href="inquiry.html" target="_blank">inquiry.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td><a href="inquiry_detail.html" target="_blank">inquiry_detail.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>등록</td>
+				<td><a href="inquiry_regist.html" target="_blank">inquiry_regist.html</a></td>
+				<td><b>2019-11-01</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span class="em1">[11/27]</span>
+					<ul>
+						<li>- 민원분류 select 에 id값 추가</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr class="tit">
+				<td>투표만들기</td>
+				<td></td>
+				<td></td>
+				<td>일반투표</td>
+				<td><a href="vote_create.html" target="_blank">vote_create.html</a></td>
+				<td><b>2019-11-07</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/08]</span>
+					<ul>
+						<li>- 비공개 투표 만들기 완료 레이어 팝업 추가 (투표만들기 버튼 클릭시 노출됨)</li>
+					</ul>
+					<span>[11/14]</span>
+					<ul>
+						<li>- 질문추가,삭제 버튼 위치 변경</li>
+						<li>- 투표기간 설정 시작,종료,시,분 텍스트 추가 ('date_slt_box')</li>
+					</ul>
+					<span class="em1">[11/27]</span>
+					<ul>
+						<li>- 질문영역 tabindex 추가</li>
+						<li>- ".tag_add_box" 내 input에 title 값 추가</li>
+					</ul>
+					<span class="em1">[11/28]</span>
+					<ul>
+						<li>- 투표기간 설정 input 추가</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>VS형</td>
+				<td><a href="vote_create_vs.html" target="_blank">vote_create_vs.html</a></td>
+				<td><b>2019-11-07</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span>[11/15]</span>
+					<ul>
+						<li>- 제목 입력과 답변입력란 마크업 분리 (마크업 참조바람)</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td>통합검색</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><a href="total_sch.html" target="_blank">total_sch.html</a></td>
+				<td><b>2019-11-06</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>에러페이지</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><a href="error.html" target="_blank">error.html</a></td>
+				<td><b>2019-11-07</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr class="tit">
+				<td>로그인</td>
+				<td>메인</td>
+				<td></td>
+				<td></td>
+				<td><a href="login.html" target="_blank">login.html</a></td>
+				<td><b>2019-10-30</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>비밀번호찾기</td>
+				<td></td>
+				<td></td>
+				<td><a href="find_pwd.html" target="_blank">find_pwd.html</a></td>
+				<td><b>2019-10-30</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>비밀번호변경</td>
+				<td></td>
+				<td></td>
+				<td><a href="find_set_pwd.html" target="_blank">find_set_pwd.html</a></td>
+				<td><b>2019-10-30</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>회원가입</td>
+				<td>메인</td>
+				<td></td>
+				<td><a href="join.html" target="_blank">join.html</a></td>
+				<td><b>2019-10-30</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>동의</td>
+				<td></td>
+				<td><a href="join_step1.html" target="_blank">join_step1.html</a></td>
+				<td><b>2019-10-30</b></td>
+				<td>●</td>
+				<td>
+					<!-- <span class="em1">[11/27]</span>
+					<ul>
+						<li>- ".scroll_box" 태그에 tabindex="0" 추가</li>
+					</ul> -->
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>정보작성</td>
+				<td></td>
+				<td><a href="join_step2.html" target="_blank">join_step2.html</a></td>
+				<td><b>2019-10-30</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>가입완료</td>
+				<td></td>
+				<td><a href="join_step3.html" target="_blank">join_step3.html</a></td>
+				<td><b>2019-10-30</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr class="tit">
+				<td>어플전용페이지</td>
+				<td>현장투표</td>
+				<td></td>
+				<td></td>
+				<td><a href="field_vote.html" target="_blank">field_vote.html</a></td>
+				<td><b>2019-11-12</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>GPS</td>
+				<td>목록</td>
+				<td></td>
+				<td><a href="gps_vote.html" target="_blank">gps_vote.html</a></td>
+				<td><b>2019-12-09</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td></td>
+				<td><a href="gps_detail.html" target="_blank">gps_detail.html</a></td>
+				<td><b>2019-12-09</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>내정보&amp;설정</td>
+				<td></td>
+				<td></td>
+				<td><a href="push_set.html" target="_blank">push_set.html</a></td>
+				<td><b>2019-11-12</b></td>
+				<td>●</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

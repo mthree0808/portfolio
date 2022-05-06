@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Light.eot");
+  src: local(※), url("../fonts/NotoSansKR-Light.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Light.woff") format("woff"), url("../fonts/NotoSansKR-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-DemiLight.eot");
+  src: local(※), url("../fonts/NotoSansKR-DemiLight.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-DemiLight.woff") format("woff"), url("../fonts/NotoSansKR-DemiLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../common/fonts/NotoSansKR-Regular.eot");
+  src: local(※), url("../fonts/NotoSansKR-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Regular.woff") format("woff"), url("../fonts/NotoSansKR-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Medium.eot");
+  src: local(※), url("../fonts/NotoSansKR-Medium.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Medium.woff") format("woff"), url("../fonts/NotoSansKR-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/NotoSansKR-Bold.eot");
+  src: local(※), url("../fonts/NotoSansKR-Bold.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Bold.woff") format("woff"), url("../fonts/NotoSansKR-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.otf") format("opentype");
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.otf") format("opentype");
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.otf") format("opentype");
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.otf") format("opentype");
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'Jalnan';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Jalnan.eot");
+  src: url("../fonts/Jalnan.eot?#iefix") format("embedded-opentype"), url("../fonts/Jalnan.woff") format("woff"), url("../fonts/Jalnan.otf") format("opentype");
+}
+
+/********* reset.css **********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul, ol, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #222;
+  letter-spacing: -0.02em;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  border: 0 none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0 none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+caption {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  margin: -1px;
+  position: static;
+}
+
+.hide {
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.skip_navi {
+  position: absolute;
+  z-index: 999999;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+
+.skip_navi a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -9999px;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.skip_navi a:hover, .skip_navi a:focus {
+  top: 0;
+}
+/*# sourceMappingURL=reset.css.map */

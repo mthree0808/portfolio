@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="../../common/img/parking/common/logo_favi.ico">
+	<link rel="stylesheet" href="https://www.gongdan.go.kr/static/portal/css/default.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../../common/css/line-awesome.min.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/default.css">
+	<script src="../../common/js/jquery-1.11.1.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/publish.js"></script>
+	<title>시간제보육 이용안내 | 성북구도시관리공단 아이조아</title>
+</head>
+
+<body>
+	<div id="wrapper" class="kid">
+		<dl class="skip_navi">
+			<dt class="hide"><strong>바로가기 메뉴</strong></dt>
+			<dd><a href="#contents">본문 바로가기</a></dd>
+			<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+		</dl>
+
+		<div id="globalWarp">
+			<div class="container">
+				<div class="familySet">
+					<ul>
+						<li class="f1"><a href="#">성북구도시관리공단</a></li>
+						<li class="f2"><a href="#">온라인예약</a></li>
+						<li class="f3"><a href="#">통합주차</a></li>
+						<li class="f4 on"><a href="#" title="선택됨">아이조아</a></li>
+					</ul>
+				</div>
+				<div class="global">
+					<ul class="mynav">
+						<li><a href="https://www.gongdan.go.kr/portal/member/user/forLogin.do?menuNo=400474">로그인</a></li>
+						<li><a href="https://www.gongdan.go.kr/portal/member/user/joinSelect.do?menuNo=400475">회원가입</a></li>
+						<li><a href="/portal/singl/siteMap/list.do?menuNo=400491">사이트맵</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<header id="header">
+			<div class="top">
+				<div class="container">
+					<p class="logo"><a href="/portal/main/main.do"><span class="sr-only">성북구도시관리공단</span></a></p>
+					<div id="subtsh">
+						<script>
+							//<![CDATA[
+					function checkSearchForm(frm) {
+						if (frm.q.value == "") {
+							alert("검색어를 입력하세요.");
+							frm.q.focus();
+							return false;
+						}
+						document.frm.submit();
+					}
+				//]]>
+				</script>
+						<form name="frmSearch" id="frmSearch" method="post" action="/portal/singl/search/list.do" onsubmit="return checkSearchForm(this);">
+							<fieldset>
+								<legend class="sr-only">통합검색</legend>
+								<select name="rangeView" id="rangeView1" title="검색어 구분">
+									<option value="">통합검색</option>
+								</select>
+								<input type="text" name="q" id="q2" value="" title="통합 검색어" class="keyword" placeholder="검색어를 입력하세요.">
+								<button><span class="sr-only">검색</span></button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<i class="bg_gnb"></i>
+			<div class="container">
+				<nav id="gnb">
+					<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+					<div class="mob_global">
+						<ul>
+							<li><a href="#">성북구도시관리공단</a></li>
+							<li><a href="#">온라인예약</a></li>
+							<li><a href="#">거주자주차</a></li>
+							<li class="active"><a href="#">아이조아</a></li>
+						</ul>
+					</div>
+					<ul>
+						<li class="m_1 "><a href="#">센터안내</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">센터비전</a></li>
+										<li class="s_2 "><a href="#">연혁</a></li>
+										<li class="s_3 "><a href="#">조직구성</a></li>
+										<li class="s_4 "><a href="#">전문상담위원</a></li>
+										<li class="s_5 "><a href="#">이용방법</a></li>
+										<li class="s_6 "><a href="#">환불규정</a></li>
+										<li class="s_7 "><a href="#">시설안내</a></li>
+										<li class="s_8 "><a href="#">위치 및 교통</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_2 "><a href="#">가정양육지원</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">장난감이좋아</a></li>
+										<li class="s_2 "><a href="#">책이좋아</a></li>
+										<li class="s_3 "><a href="#">놀이가좋아</a></li>
+										<li class="s_4 "><a href="#">시간제보육</a></li>
+										<li class="s_5 "><a href="#">우리동네보육반장</a></li>
+										<li class="s_6 "><a href="#">육아상담</a></li>
+										<li class="s_7 "><a href="#">부모교육</a></li>
+										<li class="s_8 "><a href="#">놀이문화강좌</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_3"><a href="#">어린이집지원</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">보육행정</a></li>
+										<li class="s_2 "><a href="#">보육과정</a></li>
+										<li class="s_3 "><a href="#">보육컨설팅</a></li>
+										<li class="s_4 "><a href="#">아동학대예방사업</a></li>
+										<li class="s_5 "><a href="#">장애아지원사업</a></li>
+										<li class="s_6 "><a href="#">대체교사, 조리원 지원사업</a></li>
+										<li class="s_7 "><a href="#">안전관리관	지원사업</a></li>
+										<li class="s_8 "><a href="#">자료실</a></li>
+										<li class="s_9 "><a href="#">대관</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_4 "><a href="#">보육지원</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">장위행복누림	지원센터</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_4 "><a href="#">커뮤니티</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">공지사항</a></li>
+										<li class="s_2 "><a href="#">구인구직</a></li>
+										<li class="s_3 "><a href="#">보육뉴스</a></li>
+										<li class="s_4 "><a href="#">추천사이트</a></li>
+										<li class="s_5 "><a href="#">Q&amp;A</a></li>
+										<li class="s_6 "><a href="#">FAQ</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="mobile_only"><a href="#">마이조아</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">현재대여정보</a></li>
+										<li class="s_2 "><a href="#">대여이력조회</a></li>
+										<li class="s_3 "><a href="#">관심대여목록</a></li>
+										<li class="s_4 "><a href="#">결제이력조회</a></li>
+										<li class="s_5 "><a href="#">교육평가</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div id="allmenu">
+						<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+					</div>
+				</nav>
+			</div>
+			<script>
+				$(function(){
+					$('.gnbOpen').click(function(event) {
+						$('#gnb').addClass('mobileOn')
+					});
+					$('.gnbClose').click(function(event) {
+						$('#gnb').removeClass('mobileOn')
+					});
+					var gnbDepth1 = $('#gnb>ul a')
+					gnbDepth1.click(function(event) {
+						if ($(window).size() > 992) {
+							if ($(this).next().has('ul').length) {
+								$(this).parent().toggleClass('on');
+								event.preventDefault();
+							}
+						}
+					});
+					$('.familySetOpen').click(function(event) {
+						$('.familySet').addClass('mobileOn')
+					});
+					$('.familySetClose').click(function(event) {
+						$('.familySet').removeClass('mobileOn')
+					});
+				})
+			</script>
+		</header>
+
+		<div class="contents">
+			<div class="sub_tit_box">
+				<div class="container">
+					<h3 class="sub_top_tit">이용안내</h3>
+					<div class="sub_top_attr">
+						<ul class="breadcrumbs">
+							<li class="home"><span class="hide">메인</span></li>
+							<li>가정양육지원</li>
+							<li>시간제보육</li>
+							<li>이용안내</li>
+						</ul>
+						<div class="share_box">
+							<button type="button" class="btn_share"><span class="hide">공유하기</span></button>
+							<ul>
+								<li><a href="#" class="kakao"><span class="hide">카카오스토리 공유하기</span></a></li>
+								<li><a href="#" class="twit"><span class="hide">트위터 공유하기</span></a></li>
+								<li><a href="#" class="face"><span class="hide">페이스북 공유하기</span></a></li>
+								<li><button type="button" class="btn_x"><span class="hide">공유하기 닫기</span></button></li>
+							</ul>
+						</div>
+						<a href="#" class="btn_print"><span class="hide">프린트하기</span></a>
+					</div><!-- //sub_top_attr -->
+				</div>
+			</div><!-- //sub_tit_box -->
+
+			<div class="container">
+				<div class="lnb_box">
+					<h3 class="lnb_tit"><span class="va_m">센터안내</span></h3>
+					<ul class="lnb_list">
+						<li class="active"><a href="#" title="선택됨">센터 비전</a></li>
+						<li><a href="#">연혁</a></li>
+						<li><a href="#">조직구성</a></li>
+						<li><a href="#">전문상담위원</a></li>
+						<li><a href="#">이용방법</a></li>
+						<li><a href="#">환불규정</a></li>
+						<li><a href="#">시설안내</a></li>
+						<li><a href="#">위치 및 교통</a></li>
+					</ul>
+				</div><!-- //lnb_box -->
+				<div class="sub_con_box" id="contents">
+					<div class="sub_each">
+						<h3 class="sub_tit2">운영시간</h3>
+						<p>월~ 금: 09:00 ~ 18:00</p>
+						<span class="gray_txt">(토/일요일, 공휴일, 근로자의 날은 시간제 보육실 운영을 하지 않습니다.)</span>
+					</div><!-- //sub_each -->
+
+					<div class="sub_each">
+						<h3 class="sub_tit2">이용대상</h3>
+						<p class="sub_txt1">[ 유아 ] 36개월 ~ 7세 유아(취학전)<br />[ 영아 ] 06개월 ~ 36개월 미만의 영아</p>
+					</div><!-- //sub_each -->
+
+					<div class="sub_each">
+						<h3 class="sub_tit2">보육정원</h3>
+						<p class="sub_txt1">[ 영&middot;유아반 ] 3~5명 (24개월 미만이나 장애아 보육 시, 3명으로 제한)</p>
+					</div><!-- //sub_each -->
+
+					<div class="sub_each">
+						<h3 class="sub_tit2">이용료</h3>
+						<dl class="dot_list">
+							<dt>[ 영·유아 ]</dt>
+							<dd>보육료 지원 가정 : 시간당 4,000원(전액본인부담)</dd>
+							<dd>양육비 지원 가정 : 시간당 4,000원(정부지원 3,000원 + 본인부담 1,000원)</dd>
+						</dl>
+					</div><!-- //sub_each -->
+
+					<div class="sub_each">
+						<h3 class="sub_tit2">이용방법</h3>
+						<ul class="step_list">
+							<li>
+								<img src="../../common/img/kid/sub/icon_info1.png" alt="">
+								<span class="step1">step.1</span>
+								<p class="txt1">‘임신육아종합포털 아이사랑’ 사이트(www.childcare.go.kr) <br /><span class="fc_red">‘시간제 보육’ 클릭</span></p>
+							</li>
+							<li>
+								<img src="../../common/img/kid/sub/icon_info2.png" alt="">
+								<span class="step1">step.2</span>
+								<p class="txt1">보호자 회원가입 및 공인인증서 로그인 완료</p>
+							</li>
+							<li>
+								<img src="../../common/img/kid/sub/icon_info3.png" alt="">
+								<span class="step1">step.3</span>
+								<p class="txt1">아동 등록 입력 완료 후 시간제 보육 신청 (이용기관, 이용일, 시간 등 선택 후 예약클릭)</p>
+							</li>
+						</ul>
+						<p class="bull_chk">[유아반] (36개월 ~ 7세) 이용 시, 시범사업으로 인해 ‘전화예약’ 으로만 가능함</p>
+						<div class="txt_bd_box point">
+							<b class="navy_tit">[당일예약] 1661-9361</b>
+							<p class="gray_txt">[유아반] (36개월 ~ 7세) 이용 시, ‘임신육아종합포털 아이사랑’ 사이트 아동 등록 후<br /> &rarr; 전화예약 (시작 시간 40분 전 전화)</p>
+						</div>
+					</div><!-- //sub_each -->
+
+					<div class="sub_each">
+						<h3 class="sub_tit2">결제방법</h3>
+						<ul class="dot_list">
+							<li>아이행복카드로 이용 시 마다 결제(기본형 및 맞벌이형에 한함)</li>
+						</ul>
+					</div><!-- //sub_each -->
+
+					<div class="sub_each">
+						<h3 class="sub_tit2">최초 이용 시 준비서류</h3>
+						<ul class="dot_list">
+							<li>(영·유아명이 기재된) 가족관계증명서, 보호자 신분증, 아이행복카드(결제) 지참</li>
+						</ul>
+					</div><!-- //sub_each -->
+
+					<div class="sub_each">
+						<h3 class="sub_tit2">유의사항</h3>
+						<ul class="dot_list">
+							<li>시간제 보육 서비스를 이용하시려면 ‘임신육아종합포털 아이사랑’ 사이트▶ ‘시간제보육’ 에 영·유아가 등록되어야 합니다. <br />(등록되지 않은 영·유아는 서비스를 이용할 수 없습니다.)</li>
+							<li>보호자가 아닐 경우, 시간제 보육 서비스를 이용할 수 없습니다. <br />(단, 귀가 시 부득이한 경우에는 부모님의 확인 후에 인계하므로 사전에 담임교사에게 미리 연락을 주시기 바랍니다.)</li>
+							<li>등, 하원시에 보호자는 이용대장에 서명을 해 주세요.
+								<ul class="dash_list">
+									<li>최초 이용시, 운영지침 서약서와 개인정보동의서 등 작성</li>
+								</ul>
+							</li>
+							<li>영유아의 개별 물품은 개인이 준비해야 합니다.
+								<ul class="dash_list">
+									<li>물티슈, 간식, 분유(젖병), 기저귀, 여벌옷, 약, 영유아의 애착물건, 낮잠 시 침구류 등</li>
+								</ul>
+							</li>
+							<li>영유아의 특이사항은 반드시 시간제 보육교사에게 전달해 주세요.
+								<ul class="dash_list">
+									<li>낮잠 및 식습관, 개별특성, 좋아하는 놀이, 알레르기 등</li>
+								</ul>
+							</li>
+							<li>투약의뢰를 원하실 경우에는 가정에서 준비해 오는 것을 원칙으로 하며, 반드시 1회 분량씩 개별 통에 나누어 담아주시고 ‘투약의뢰서’가 작성되어야 합니다.</li>
+							<li>이용료는 ‘보육이 시작된 시간’부터 ‘종료된 시간’을 기준으로 산정하여 귀가 때 결제합니다.
+								<ul class="dash_list">
+									<li>(영유아) 예약된 이용 시간 초과 시 벌점 -7점(당월 사전예약 취소 및 불가)과 함께,  본인부담금(10분당 700원, 현금결제)이 발생하며 이후 당월 이용 요금은 전액 본인 부담입니다.</li>
+									<li>벌점은 해당 월에만 적용됩니다.</li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- //sub_each -->
+					
+					<div class="sub_each">
+						<ul class="sub_img_list">
+							<li><img src="../../common/img/kid/sub/nurture_img1.jpg" alt="시간제 보육실 사진 1"></li>
+							<li><img src="../../common/img/kid/sub/nurture_img2.jpg" alt="시간제 보육실 사진 2"></li>
+							<li><img src="../../common/img/kid/sub/nurture_img3.jpg" alt="시간제 보육실 사진 3"></li>
+							<li><img src="../../common/img/kid/sub/nurture_img4.jpg" alt="시간제 보육실 사진 4"></li>
+						</ul>
+					</div><!-- //sub_each -->
+
+					<div class="page_survey">
+						<div class="inner">
+							<p class="tit">이 페이지에서 제공하는 정보에 대하여 만족하시나요?</p>
+							<div class="radio_box">
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade1" class="hide" checked="">
+									<label for="satEvalGrade1"><span class="vradio"></span>매우만족 <img src="../../common/img/parking/sub/star5.png" alt="별 5개"></label>
+								</span>
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade2" class="hide">
+									<label for="satEvalGrade2"><span class="vradio"></span>만족 <img src="../../common/img/parking/sub/star4.png" alt="별 4개"></label>
+								</span>
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade3" class="hide">
+									<label for="satEvalGrade3"><span class="vradio"></span>보통 <img src="../../common/img/parking/sub/star3.png" alt="별 3개"></label>
+								</span>
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade4" class="hide">
+									<label for="satEvalGrade4"><span class="vradio"></span>불만족 <img src="../../common/img/parking/sub/star2.png" alt="별 2개"></label>
+								</span>
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade5" class="hide">
+									<label for="satEvalGrade5"><span class="vradio"></span>매우불만족 <img src="../../common/img/parking/sub/star1.png" alt="별 1개"></label>
+								</span>
+							</div>
+							<div class="input_box">
+								<input type="text" title="의견 입력" placeholder="의견을 등록해주세요.">
+								<a href="#" class="btn">의견등록</a>
+							</div>
+						</div>
+					</div><!-- //page_survey -->
+				</div>
+			</div><!-- //container -->
+		</div><!-- //contents -->
+
+		<div class="flinkList">
+			<div class="container">
+				<div class="serviceList">
+					<h3>주요서비스</h3>
+					<div class="ctrl">
+						<button type="button" class="btn b-left serviceListLt"><span class="hidden">이전 주요서비스 보기</span></button>
+						<button type="button" class="btn b-right serviceListRt"><span class="hidden">다음 주요서비스 보기</span></button>
+					</div>
+					<div id="serviceSlide">
+						<div class="items"><a href="https://park.gongdan.go.kr/" target="_blank" title="새창열림">거주자주차</a></div>
+						<div class="items"><a href="/sbpay/main/main.do" target="_blank" title="새창열림">강좌온라인예약</a></div>
+						<div class="items"><a href="http://bomun.gongdan.go.kr/" target="_blank" title="새창열림">육아종합지원센터</a></div>
+						<div class="items"><a href="http://sbep.gongdan.go.kr/" target="_blank" title="새창열림">운동처방센터</a></div>
+					</div>
+					<script>
+						$(function(){
+							var visualSlide = $("#serviceSlide").slick({
+								accessibility : true,
+								autoplay: false,
+								autoplaySpeed:4000,
+								//speed:500,
+								//dots: true,
+								touchMove:false,
+								slidesToShow: 3,
+								variableWidth: true,
+								slidesToScroll: 1,
+								arrows:true,
+								prevArrow  : '.serviceListLt',
+								nextArrow : '.serviceListRt',
+								//slickPlay : '.b-play',
+								//slickStop : '.b-stop',
+								pauseOnFocus: true,
+								pauseOnHover : true,
+								responsive: [
+									 {
+										breakpoint: 1023,
+										settings: {
+											slidesToShow: 3
+										}
+									},
+									{
+										breakpoint: 767,
+										settings: {
+											slidesToShow: 2
+										}
+									},
+									{
+										breakpoint: 480,
+										settings: {
+											slidesToShow: 1
+										}
+									}
+								//fade : true
+								// draggable: false,
+								//focusOnSelect: true
+								]
+							});
+
+							/*$(".b-play").click(function(){
+								visualSlide.slick('slickPlay');
+								$(this).hide();
+								$(".b-stop").show();
+							})
+							$(".b-stop").click(function(){
+								visualSlide.slick('slickPause');
+								$(this).hide();
+								$(".b-play").show();
+							})*/
+						});
+						</script>
+
+					</div>
+					<div class="weSite">
+						<ul>
+							<li><a href="javascript:void(0)">패밀리사이트</a>
+								<ul>
+									<li><a href="https://park.gongdan.go.kr" target="_blank" title="새창열림">성북구주차통합홈페이지</a></li>
+									<li><a href="http://ijoa.gongdan.go.kr" target="_blank" title="새창열림">아이조아 홈페이지</a></li>
+									<li><a href="http://bomun.gongdan.go.kr/index.jsp?MID=home" target="_blank" title="새창열림">부모지원센터 홈페이지</a></li>
+									<li><a href="http://sbep.gongdan.go.kr" target="_blank" title="새창열림">운동처방센터 홈페이지</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)">관련사이트</a>
+								<ul>
+									<li><a href="http://www.mois.go.kr" target="_blank" title="새창열림">행정안전부</a></li>
+									<li><a href="http://www.seoul.go.kr" target="_blank" title="새창열림">서울특별시청</a></li>
+									<li><a href="http://www.sb.go.kr " target="_blank" title="새창열림">성북구청</a></li>
+									<li><a href="http://www.sbc.go.kr/" target="_blank" title="새창열림">성북구의회</a></li>
+
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)">유용한사이트</a>
+								<ul>
+									<li><a href="http://www.cleaneye.go.kr" target="_blank" title="새창열림">클린아이</a></li>
+									<li><a href="http://www.alio.go.kr" target="_blank" title="새창열림">공공기관 알리오</a></li>
+									<li><a href="https://www.data.go.kr" target="_blank" title="새창열림">공공데이터포털</a></li>
+									<li><a href="https://www.open.go.kr" target="_blank" title="새창열림">정보공개</a></li>
+								</ul>
+							</li>
+						</ul>
+						<script>
+							$('.weSite>ul>li>a').each(function(index, el) {
+								$(this).bind('touchstart focus mouseenter', function(event) {
+									if (event.type == 'focus' || event.type == 'mouseenter') {
+										$(this).parent().addClass('on').siblings().removeClass('on');
+									}else if(event.type == 'touchstart'){
+										$(this).parent().toggleClass('on').siblings().removeClass('on');
+									}
+									event.preventDefault();
+								});
+							});
+							$('.weSite').mouseleave(function(event) {
+								$(this).find('li').removeClass('on')
+							}).find('a:last').focusout(function(event) {
+								$(this).parents('li').removeClass('on')
+							});
+						</script>
+					</div>
+			</div>
+		</div><!-- //flinkList -->
+	</div><!-- //#wrapper -->
+
+	<footer id="footer">
+		<div class="ft">
+			<div class="set">
+			</div>
+		</div>
+		<div class="footerSet">
+			<nav class="fnav">
+				<ul>
+					<li><a href="/portal/main/contents.do?menuNo=400070">개인정보처리방침</a></li>
+					<!-- <li><a href="/portal/main/contents.do?menuNo=">배너광장</a></li> -->
+					<li><a href="/portal/main/contents.do?menuNo=400512">회원약관</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400073">이메일추출방지정책</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400457">고객서비스헌장</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400492">뷰어다운로드</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400455">오시는길</a></li>
+				</ul>
+			</nav>
+			<address>
+				<p>
+					공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+					성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 구민체육관팀 02-909-3497, 해오름휘트니스센터 02-6925-7003, 북악골프연습장 02-919-4040<br>
+					성북펜싱체육관 02-2241-0681, 거주자주차팀 02-914-2008, 공영주차장팀 02-6925-0023, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256<br>
+					월곡배드민턴센터 02-2241-0661
+				</p>
+			</address>
+			<div class="bottomset">
+				<div class="copyright">
+					<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. jeonsan@gongdan.go.kr</em>
+				</div>
+				<div class="markSet">
+					<ul>
+						<!-- <li class="wamark"><img src="https://www.gongdan.go.kr/static/portal/img/common/mark_ccm.png" alt="CCM인증마크"> &nbsp;
+							<img src="https://www.gongdan.go.kr/static/portal/img/common/mark-webacc01.png" alt="WA품질인증마크"></li> -->
+						<li class="i1"><span class="sr-only">산업통상자원부 인증 한국서비스품질 우수기업</span></li>
+						<li class="i2"><span class="sr-only">공정거래위원회, 한국소비자원 인증 소비자중심경영 우수기관</span></li>
+						<li class="i3"><span class="sr-only">개인정보보호협회인증 개인정보보호우수사이트</span></li>
+						<li class="i4"><span class="sr-only">여성가족부 인증 가족친화기관</span></li>
+						<li class="i5"><span class="sr-only">한국경영인증원 인증 부패방지경영시스템</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

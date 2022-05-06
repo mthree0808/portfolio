@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 학교협동조합 */
+.school .svisual > span:before { background-image: url(../images/sub/school/bg.jpg); }
+.school .main_area { position: relative; padding-bottom: 180px; }
+.school .main_area img { position: absolute; z-index: 9; }
+.school .main_area .ob_1 { left: 50%; margin-left: -780px; top: 816px; animation: fr_1 2s linear infinite; }
+.school .main_area .ob_2 { right: 50%; margin-right: -880px; top: 780px; animation: fr_2 4s linear infinite; }
+.school .main_area .ob_3 { right: 50%; margin-right: -690px; top: 990px; animation: fr_3 2s linear infinite; }
+.school .main_area .ob_4 { left: 50%; margin-left: -880px; top: 1080px; animation: fr_4 3s linear infinite; }
+.school .main_area .ob_5 { left: 50%; margin-left: -800px; top: 1180px; animation: fr_5 2.2s linear infinite; }
+.school .main_area .ob_6 { right: 50%; margin-right: -880px; top: 1150px; animation: fr_6 4s linear infinite; }
+.school .main_area .ob_7 { left: 50%; margin-left: -620px; top: 1480px; animation: fr_7 3s linear infinite; }
+.school .main_area .ob_8 { right: 50%; margin-right: -780px; top: 1480px; animation: fr_8 2s linear infinite; }
+.school .main_area .ob_9 { left: 50%; margin-left: -860px; top: 1880px; animation: fr_9 2s linear infinite; }
+.school .main_area .ob_10 { right: 50%; margin-right: -720px; bottom: 150px; animation: fr_10 2s linear infinite; }
+.school .main_area .frame { height: 2110px; background-size: 1400px auto; } 
+.school .main_area .frame_top { height: 762px; background-size: 1400px auto; }
+.school .wrap { width: 1460px; }
+.school .section1 { position: relative; }
+.school .section1 .sub_tit { text-align: left; margin-bottom: 60px; }
+.school .section1 .mock_list { margin: 0 0 0 -140px; text-align: left; }
+.school .section1 .mock_list > li { margin: 0 0 0 140px; }
+.school .section1 .mock_list > li.issue2 { position: relative; margin: 440px 0 0 140px; }
+.school .section1 .mock_list > li.issue2:before { content: ''; position: absolute; left: 70px; top: -390px; z-index: 1; background: url(../images/sub/school/fam.png) no-repeat center top; width: 666px; height: 298px; }
+.school .section1 .mock_list > li.issue3 { transform: translateY(-48px); }
+.school .section1 .mock_list > li.issue4 { transform: translateY(100px); }
+.school .section1 .mock_list > li.issue5 { position: relative; transform: translateY(128px); }
+.school .section1 .mock_list > li.issue5 .sub_w_5 { position: relative; z-index: 3; }
+.school .section1 .mock_list > li.issue5:before { content: ''; position: absolute; left: -300px; top: 44px; z-index: 1; width: 350px; height: 118px; background: url(../images/sub/school/cloud1.png) no-repeat center top; }
+.school .section1 .mock_list > li.issue5:after { content: ''; position: absolute; right: -180px; bottom: 270px; z-index: 1; width: 232px; height: 84px; background: url(../images/sub/school/cloud2.png) no-repeat center top; }
+.school .section1 .bg_area { position: absolute; left: 0; bottom: 0; z-index: 3; overflow: hidden; width: 100%; height: 777px; background-color: #f7f4e5; }
+.school .section1 .bg_area:before { content: ''; position: absolute; right: 50%; bottom: 0; z-index: 3; width: 824px; height: 414px; background: url(../images/sub/school/stud.png) no-repeat center top; transform: translateX(960px); }
+.school .section2 { position: relative; text-align: center; padding: 268px 0 280px; }
+.school .section2:before { content: ''; position: absolute; left: 0; top: -38px; z-index: -1; width: 100%; height: 666px; background: url(../images/sub/school/c_bg.png) no-repeat center top; }
+.school .section2:after { content: 'Schoolcoop'; position: absolute; left: 50%; top: 50px; z-index: 2; margin-left: -95px; font-family: montB; font-size: 100px; color: #addde6; opacity: 0.3; }
+.school .section2 .issue1 { position: relative; display: inline-block; vertical-align: top; }
+.school .section2 .issue1:before { content: ''; position: absolute; left: -200px; top: 165px; z-index: 3; width: 194px; height: 218px; background: url(../images/sub/school/people.png) no-repeat center top; }
+.school .section2 .issue1:after { content: ''; position: absolute; right: -430px; top: -190px; z-index: 3; width: 310px; height: 320px; background: url(../images/sub/school/book.png) no-repeat center top; }
+.school .section2 .mock_list { position: relative; left: 50%; top: -280px; z-index: 1; width: 2360px; transform: translateX(-50%); }
+.school .section2 .mock_list > li { margin: 0 60px; }
+.school .section2 .mock_list > li.issue2 { transform: translateY(380px); }
+.school .section3 { padding-bottom: 110px; }
+.school .section3 .wrap { width: 1700px; }
+.school .section3 .sub_tit { position: relative; margin: 180px 0 125px; }
+.school .section3 .sub_tit:after { content: ''; position: absolute; right: -310px; top: -112px; z-index: 3; width: 250px; height: 172px; background: url(../images/sub/school/per1.png) no-repeat center top; }
+.school .section3 .mock_list { margin: 0 0 0 -100px; padding-left: 535px; text-align: left; }
+.school .section3 .mock_list > li { margin: 0 0 0 100px; }
+.school .section3 .mock_list > li.issue3 { position: relative; transform: translateY(-241px); }
+.school .section3 .mock_list > li.issue3:after { content: ''; position: absolute; left: -105px; bottom: -275px; z-index: -1; width: 255px; height: 162px; background: url(../images/sub/school/per2.png) no-repeat center top; }
+.school .section3 .mock_list > li.issue4 { position: relative; transform: translateY(110px); overflow: hidden; }
+.school .section3 .mock_list > li.issue4 > a { float: left; }
+.school .section3 .mock_list > li.issue4 > a:last-child { float: left; margin-left: 100px; }
+.school .info .wrap { width: 1512px; }
+.school .info dl { margin-top: 100px; }
+.school .info dl:first-child { margin-top: 0; }
+.school .info dl > dt { margin-bottom: 50px; }
+.school .info dl > dd ul:after { content: ''; display: block; clear: both; }
+.school .info dl:first-child > dd ul > li { float: left; margin-left: 40px; }
+.school .info dl:first-child > dd ul > li:first-child { margin-left: 0; }
+.school .info dl:last-child > dd ul > li { float: left; margin-left: 70px; }
+.school .info dl > dd ul > li:first-child { margin-left: 0; }
+.school .info dl:first-child > dd ul > li { position: relative; text-align: center; width: 199px; height: 256px; border-radius: 20px; margin-left: 40px; box-shadow: 15px 15px 50px rgba(0,0,0,0.08); }
+.school .info dl:first-child > dd ul > li.st1 { background-color: #db3944; }
+.school .info dl:first-child > dd ul > li.st2 { background-color: #fb9123; }
+.school .info dl:first-child > dd ul > li.st3 { background-color: #ffb900; }
+.school .info dl:first-child > dd ul > li.st4 { background-color: #dff0f7; }
+.school .info dl:first-child > dd ul > li.st5 { background-color: #495f74; }
+.school .info dl:first-child > dd ul > li span { position: absolute; left: 0; bottom: 0; z-index: 1; font-family: montM; font-size: 20px; color: #222; display: block; width: 100%; background-color: #fff; padding: 22px 0; border-radius: 0 0 18px 18px; }
+
+/* 학교협동조합 이미지 */
+.school .main { background-image: url(../images/sub/school/main.jpg); }
+.school .main_m { background-image: url(../images/sub/school/main_m_th.jpg); height: 600px; }
+.school .sub_w_1 { background-image: url(../images/sub/school/sub_w_1_th.jpg); height: 1024px; }
+.school .sub_w_2 { background-image: url(../images/sub/school/sub_w_2_th.jpg); height: 828px; }
+.school .sub_w_3 { background-image: url(../images/sub/school/sub_w_3_th.jpg); height: 853px; }
+.school .sub_w_4 { background-image: url(../images/sub/school/sub_w_4_th.jpg); height: 832px; }
+.school .sub_w_5 { background-image: url(../images/sub/school/sub_w_5_th.jpg); height: 637px; }
+.school .sub_w_6 { background-image: url(../images/sub/school/sub_w_6_th.jpg); height: 725px; }
+.school .sub_w_7 { background-image: url(../images/sub/school/sub_w_7_th.jpg); height: 536px; }
+.school .sub_w_8 { background-image: url(../images/sub/school/sub_w_8_th.jpg); height: 643px; }
+.school .sub_w_9 { background-image: url(../images/sub/school/sub_w_9_th.jpg); height: 496px; }
+.school .sub_m_1 { background-image: url(../images/sub/school/sub_m_1_th.jpg); height: 600px; }
+.school .sub_m_1 { background-image: url(../images/sub/school/sub_m_1_th.jpg); height: 600px; }
+.school .sub_m_1 { background-image: url(../images/sub/school/sub_m_1_th.jpg); height: 600px; }
+.school .sub_m_1 { background-image: url(../images/sub/school/sub_m_1_th.jpg); height: 600px; }
+.school .sub_m_2 { background-image: url(../images/sub/school/sub_m_2_th.jpg); height: 600px; }
+.school .sub_m_3 { background-image: url(../images/sub/school/sub_m_3_th.jpg); height: 600px; }
+.school .sub_m_4 { background-image: url(../images/sub/school/sub_m_4_th.jpg); height: 600px; }
+
+/* 애니메이션 */
+@keyframes fr_1 {
+    0% { transform: translate(-10px,10px) rotate(-45deg); }
+    50% { transform: translate(-20px,20px) rotate(0); }
+    100% { transform: translate(-10px,10px) rotate(-45deg); }
+}
+@keyframes fr_2 {
+    0% { transform: rotate(0);}
+    100% { transform: rotate(360deg); }
+}
+@keyframes fr_3 {
+    0% { transform: translateY(30px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(30px); }
+}
+@keyframes fr_4 {
+    0% { transform: translateY(50px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(50px); }
+}
+@keyframes fr_5 {
+    0% { transform: translateY(30px) rotate(-15deg); }
+    50% { transform: translateY(0) rotate(0); }
+    100% { transform: translateY(30px) rotate(-15deg); }
+}
+@keyframes fr_6 {
+    0% { transform: translateY(40px) rotate(35deg); }
+    50% { transform: translateY(0) rotate(0); }
+    100% { transform: translateY(40px) rotate(35deg); }
+}
+@keyframes fr_7 {
+    0% { transform: translateY(40px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(40px); }
+}
+@keyframes fr_8 {
+    0% { transform: translateY(-30px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+@keyframes fr_9 {
+    0% { transform: translateY(20px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+@keyframes fr_10 {
+    0% { transform: translateX(-10px) rotate(-15deg); }
+    50% { transform: translateX(0) rotate(0); }
+    100% { transform: translateX(-10px) rotate(-15deg); }
+}

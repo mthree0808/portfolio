@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 안산시 생생소통방 */
+.asvoting .contents { position: relative; }
+.asvoting .contents:before { content: ''; position: absolute; left: 0; top: 660px; z-index: -1; width: 100%; height: 1600px; background: url(../images/sub/asvoting/wg_bg.jpg) no-repeat center top; background-size: cover; }
+.asvoting .contents:after { content: ''; position: absolute; left: 0; top: 0; z-index: -3; width: 100%; height: 100%; background-color: #f5f5f5; }
+.asvoting .svisual > span:before { background-image: url(../images/sub/asvoting/t_bg.jpg); }
+.asvoting .svisual .cont { color: #222; }
+.asvoting .svisual dd { font-family: notokrM; }
+.asvoting .svisual .cont a { background: none; border: 1px solid #000; }
+.asvoting .svisual .cont a > span { font-family: notokrM; color: #000; }
+.asvoting .svisual .cont a:before { background-color: #000; }
+.asvoting .svisual .p3 { position: absolute; right: 50%; bottom: -110px; z-index: 1; margin-right: -930px; width: 553px; height: 401px; background: url(../images/sub/asvoting/p3.png) no-repeat center top; animation: p3 2s infinite; }
+.asvoting .ov_area { position: relative; z-index: 9; }
+.asvoting .ov_area .p1 { position: absolute; left: 50%; top: -374px; z-index: 4; margin-left: -800px; width: 149px; height: 279px; background: url(../images/sub/asvoting/p1.png) no-repeat center top; animation: p1 2s infinite; }
+.asvoting .ov_area .p2 { position: absolute; left: 50%; top: -254px; z-index: 4; margin-left: -620px; width: 100px; height: 194px; background: url(../images/sub/asvoting/p2.png) no-repeat center top; animation: p2 1.5s infinite ease; }
+.asvoting .main_area { position: relative; }
+.asvoting .main_area .frame { height: 1762px; background-size: 1400px; }
+.asvoting .main_area .frame_top { height: 737px; background-size: 1400px; }
+.asvoting .main_area .l_c { position: absolute; left: -200px; bottom: 0; z-index: 1; width: 433px; height: 433px; background: url(../images/sub/asvoting/l_c.png) no-repeat center top; animation: quake 1.5s infinite; }
+.asvoting .main_area .r_c { position: absolute; right: -280px; bottom: 657px; z-index: 1; width: 486px; height: 464px; background: url(../images/sub/asvoting/r_c.png) no-repeat center top; animation: bounce 1.5s infinite ease; }
+.asvoting .section1 { position: relative; padding-top: 180px; }
+.asvoting .section1:before { content: ''; position: absolute; left: -250px; top: 952px; z-index: 1; width: 463px; height: 463px; background: url(../images/sub/asvoting/pat2.png) no-repeat center top; }
+.asvoting .section1:after { content: ''; position: absolute; right: 0; top: 1553px; z-index: 1; width: 332px; height: 347px; background: url(../images/sub/asvoting/pat1.png) no-repeat center top; }
+.asvoting .section1 .sub_tit { text-align: center; margin-bottom: 70px; }
+.asvoting .section1 .mock_list.issue2 > li:first-child { margin-top: 90px; }
+.asvoting .section1 .mock_list.issue2 > li:last-child { margin: 250px 0 0 60px; }
+.asvoting .section2 { position: relative; transform: translateY(-80px); }
+.asvoting .section2:before { content: ''; position: absolute; left: 0; top: 495px; z-index: -1; width: 100%; height: 980px; background-color: #403899; }
+.asvoting .section2 .mock_list.issue1 { position: relative; left: 50%; top: 0; z-index: 1; transform: translateX(-50%); width: 2430px; }
+.asvoting .section2 .mock_list.issue1 > li:first-child { position: relative; }
+.asvoting .section2 .mock_list.issue1 > li:first-child:after { content: ''; position: absolute; right: 190px; bottom: -250px; z-index: 1; width: 610px; height: 610px; background: url(../images/sub/asvoting/pat3.png) no-repeat center top; }
+.asvoting .section2 .mock_list.issue1 > li:last-child { position: relative; margin: 200px 0 0 115px; }
+.asvoting .section2 .mock_list.issue1 > li:last-child:after { content: ''; position: absolute; left: 140px; bottom: -325px; z-index: 1; width: 567px; height: 272px; background: url(../images/sub/asvoting/logo.png) no-repeat center top; }
+.asvoting .section2 .mock_list.issue2 > li { position: relative; padding-right: 540px; margin-top: 215px; }
+.asvoting .section2 .mock_list.issue2 > li:after { content: ''; position: absolute; right: 0; top: 120px; z-index: 1; width: 434px; height: 471px; background: url(../images/sub/asvoting/stud.png) no-repeat center top; animation: bounce 2s infinite; }
+.asvoting .section3 { padding-top: 120px; }
+.asvoting .section3 .wrap { position: relative; width: 1700px; }
+.asvoting .section3 .sub_tit { text-align: left; margin-bottom: 100px; }
+.asvoting .section3 .icon_area { position: absolute; left: 0; top: 148px; z-index: 1; }
+.asvoting .section3 .icon_area:after { content: ''; display: block; clear: both; }
+.asvoting .section3 .icon_area > li { float: left; margin: 0 0 50px 60px; width: 110px; height: 110px; border-radius: 50%; }
+.asvoting .section3 .icon_area > li.st1 { background: url(../images/sub/asvoting/icon1.png); margin: 0 0 50px 0; }
+.asvoting .section3 .icon_area > li.st2 { background: url(../images/sub/asvoting/icon2.png); box-shadow: 20px 20px 36px rgba(29, 115, 207, 0.2); }
+.asvoting .section3 .icon_area > li.st3 { background: url(../images/sub/asvoting/icon3.png); }
+.asvoting .section3 .icon_area > li.st4 { background: url(../images/sub/asvoting/icon4.png); box-shadow: 20px 20px 36px rgba(255, 162, 0, 0.2); clear: left; margin: 0 0 50px 170px; }
+.asvoting .section3 .icon_area > li.st5 { background: url(../images/sub/asvoting/icon5.png); box-shadow: 20px 20px 36px rgba(15, 5, 126, 0.2); }
+.asvoting .section3 .icon_area > li.st6 { background: url(../images/sub/asvoting/icon6.png); }
+.asvoting .section3 .icon_area > li.st7 { background: url(../images/sub/asvoting/icon7.png); box-shadow: 20px 20px 36px rgba(3, 147, 0, 0.2); }
+.asvoting .section3 .mock_list { position: relative; left: 50%; top: 0; z-index: 4; transform: translateX(-50%); width: 1278px; }
+.asvoting .section3 .mock_list > li { position: absolute; z-index: 3; }
+.asvoting .section3 .mock_list > li.issue1 { left: 0; top: 550px; z-index: 4; }
+.asvoting .section3 .mock_list > li.issue2 { position: relative; margin: 410px 0 0 0; width: 100%; text-align: center; }
+.asvoting .section3 .mock_list > li.issue2 > a, .asvoting .section3 .mock_list > li.issue5 > a { display: inline-block; vertical-align: top; }
+.asvoting .section3 .mock_list > li.issue3 { right: 0; top: 0; }
+.asvoting .section3 .mock_list > li.issue4 { left: 0; top: 1652px; }
+.asvoting .section3 .mock_list > li.issue5 { position: relative; margin: 160px 0 0 0; text-align: center; }
+.asvoting .section3 .mock_list > li.issue6 { right: 0; top: 832px; }
+.asvoting .info { padding: 220px 0 240px; }
+.asvoting .info dl:first-child { float: left; width: 866px; }
+.asvoting .info:after { content: ''; display: block; clear: both; }
+.asvoting .info .wrap { width: 1512px; }
+.asvoting .info dt { margin-bottom: 50px; }
+.asvoting .info dl:first-child ul:after { content: ''; display: block; clear: both; }
+.asvoting .info dl:first-child li { position: relative; float: left; display: table; margin-left: 70px; width: 156px; height: 156px; border-radius: 50px; transform: rotate(45deg); }
+.asvoting .info dl:first-child li:first-child { margin-left: 0; }
+.asvoting .info dl:first-child li > span { display: table-cell; vertical-align: middle; text-align: center; font-family: montM; font-size: 20px; color: #fff; transform: rotate(-45deg); }
+.asvoting .info dl:first-child li:after { content: ''; position: absolute; right: -1px; bottom: 15px; z-index: 1; width: 180px; height: 147px; background: url(../images/sub/asvoting/cr_bg.png) no-repeat center; transform: rotate(-45deg); }
+.asvoting .info dl:first-child li.st1 { background-color: #398de7; }
+.asvoting .info dl:first-child li.st2 { background-color: #ffae00; }
+.asvoting .info dl:first-child li.st3 { background-color: #403899; }
+.asvoting .info dl:first-child li.st4 { background-color: #75c00b; }
+.asvoting .info dl:last-child { float: left; width: auto; margin-left: 180px; }
+.asvoting .info dl:last-child li { margin-top: 45px; }
+.asvoting .info dl:last-child li:first-child { margin-left: 0; }
+
+/* 안산시 생생소통방 이미지 */
+.asvoting .main_bgno { background-image: url(../images/sub/asvoting/main_bgno.jpg); }
+.asvoting .main { background-image: url(../images/sub/asvoting/main.jpg); }
+.asvoting .main_m { background-image: url(../images/sub/asvoting/main_m_th.jpg); height: 1395px; }
+.asvoting .sub_w_1 { background-image: url(../images/sub/asvoting/sub_w_1_th.jpg); height: 1667px; }
+.asvoting .sub_w_2 { background-image: url(../images/sub/asvoting/sub_w_2_th.jpg); height: 1512px; }
+.asvoting .sub_w_3 { background-image: url(../images/sub/asvoting/sub_w_3_th.jpg); height: 1587px; }
+.asvoting .sub_w_4 { background-image: url(../images/sub/asvoting/sub_w_4_th.jpg); height: 811px; }
+.asvoting .sub_w_5 { background-image: url(../images/sub/asvoting/sub_w_5_th.jpg); height: 727px; }
+.asvoting .sub_w_6 { background-image: url(../images/sub/asvoting/sub_w_6_th.jpg); height: 734px; }
+.asvoting .sub_m_1 { background-image: url(../images/sub/asvoting/sub_m_1_th.jpg); height: 930px; }
+.asvoting .sub_m_2 { background-image: url(../images/sub/asvoting/sub_m_2_th.jpg); height: 660px; }
+.asvoting .sub_m_3 { background-image: url(../images/sub/asvoting/sub_m_3_th.jpg); height: 1016px; }
+.asvoting .sub_m_4 { background-image: url(../images/sub/asvoting/sub_m_4_th.jpg); height: 957px; }
+.asvoting .sub_m_5 { background-image: url(../images/sub/asvoting/sub_m_5_th.jpg); height: 1391px; }
+
+/* 애니메이션 */
+@keyframes p1 {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(0); }
+    100% { transform: rotate(-10deg); }
+}
+
+@keyframes p2 {
+    0% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes p3 {
+    0% { transform: rotate(5deg); }
+    50% { transform: rotate(0); }
+    100% { transform: rotate(5deg); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-30px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+
+@keyframes quake {
+    0% { transform: translateX(-30px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateX(-30px); }
+}
+
+
+@media screen and (min-width: 1024px){
+    .asvoting .svisual .cont a:hover > span { color: #fff; }
+}

@@ -1,0 +1,83 @@
+@charset 'UTF-8';
+
+/********* common_layout *********/
+html, body {height:100%;}
+body {line-height:1.3; color:#333; font-family: 'Noto Sans KR', 'sans-serif'; font-size:16px;}
+body.scroll_fixed {position: fixed !important; width: 100% !important;}
+.wrapper {position:relative; z-index:1; min-width:1200px; min-height:100%;}
+.container {position:relative; z-index:1; max-width:1200px; margin:0 auto;}
+
+/* skip navi */
+.skip_navi {position:absolute; z-index:999999; width:100%; left:0; top:0; text-align:center;}
+.skip_navi a {display:block; position:absolute; left:0; top:-9999px; z-index:1; width:100%; height:40px; line-height:40px; background-color:#333; color:#fff; font-size:20px; font-weight:700;}
+.skip_navi a:hover, .skip_navi a:focus {top:0;}
+
+/* header */
+.header {position:relative; z-index:9999; padding-top:40px; background-color:#FFF;}
+.logo_header .container {height: 125px;}
+.head_logo {position:absolute; left:0; top:50%; z-index:1; margin-top:-40px;}
+.dday_count_box {float: right; margin-top: 18px; white-space: nowrap;}
+.dday_count_box .inner_box {display: inline-block; vertical-align: middle;}
+.dday_count_box .txt {margin-bottom: 7px; color: #666; font-size: 24px; font-weight: 700; vertical-align: middle;}
+.dday_count_box .num {font-size: 0;}
+.dday_count_box .num .each {display: inline-block; width: 40px; height: 45px; line-height: 45px; margin-right: 5px; background: #21ae63 url('../images/common/dday_num_bg.png') no-repeat; border-radius: 5px; color: #fff; font-family: "Arial"; font-size: 28px; font-weight: 700; text-align: center;}
+.dday_count_box .num .each:nth-child(2) {background-color: #f79b23;}
+.dday_count_box .num .each:nth-child(3) {margin-right: 0; background-color: #00abff;}
+.dday_count_box img {margin-left: 25px; vertical-align: middle;}
+.gnb_header {position: relative; background-color: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.gnb > li {position:relative; z-index:1; float:left; width:16.66%;}
+.gnb > li > a {display:block; height:60px; line-height:60px; border-left: 1px solid #ddd; font-size:20px; font-weight:500; text-align:center;}
+.gnb > li:last-child > a {border-right: 1px solid #ddd;}
+.gnb > li:hover > a, .gnb > li.active > a, .gnb > li > a:focus {color: #007ecb;}
+.gnb > li.active:before {content: ''; display: block; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 3px; background-color: #007fcc;}
+.sub_gnb {display: none; position:absolute; left:0; top:60px; width:100%; height: 264px; border-left: 1px solid #ddd;}
+.sub_gnb li {text-align: center;}
+.sub_gnb li:first-child {padding-top: 15px;}
+.sub_gnb li a {display: inline-block; padding: 8px 0;}
+.sub_gnb li a:hover {color: #007ecb;}
+.gnb > li:last-child .sub_gnb {border-right: 1px solid #ddd;}
+.gnb_bar {display: block; position: absolute; left: 0; top: 0; z-index: 1; width: 0; height: 3px; background-color: #007fcc; opacity: 0;}
+.gnb_bg {display: none; position: absolute; top: 60px; width: 100%; height: 264px; background-color: #fff; border-top: 1px solid #ddd;}
+
+.util_header {position:absolute; top:0; z-index:1; width:100%; background-color:#f3f3f3; border-bottom: 1px solid #ddd;}
+.util_header .link_box {float: right;}
+.util_header .link_menu {float: left; margin-right: 15px;}
+.util_header .link_menu li {float: left; margin-right: 15px;}
+.util_header .link_menu li:last-child {margin-right: 0;}
+.util_header .link_menu li a {display: block; height: 40px; font-size: 0;}
+.util_header .link_menu li a img {vertical-align: middle;}
+.util_header .link_menu li a .txt {display: inline-block; color: #002c90; font-size: 15px; font-weight: 700; vertical-align: middle;}
+.util_header .link_menu li a:after {content: ''; display: inline-block; height: 100%; vertical-align: middle;}
+.util_header .sitemap_link {display: block; float: left; width: 100px; height: 40px; line-height: 40px; border-left: 1px solid #ddd; border-right: 1px solid #ddd; font-size: 14px; text-align: center;}
+
+/* .header.scrolled {padding-top:90px;}
+.header.scrolled .gnb_header {position:fixed; top:0; z-index:1; width:100%; box-shadow:0 2px 5px #555;} */
+
+
+.contents {padding-bottom:120px;}
+
+
+/* footer */
+.footer {position:absolute; bottom:0; z-index:1; width: 100%; background-color: #3e3e3e;}
+.footer .container {overflow: hidden; height:120px; padding-left: 170px; padding-top: 35px;}
+.foot_logo {position: absolute; left: 0; top: 18px;}
+.foot_txt_box {float: left;}
+.foot_txt_box .txt1 {margin-bottom: 5px; color: #c1c1c1; font-weight: 300;}
+.foot_txt_box .txt2 {color: #999; font-size: 12px;}
+.foot_sns_list {overflow: hidden; float: right;}
+.foot_sns_list li {float: left; margin-right: 10px;}
+.foot_sns_list li:last-child {margin-right: 0;}
+.foot_sns_list li a {display: block; width: 32px; height: 32px; background: url('../images/common/foot_sns_ico1.png') center center no-repeat;}
+.foot_sns_list li:nth-child(2) a {background-image: url('../images/common/foot_sns_ico2.png');}
+.foot_sns_list li:nth-child(3) a {background-image: url('../images/common/foot_sns_ico3.png');}
+.foot_sns_list li:nth-child(4) a {background-image: url('../images/common/foot_sns_ico4.png');}
+.foot_sns_list li:nth-child(5) a {background-image: url('../images/common/foot_sns_ico5.png');}
+
+/* layer_popup */
+.layer_popup_box {position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 9999; background-color: rgba(0,0,0,0.5); font-size: 0; text-align: center;}
+.layer_popup {display: inline-block; background-color: #fff; border: 1px solid #bbb; font-size: 15px; vertical-align: middle;}
+.layer_popup .btn_box {position: relative; height: 45px; line-height: 45px; padding: 0 85px 0 18px; border-top: 1px solid #ddd; text-align: left;}
+.layer_popup .btn_box input {width: 15px; height: 15px; vertical-align: middle; cursor:pointer;}
+.layer_popup .btn_box label {color: #555; cursor:pointer;}
+.layer_popup .btn_box .close_btn {display: block; position: absolute; right: 0; bottom: 0; width: 85px; height: 45px; border-left: 1px solid #ddd; color: #666;}
+.layer_popup .btn_box .close_btn i {color: #555; font-size: 14px; font-weight: bold;}

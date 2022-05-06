@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 엠보팅 */
+.mvoting .wrap { position: relative; width: 1700px; }
+.mvoting .sub_tit { text-align: left; font-size: 46px; margin-bottom: 60px; }
+.mvoting .svisual > span:before { background-image: url(../images/sub/mvoting/bg.jpg); }
+.mvoting .section2 .frame { height: 1474px; border-radius: 30px; } 
+.mvoting .section2 .frame:after { content: ''; position: absolute; right: -120px; bottom: 109px; z-index: 1; width: 364px; height: 379px; background: url(../images/sub/mvoting/ps_img1.png) no-repeat center top; border-radius: 12px; box-shadow: -36px 36px 46px rgba(21,71,159,0.2); } 
+.mvoting .frame_top { height: 734px; }
+.mvoting .section1 { text-align: center; }
+.mvoting .section1 img { padding: 100px 0 175px; transform: translateX(100px); }
+.mvoting .section2 { position: relative; padding: 0 0 450px 0; } 
+.mvoting .section2:before { content: ''; position: absolute; right: 0; top: -500px; z-index: -1; width: 1527px; height: 2500px; background: url(../images/sub/mvoting/c_bg1.png) no-repeat center top; } 
+.mvoting .section2 .issue1 { position: absolute; left: 35px; top: 0; z-index: 1; } 
+.mvoting .section2 .issue1 .sub_tit { text-align: right; } 
+.mvoting .section2 .mock_list { margin-left: 625px; text-align: left; } 
+.mvoting .section2 .mock_list > li { margin-left: 260px; } 
+.mvoting .section2 .mock_list > li.issue2 { margin-left: 0; } 
+.mvoting .section2 .mock_list > li.issue2 { position: relative; margin-top: 225px; }
+.mvoting .section2 .mock_list > li.issue2:after { content: ''; position: absolute; right: -280px; bottom: -450px; z-index: -1; width: 501px; height: 450px; background: url(../images/sub/mvoting/c_logo.png) no-repeat center top; }
+.mvoting .section2 .mock_list > li.issue3 { margin-top: 370px; }
+.mvoting .section2 .mock_list > li.issue4 { position: relative; transform: translateY(450px); margin-left: 85px; }
+.mvoting .section2 .mock_list > li.issue4:before { content: ''; position: absolute; left: -302px; bottom: 144px; z-index: 1; width: 290px; height: 140px; background: url(../images/sub/mvoting/ps_img2.png) no-repeat center top; box-shadow: 10px 10px 28px rgba(21,71,157,0.12); }
+.mvoting .section2 .mock_list > li.issue4:after { content: ''; position: absolute; right: -302px; bottom: 144px; z-index: 1; width: 290px; height: 140px; background: url(../images/sub/mvoting/ps_img3.png) no-repeat center top; box-shadow: 10px 10px 28px rgba(21,71,157,0.12); }
+.mvoting .section2 .mock_list > li.issue5 { transform: translateY(120px); }
+.mvoting .section3 { padding: 180px 0; }
+.mvoting .section3 .mock_list > li { margin-left: 100px; }
+.mvoting .section3 .mock_list > li:first-child { margin-left: 0; }
+.mvoting .section3 .mock_list > li.issue2 { margin-top: 220px; }
+.mvoting .section3 .mock_list > li.issue3 .sub_m_9 { margin-top: 110px; }
+.mvoting .section3 .mock_list > li.issue4 { margin-top: 110px; }
+.mvoting .section4 { position: relative; padding-bottom: 360px; }
+.mvoting .section4:after { content: ''; position: absolute; left: -50px; top: 150px; z-index: 1; width: 1850px; height: 2688px; background: url(../images/sub/mvoting/c_bg2.png) no-repeat center top; }
+.mvoting .section4 .wrap { width: 1320px; }
+.mvoting .section4 .wrap:before { content: ''; position: absolute; left: -200px; top: -90px; z-index: 1; width: 419px; height: 419px; background: url(../images/sub/mvoting/pat_1.png) no-repeat center top; }
+.mvoting .section4 .wrap:after { content: ''; position: absolute; right: -160px; bottom: 200px; z-index: 2; width: 302px; height: 302px; background: url(../images/sub/mvoting/pat_2.png) no-repeat center top; }
+.mvoting .section4 .frame { position: relative; z-index: 4; height: 1358px; background-size: 1400px; } 
+.mvoting .section4 .frame_top { height: 698px; background-size: 1400px; border-radius: 30px; } 
+.mvoting .section4 .sub_tit { text-align: right; }
+.mvoting .section4 .mock_list { position: relative; left: 50%; top: 180px; z-index: 3; width: 2540px; transform: translateX(-50%); }
+.mvoting .section4 .mock_list > li { margin-left: 60px; }
+.mvoting .section4 .mock_list > li:first-child { margin-left: 0; }
+.mvoting .section5 { padding: 180px 0 0 0; height: 1862px; box-sizing: border-box; background: url(../images/sub/mvoting/f_bg.jpg) no-repeat center top; background-size: cover; }
+.mvoting .section5 .wrap:before { content: ''; position: absolute; left: 22%; top: -52px; z-index: 2; background: url(../images/sub/mvoting/Ideal.png) no-repeat center top; width: 640px; height: 209px; background-size: cover; }
+.mvoting .section5 .wrap:after { content: ''; position: absolute; right: -10%; bottom: -360px; z-index: 2; background: url(../images/sub/mvoting/voting.png) no-repeat center top; width: 785px; height: 253px; background-size: cover; }
+.mvoting .section5 .mock_list > li { margin-left: 60px; }
+.mvoting .section5 .mock_list > li:first-child { margin-left: 0; }
+.mvoting .section5 .mock_list > li > a { position: relative; }
+.mvoting .section5 .mock_list > li > a:after { content: ''; position: absolute; right: -25px; top: 25px; z-index: -1; width: 100%; height: 100%; border: 1px solid #fff; opacity: 0.3; }
+.mvoting .section5 .mock_list > li.issue1 { margin-top: 60px; }
+.mvoting .section5 .mock_list > li.issue2 { margin-top: 150px; }
+.mvoting .section5 .mock_list > li.issue4 { position: absolute; left: 0; top: 611px; z-index: 3; margin-left: 0; }
+.mvoting .section5 .mock_list > li.issue5 { position: absolute; left: 587px; top: 798px; z-index: 3; margin-left: 0; }
+.mvoting .info { padding: 240px 0 180px; }
+.mvoting .info:after { content: ''; display: block; clear: both; }
+.mvoting .info .wrap { width: 1512px; }
+.mvoting .info dt { margin-bottom: 70px; }
+.mvoting .info dl:first-child { float: left; width: 890px; }
+.mvoting .info dl:first-child li { float: left; display: table; margin-left: -30px; width: 240px; height: 240px; background: none; border-radius: 50%; }
+.mvoting .info dl:first-child li:first-child { margin-left: 0; }
+.mvoting .info dl:first-child li > span { display: table-cell; vertical-align: middle; text-align: center; font-family: montM; font-size: 20px; color: #222; }
+.mvoting .info dl:first-child li.st1 { border: 2px solid #166ae6; }
+.mvoting .info dl:first-child li.st2 { border: 2px solid #ffae00; }
+.mvoting .info dl:first-child li.st3 { border: 2px solid #17a192; }
+.mvoting .info dl:first-child li.st4 { border: 2px solid #009dd2; }
+.mvoting .info dl:last-child { float: left; width: auto; margin-left: 180px; }
+.mvoting .info dl:last-child li { margin-top: 45px; }
+.mvoting .info dl:last-child li:first-child { margin-top: 0; }
+
+/* 엠보팅 이미지 */
+.mvoting .main { background-image: url(../images/sub/mvoting/main.jpg); }
+.mvoting .main_m { background-image: url(../images/sub/mvoting/main_m_th.jpg); }
+.mvoting .sub_w_1 { background-image: url(../images/sub/mvoting/sub_w_1_th.jpg); height: 516px; }
+.mvoting .sub_w_2 { background-image: url(../images/sub/mvoting/sub_w_2_th.jpg); height: 885px; }
+.mvoting .sub_w_3 { background-image: url(../images/sub/mvoting/sub_w_3_th.jpg); height: 1336px; }
+.mvoting .sub_w_4 { background-image: url(../images/sub/mvoting/sub_w_4_th.jpg); height: 377px; margin-bottom: 110px; }
+.mvoting .sub_w_5 { background-image: url(../images/sub/mvoting/sub_w_5_th.jpg); height: 303px; }
+.mvoting .sub_w_6 { background-image: url(../images/sub/mvoting/sub_w_6_th.jpg); height: 451px; }
+.mvoting .sub_w_7 { background-image: url(../images/sub/mvoting/sub_w_7_th.jpg); height: 548px; }
+.mvoting .sub_w_8 { background-image: url(../images/sub/mvoting/sub_w_8_th.jpg); height: 953px; }
+.mvoting .sub_w_9 { background-image: url(../images/sub/mvoting/sub_w_9_th.jpg); height: 471px; }
+.mvoting .sub_w_10 { background-image: url(../images/sub/mvoting/sub_w_10_th.jpg); height: 677px; }
+.mvoting .sub_m_1 { background-image: url(../images/sub/mvoting/sub_m_1_th.jpg); height: 630px; }
+.mvoting .sub_m_2 { background-image: url(../images/sub/mvoting/sub_m_2_th.jpg); height: 630px; }
+.mvoting .sub_m_3 { background-image: url(../images/sub/mvoting/sub_m_3_th.jpg); height: 673px; }
+.mvoting .sub_m_4 { background-image: url(../images/sub/mvoting/sub_m_4_th.jpg); height: 640px; }
+.mvoting .sub_m_5 { background-image: url(../images/sub/mvoting/sub_m_5_th.jpg); height: 773px; }
+.mvoting .sub_m_6 { background-image: url(../images/sub/mvoting/sub_m_6_th.jpg); height: 862px; }
+.mvoting .sub_m_7 { background-image: url(../images/sub/mvoting/sub_m_7_th.jpg); height: 773px; }
+.mvoting .sub_m_8 { background-image: url(../images/sub/mvoting/sub_m_8_th.jpg); height: 1106px; }
+.mvoting .sub_m_9 { background-image: url(../images/sub/mvoting/sub_m_9_th.jpg); height: 700px; }

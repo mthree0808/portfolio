@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="../../common/img/parking/common/logo_favi.ico">
+	<link rel="stylesheet" href="https://www.gongdan.go.kr/static/portal/css/default.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../../common/css/line-awesome.min.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/default.css">
+	<script src="../../common/js/jquery-1.11.1.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/publish.js"></script>
+	<title>이용안내 | 성북구도시관리공단 통합주차</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<dl class="skip_navi">
+			<dt class="hide"><strong>바로가기 메뉴</strong></dt>
+			<dd><a href="#contents">본문 바로가기</a></dd>
+			<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+		</dl>
+
+		<div id="globalWarp">
+			<div class="container">
+				<div class="familySet">
+					<ul>
+						<li class="f1"><a href="#">성북구도시관리공단</a></li>
+						<li class="f2"><a href="#">온라인예약</a></li>
+						<li class="f3 on"><a href="#" title="선택됨">통합주차</a></li>
+					</ul>
+				</div>
+				<div class="global">
+					<ul class="mynav">
+						<li><a href="https://www.gongdan.go.kr/portal/member/user/forLogin.do?menuNo=400474">로그인</a></li>
+						<li><a href="https://www.gongdan.go.kr/portal/member/user/joinSelect.do?menuNo=400475">회원가입</a></li>
+						<li><a href="/portal/singl/siteMap/list.do?menuNo=400491">사이트맵</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<header id="header">
+			<div class="top">
+				<div class="container">
+					<p class="logo"><a href="/portal/main/main.do"><span class="sr-only">성북구도시관리공단</span></a></p>
+					<div id="subtsh">
+						<script>
+							//<![CDATA[
+					function checkSearchForm(frm) {
+						if (frm.q.value == "") {
+							alert("검색어를 입력하세요.");
+							frm.q.focus();
+							return false;
+						}
+						document.frm.submit();
+					}
+				//]]>
+				</script>
+						<form name="frmSearch" id="frmSearch" method="post" action="/portal/singl/search/list.do" onsubmit="return checkSearchForm(this);">
+							<fieldset>
+								<legend class="sr-only">통합검색</legend>
+								<select name="rangeView" id="rangeView1" title="검색어 구분">
+									<option value="">통합검색</option>
+								</select>
+								<input type="text" name="q" id="q2" value="" title="통합 검색어" class="keyword" placeholder="검색어를 입력하세요.">
+								<button><span class="sr-only">검색</span></button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<i class="bg_gnb"></i>
+			<div class="container">
+				<nav id="gnb">
+					<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+					<div class="mob_global">
+						<ul>
+							<li><a href="#">성북구도시관리공단</a></li>
+							<li><a href="#">온라인예약</a></li>
+							<li class="active"><a href="#">거주자주차</a></li>
+							<li><a href="#">아이조아</a></li>
+						</ul>
+					</div>
+					<ul>
+						<li class="m_1 "><a href="#">거주자우선주차</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">이용안내</a></li>
+										<li class="s_2 "><a href="#">이용신청</a></li>
+										<li class="s_3 "><a href="#">환불신청안내</a></li>
+										<li class="s_4 "><a href="#" target="_blank">구획지도검색</a></li>
+										<li class="s_5 "><a href="#">수납 및 변경</a></li>
+										<li class="s_6 "><a href="#">방문주차</a></li>
+										<li class="s_7 "><a href="#">설치 / 삭선신청</a></li>
+										<li class="s_8 "><a href="#">모두의 주차장</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_2 "><a href="#">공영주차</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">현황 및 위치</a></li>
+										<li class="s_2 "><a href="#">운영시간 및 요금</a></li>
+										<li class="s_3 "><a href="#">요금감면안내</a></li>
+										<li class="s_4 "><a href="#">납부안내</a></li>
+										<li class="s_5 "><a href="#">미납차량조회</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_3"><a href="#">견인보관소</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">견인보관소안내</a></li>
+										<li class="s_2 "><a href="#">견인차량조회</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_4 "><a href="#">고객의 소리</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">공지사항</a></li>
+										<li class="s_2 "><a href="#">FAQ</a></li>
+										<li class="s_3 "><a href="#">거주자상담</a></li>
+										<li class="s_4 "><a href="#">자료실(양식)</a></li>
+										<li class="s_5 "><a href="#">설문조사</a></li>
+										<li class="s_6 "><a href="#">칭찬합시다</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="mobile_only"><a href="#">마이페이지</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">나의게시물</a></li>
+										<li class="s_2 "><a href="#">나의 수강/대관현황</a></li>
+										<li class="s_3 "><a href="#">나의 주차정보</a></li>
+										<li class="s_4 "><a href="#">마이조아</a></li>
+										<li class="s_5 "><a href="#">회원정보수정</a></li>
+										<li class="s_6 "><a href="#">회원탈퇴</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div id="allmenu">
+						<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+					</div>
+				</nav>
+			</div>
+			<script>
+				$(function(){
+					$('.gnbOpen').click(function(event) {
+						$('#gnb').addClass('mobileOn')
+					});
+					$('.gnbClose').click(function(event) {
+						$('#gnb').removeClass('mobileOn')
+					});
+					var gnbDepth1 = $('#gnb>ul a')
+					gnbDepth1.click(function(event) {
+						if ($(window).size() > 992) {
+							if ($(this).next().has('ul').length) {
+								$(this).parent().toggleClass('on');
+								event.preventDefault();
+							}
+						}
+					});
+					$('.familySetOpen').click(function(event) {
+						$('.familySet').addClass('mobileOn')
+					});
+					$('.familySetClose').click(function(event) {
+						$('.familySet').removeClass('mobileOn')
+					});
+				})
+			</script>
+		</header>
+
+		<div class="contents">
+			<div class="sub_tit_box">
+				<div class="container">
+					<h3 class="sub_top_tit">이용안내</h3>
+					<div class="sub_top_attr">
+						<ul class="breadcrumbs">
+							<li class="home"><span class="hide">메인</span></li>
+							<li>거주자우선주차</li>
+							<li>이용안내</li>
+						</ul>
+						<div class="share_box">
+							<button type="button" class="btn_share"><span class="hide">공유하기</span></button>
+							<ul>
+								<li><a href="#" class="kakao"><span class="hide">카카오스토리 공유하기</span></a></li>
+								<li><a href="#" class="twit"><span class="hide">트위터 공유하기</span></a></li>
+								<li><a href="#" class="face"><span class="hide">페이스북 공유하기</span></a></li>
+								<li><button type="button" class="btn_x"><span class="hide">공유하기 닫기</span></button></li>
+							</ul>
+						</div>
+						<a href="#" class="btn_print"><span class="hide">프린트하기</span></a>
+					</div><!-- //sub_top_attr -->
+				</div>
+			</div><!-- //sub_tit_box -->
+
+			<div class="container">
+				<div class="lnb_box">
+					<h3 class="lnb_tit"><span class="va_m">거주자우선주차</span></h3>
+					<ul class="lnb_list">
+						<li class="active"><a href="#" title="선택됨">이용안내</a></li>
+						<li><a href="#">이용신청</a></li>
+						<li><a href="#">환불신청 안내</a></li>
+						<li><a href="#">구획지도 검색</a></li>
+						<li><a href="#">수납 및 변경</a></li>
+						<li><a href="#">방문주차</a></li>
+						<li><a href="#">설치/삭선신청</a></li>
+						<li><a href="#">모두의 주차장</a></li>
+					</ul>
+				</div><!-- //lnb_box -->
+				<div class="sub_con_box" id="contents">
+					<div class="tab_wrapA">
+						<button type="button" class="btn_select">배정안내</button>
+						<ul class="tab_list">
+							<li class="active"><a href="#" title="선택됨">배정안내</a></li>
+							<li><a href="#">시간 및 요금안내</a></li>
+							<li><a href="#">단속 및 주차안내</a></li>
+						</ul>
+
+						<div class="tab_con_box">
+							<div class="tab_con active">
+								<div class="sub_each">
+									<h4 class="sub_tit1">신규설치 구획 배정 시</h4>
+									<h5 class="sub_tit2">인터넷신청</h5>
+									<ul class="dot_list">
+										<li>신규 설치구획에 가장 인접한 거주자 배정(건물주)</li>
+										<li>성북구에 등록된 장애자 차량</li>
+										<li>성북구에 등록된 경차</li>
+										<li>성북구에 등록된 국가유공자 차량</li>
+										<li>성북구에 등록된 차량</li>
+										<li>서울시(타구)에 등록된 장애자 차량</li>
+										<li>서울시(타구)에 등록된 경차</li>
+										<li>서울시(타구)에 등록된 차량</li>
+									</ul>
+								</div><!-- //sub_each -->
+			
+								<div class="sub_each">
+									<h5 class="sub_tit2">집앞에 주차구획선이 없는 경우</h5>
+									<ul class="dot_list">
+										<li>주차구획선이 가까운 자 (2인 이상 경쟁 시)</li>
+										<li>성북구에 등록된 장애자 차량</li>
+										<li>성북구에 등록된 경차</li>
+										<li>성북구에 등록된 국가유공자 차량</li>
+										<li>성북구에 등록된 차량</li>
+										<li>서울시(타구)에 등록된 장애자 차량</li>
+										<li>서울시(타구)에 등록된 경차</li>
+										<li>서울시(타구)에 등록된 차량</li>
+									</ul>
+								</div><!-- //sub_each -->
+			
+								<div class="sub_each">
+									<h4 class="sub_tit1">기존설치 구획 배정 시</h4>
+									<ul class="dot_list">
+										<li>신청 구획에 대기자가 없는 경우 신청 즉시 배정</li>
+										<li>그 외 지역은 대기자 순서에 의한 배정</li>
+									</ul>
+								</div><!-- //sub_each -->
+			
+								<div class="sub_each">
+									<h5 class="sub_tit2">배정우선순위</h5>
+									<ul class="dot_list">
+										<li>주차 구획의 배정은 우선순위 결정 기준에 의한다.</li>
+										<li>대문 및 상가출입구 앞에 주차 구획을 민원인의 신규설치요청에 의해 설치할 경우에는 최우선 순위로 배정한다.</li>
+										<li>우선순위가 동일한 경우에는 ①장애인차량, ②전입순서, ③경차순으로 하고 그래도 동일한 경우에는 당사자 간 합의로 정한다.</li>
+										<li>부설주차장의 불법용도변경 및 미사용자는 배정대상에서 제외한다.</li>
+										<li>내집주차장설치에 따른 보조금 수혜자는 배정대상에서 제외한다.</li>
+									</ul>
+									<div class="sub_mt">
+										<table class="tableA">
+											<caption>전화번호 안내 - 동명, 직통안내전화가 포함된 표</caption>
+											<thead>
+												<tr>
+													<th scope="col">동명</th>
+													<th scope="col">직통안내전화</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>삼선동, 보문동, 안암동, 정릉동</td>
+													<td>02)2241-0706</td>
+												</tr>
+												<tr>
+													<td>종암동, 동선동, 돈암동, 성북동</td>
+													<td>02)2241-0709</td>
+												</tr>
+												<tr>
+													<td>길음동, 월곡동, 장위동, 석관동</td>
+													<td>02)2241-0705</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="bull_chk">거주자 주차 문의 02)914-2008</p>
+								</div><!-- //sub_each -->
+							</div><!-- //tab_con -->
+							<div class="tab_con">
+								<div class="sub_each">
+									<h4 class="sub_tit1">시간 및 요금안내</h4>
+									<h5 class="sub_tit2">집 앞에 주차구획선이 있는 경우</h5>
+									<div class="scroll_box">
+										<table class="tableA">
+											<caption>시간, 요금 안내 - 항목주차장, 노상, 노외가 포함된 표</caption>
+											<thead>
+												<tr>
+													<th scope="col">항목주차장</th>
+													<th scope="col" colspan="3">노상</th>
+													<th scope="col" colspan="3">노외</th>
+												</tr>
+												<tr>
+													<th scope="col" class="tbl_point">사용방법</th>
+													<th scope="col" class="tbl_point">전일</th>
+													<th scope="col" class="tbl_point">주간</th>
+													<th scope="col" class="tbl_point">야간</th>
+													<th scope="col" class="tbl_point">전일</th>
+													<th scope="col" class="tbl_point">주간</th>
+													<th scope="col" class="tbl_point">야간</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="tbl_point">주차요금 <br />&lt;월 단위&gt;</td>
+													<td>40,000</td>
+													<td>30,000</td>
+													<td>20,000</td>
+													<td>65,000</td>
+													<td>39,000</td>
+													<td>26,000</td>
+												</tr>
+												<tr>
+													<td class="tbl_point">사용시간</td>
+													<td colspan="2">전일: 24시간</td>
+													<td colspan="2">주간 : 08:00~19:00</td>
+													<td colspan="2">야간: 19:00~08:00</td>
+												</tr>
+												<tr>
+													<td class="tbl_point">기타</td>
+													<td colspan="6" class="ta_l">
+														<p class="mb10">거주자주차요금은 선납제 이며, 분기납(3개월단위)입니다.</p>
+														<ul class="dot_list">
+															<li>장애차는 80%, 경차는 50% 할인 적용</li>
+															<li>다둥이 및 저공해차량은 50% 할인 적용</li>
+															<li>국가유공자의 경우 상해등급이 있는 경우 장애차와 동일 적용</li>
+															<li>1가구 2차량은 30% 할증 적용</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div><!-- //scroll_box -->
+									<div class="sub_mt">
+										<ul class="dot_list">
+											<li>장애인은, "장애인 복지법 제2조의 규정에 의한 1급 내지 6급의 (신체 또는 정신)장애등급자로서 같은 법 	제29조의 규정에 의한 장애인수첩을 소지한 자" 이며,</li>
+											<li>국가유공자는, "국가유공자 등 예우 및 지원에 관한 법률 제 4조 제 1항 제 4호 6호 / 제 10호 / 제 12호 / 제 14호와 	같은 법 제 73조의 규정에 의한 상이자로서 동법 시행령 제 101조의 규정에 의하여 국가보훈처장이	발행한 국가유공자증서를 소지한 자" (전 상군경, 공상군경, 4.19혁명부상자, 공상공무원, 국가사회발전	특별공로 이자, 반 공귀순상이자로서 국가보훈처장이 발행한 국가유공자증서를 소지한 자)입니다.</li>
+											<li>경차는 요금이 50% 할인됩니다. 할인 대상인 경차는 자동차관리법 제3조 및 동법시행규칙 제2조의 규정에 의한 경형 자동차(1000cc 미만의 승용 / 승합 / 화물 / 특수 자동차로서 길이 3.5미터 / 너비 1.5미터/ 높이 2.0미터 이하의 것)입니다.	</li>
+											<li>할인 시작일은 할인 관련 서류가 접수된 날이며, 사용기간이 종료된 금액의 소급 할인은 불가하오니 양해하여 주시기 바랍니다.</li>
+										</ul>
+									</div>
+								</div><!-- //sub_each -->
+							</div><!-- //tab_con -->
+							<div class="tab_con">
+								<div class="sub_each">
+									<h4 class="sub_tit1">단속 및 주차안내</h4>
+									<h5 class="sub_tit2">단속안내</h5>
+									<ul class="dot_list">
+										<li>거주자 우선주차제 시행구간에서, 지정 받지 않은 차량이 주차구획 내에 부정주차 하는 경우 주차장법 제 8조의 2 규정에 따라 견인조치 됩니다.</li>
+										<li>현재 우리 구를 포함한 서울시 및 각 자치구에서는 "24시간 상설 단속체계"를 구축 하여 24시간 주차단속을 시행하고 있습니다.</li>
+										<li>우리 공단에서도 주간단속조, 야간단속조, 심야단속조를 편성하여 신고 단속 뿐 아니라 24시간 상시순찰단속을 실시하고 있습니다.</li>
+									</ul>
+								</div><!-- //sub_each -->
+								<div class="sub_each">
+									<h5 class="sub_tit2">단속방법</h5>
+									<ul class="dot_list">
+										<li>연중 24시간 순찰단속 및 신고단속</li>
+										<li>단속전화번호 : 080-900-2008</li>
+									</ul>
+								</div><!-- //sub_each -->
+							</div><!-- //tab_con -->
+						</div>
+					</div><!-- //tab_wrapA -->
+
+					<div class="page_survey">
+						<div class="inner">
+							<p class="tit">이 페이지에서 제공하는 정보에 대하여 만족하시나요?</p>
+							<div class="radio_box">
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade1" class="hide" checked="">
+									<label for="satEvalGrade1"><span class="vradio"></span>매우만족 <img src="../../common/img/parking/sub/star5.png" alt="별 5개"></label>
+								</span>
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade2" class="hide">
+									<label for="satEvalGrade2"><span class="vradio"></span>만족 <img src="../../common/img/parking/sub/star4.png" alt="별 4개"></label>
+								</span>
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade3" class="hide">
+									<label for="satEvalGrade3"><span class="vradio"></span>보통 <img src="../../common/img/parking/sub/star3.png" alt="별 3개"></label>
+								</span>
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade4" class="hide">
+									<label for="satEvalGrade4"><span class="vradio"></span>불만족 <img src="../../common/img/parking/sub/star2.png" alt="별 2개"></label>
+								</span>
+								<span class="radio_each">
+									<input type="radio" name="satEvalGrade" id="satEvalGrade5" class="hide">
+									<label for="satEvalGrade5"><span class="vradio"></span>매우불만족 <img src="../../common/img/parking/sub/star1.png" alt="별 1개"></label>
+								</span>
+							</div>
+							<div class="input_box">
+								<input type="text" title="의견 입력" placeholder="의견을 등록해주세요.">
+								<a href="#" class="btn">의견등록</a>
+							</div>
+						</div>
+					</div><!-- //page_survey -->
+				</div><!-- //sub_con_box -->
+			</div><!-- //container -->
+		</div><!-- //contents -->
+
+		<div class="flinkList">
+			<div class="container">
+				<div class="serviceList">
+					<h3>주요서비스</h3>
+					<div class="ctrl">
+						<button type="button" class="btn b-left serviceListLt"><span class="hidden">이전 주요서비스 보기</span></button>
+						<button type="button" class="btn b-right serviceListRt"><span class="hidden">다음 주요서비스 보기</span></button>
+					</div>
+					<div id="serviceSlide">
+						<div class="items"><a href="https://park.gongdan.go.kr/" target="_blank" title="새창열림">거주자주차</a></div>
+						<div class="items"><a href="/sbpay/main/main.do" target="_blank" title="새창열림">강좌온라인예약</a></div>
+						<div class="items"><a href="http://bomun.gongdan.go.kr/" target="_blank" title="새창열림">육아종합지원센터</a></div>
+						<div class="items"><a href="http://sbep.gongdan.go.kr/" target="_blank" title="새창열림">운동처방센터</a></div>
+					</div>
+					<script>
+						$(function(){
+							var visualSlide = $("#serviceSlide").slick({
+								accessibility : true,
+								autoplay: false,
+								autoplaySpeed:4000,
+								//speed:500,
+								//dots: true,
+								touchMove:false,
+								slidesToShow: 3,
+								variableWidth: true,
+								slidesToScroll: 1,
+								arrows:true,
+								prevArrow  : '.serviceListLt',
+								nextArrow : '.serviceListRt',
+								//slickPlay : '.b-play',
+								//slickStop : '.b-stop',
+								pauseOnFocus: true,
+								pauseOnHover : true,
+								responsive: [
+									 {
+										breakpoint: 1023,
+										settings: {
+											slidesToShow: 3
+										}
+									},
+									{
+										breakpoint: 767,
+										settings: {
+											slidesToShow: 2
+										}
+									},
+									{
+										breakpoint: 480,
+										settings: {
+											slidesToShow: 1
+										}
+									}
+								//fade : true
+								// draggable: false,
+								//focusOnSelect: true
+								]
+							});
+
+							/*$(".b-play").click(function(){
+								visualSlide.slick('slickPlay');
+								$(this).hide();
+								$(".b-stop").show();
+							})
+							$(".b-stop").click(function(){
+								visualSlide.slick('slickPause');
+								$(this).hide();
+								$(".b-play").show();
+							})*/
+						});
+						</script>
+
+					</div>
+					<div class="weSite">
+						<ul>
+							<li><a href="javascript:void(0)">패밀리사이트</a>
+								<ul>
+									<li><a href="https://park.gongdan.go.kr" target="_blank" title="새창열림">성북구주차통합홈페이지</a></li>
+									<li><a href="http://ijoa.gongdan.go.kr" target="_blank" title="새창열림">아이조아 홈페이지</a></li>
+									<li><a href="http://bomun.gongdan.go.kr/index.jsp?MID=home" target="_blank" title="새창열림">부모지원센터 홈페이지</a></li>
+									<li><a href="http://sbep.gongdan.go.kr" target="_blank" title="새창열림">운동처방센터 홈페이지</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)">관련사이트</a>
+								<ul>
+									<li><a href="http://www.mois.go.kr" target="_blank" title="새창열림">행정안전부</a></li>
+									<li><a href="http://www.seoul.go.kr" target="_blank" title="새창열림">서울특별시청</a></li>
+									<li><a href="http://www.sb.go.kr " target="_blank" title="새창열림">성북구청</a></li>
+									<li><a href="http://www.sbc.go.kr/" target="_blank" title="새창열림">성북구의회</a></li>
+
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)">유용한사이트</a>
+								<ul>
+									<li><a href="http://www.cleaneye.go.kr" target="_blank" title="새창열림">클린아이</a></li>
+									<li><a href="http://www.alio.go.kr" target="_blank" title="새창열림">공공기관 알리오</a></li>
+									<li><a href="https://www.data.go.kr" target="_blank" title="새창열림">공공데이터포털</a></li>
+									<li><a href="https://www.open.go.kr" target="_blank" title="새창열림">정보공개</a></li>
+								</ul>
+							</li>
+						</ul>
+						<script>
+							$('.weSite>ul>li>a').each(function(index, el) {
+								$(this).bind('touchstart focus mouseenter', function(event) {
+									if (event.type == 'focus' || event.type == 'mouseenter') {
+										$(this).parent().addClass('on').siblings().removeClass('on');
+									}else if(event.type == 'touchstart'){
+										$(this).parent().toggleClass('on').siblings().removeClass('on');
+									}
+									event.preventDefault();
+								});
+							});
+							$('.weSite').mouseleave(function(event) {
+								$(this).find('li').removeClass('on')
+							}).find('a:last').focusout(function(event) {
+								$(this).parents('li').removeClass('on')
+							});
+						</script>
+					</div>
+			</div>
+		</div><!-- //flinkList -->
+	</div><!-- //#wrapper -->
+
+	<footer id="footer">
+		<div class="ft">
+			<div class="set">
+			</div>
+		</div>
+		<div class="footerSet">
+			<nav class="fnav">
+				<ul>
+					<li><a href="/portal/main/contents.do?menuNo=400070">개인정보처리방침</a></li>
+					<!-- <li><a href="/portal/main/contents.do?menuNo=">배너광장</a></li> -->
+					<li><a href="/portal/main/contents.do?menuNo=400512">회원약관</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400073">이메일추출방지정책</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400457">고객서비스헌장</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400492">뷰어다운로드</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400455">오시는길</a></li>
+				</ul>
+			</nav>
+			<address>
+				<p>
+					공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+					성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 구민체육관팀 02-909-3497, 해오름휘트니스센터 02-6925-7003, 북악골프연습장 02-919-4040<br>
+					성북펜싱체육관 02-2241-0681, 거주자주차팀 02-914-2008, 공영주차장팀 02-6925-0023, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256<br>
+					월곡배드민턴센터 02-2241-0661
+				</p>
+			</address>
+			<div class="bottomset">
+				<div class="copyright">
+					<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. jeonsan@gongdan.go.kr</em>
+				</div>
+				<div class="markSet">
+					<ul>
+						<!-- <li class="wamark"><img src="https://www.gongdan.go.kr/static/portal/img/common/mark_ccm.png" alt="CCM인증마크"> &nbsp;
+							<img src="https://www.gongdan.go.kr/static/portal/img/common/mark-webacc01.png" alt="WA품질인증마크"></li> -->
+						<li class="i1"><span class="sr-only">산업통상자원부 인증 한국서비스품질 우수기업</span></li>
+						<li class="i2"><span class="sr-only">공정거래위원회, 한국소비자원 인증 소비자중심경영 우수기관</span></li>
+						<li class="i3"><span class="sr-only">개인정보보호협회인증 개인정보보호우수사이트</span></li>
+						<li class="i4"><span class="sr-only">여성가족부 인증 가족친화기관</span></li>
+						<li class="i5"><span class="sr-only">한국경영인증원 인증 부패방지경영시스템</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

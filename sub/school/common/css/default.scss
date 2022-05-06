@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+// 파일 불러오기
+// 기본
+@import 'reset'; // 설정값 리셋
+@import 'font'; // 폰트
+@import 'variables'; // 변수
+
+@import 'common'; // header, footer, gnb
+@import 'main'; // main
+@import 'sub'; //sub
+
+ 

@@ -1,0 +1,120 @@
+/* Header & Footer */
+.scrollDisable {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+#header .bg_gnb {
+  border-top-color: #061d45;
+}
+
+#header .logo a {
+  background-image: url("../img/parking/common/main_logo.png");
+  background-size: auto 41px;
+  background-position: left center;
+}
+
+.kid #header .logo a {
+  background-image: url("../img/kid/common/main_logo.png");
+  background-size: auto 43px;
+}
+
+@media (max-width: 990px) {
+  .kid #header .logo a {
+    background-size: auto 30px;
+  }
+}
+
+@media (max-width: 990px) {
+  #header .logo a {
+    background-size: auto 28px;
+    background-position: center;
+  }
+}
+
+#gnb > ul > li {
+  border-right: 1px solid #e8e9ed;
+}
+
+@media (max-width: 990px) {
+  #gnb > ul > li {
+    border-right-width: 0;
+  }
+}
+
+#gnb > ul > li:first-child {
+  border-left: 1px solid #e8e9ed;
+}
+
+@media (max-width: 990px) {
+  #gnb > ul > li:first-child {
+    border-left-width: 0;
+  }
+}
+
+#gnb > ul > li.mobile_only {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  #gnb > ul > li.mobile_only {
+    display: block;
+  }
+}
+
+#gnb .mob_global {
+  display: none;
+}
+
+#gnb.mobileOn:after {
+  background-image: url("../img/parking/common/main_logo.png");
+  background-size: auto 27px;
+  background-position: center;
+}
+
+#gnb.mobileOn > ul {
+  border-top-width: 0;
+}
+
+#gnb.mobileOn .mob_global {
+  display: block;
+  background-color: #081f46;
+}
+
+#gnb.mobileOn .mob_global ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#gnb.mobileOn .mob_global ul li {
+  float: left;
+  width: 50%;
+  border-right: 1px solid #79869b;
+  border-bottom: 1px solid #79869b;
+}
+
+#gnb.mobileOn .mob_global ul li.active {
+  background-color: #3361b3;
+}
+
+#gnb.mobileOn .mob_global ul li:nth-child(2n) {
+  border-right-width: 0;
+}
+
+#gnb.mobileOn .mob_global ul li:nth-child(n+3) {
+  border-bottom-width: 0;
+}
+
+#gnb.mobileOn .mob_global ul li a {
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+}
+/*# sourceMappingURL=common.css.map */

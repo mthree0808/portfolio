@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="../../common/img/parking/common/logo_favi.ico">
+	<link rel="stylesheet" href="https://www.gongdan.go.kr/static/portal/css/default.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../../common/css/line-awesome.min.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/default.css">
+	<script src="../../common/js/jquery-1.11.1.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/publish.js"></script>
+	<title>신청정보 | 나의 주차정보 | 성북구도시관리공단 통합주차</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<dl class="skip_navi">
+			<dt class="hide"><strong>바로가기 메뉴</strong></dt>
+			<dd><a href="#contents">본문 바로가기</a></dd>
+			<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+		</dl>
+
+		<div id="globalWarp">
+			<div class="container">
+				<div class="familySet">
+					<ul>
+						<li class="f1"><a href="#">성북구도시관리공단</a></li>
+						<li class="f2"><a href="#">온라인예약</a></li>
+						<li class="f3 on"><a href="#" title="선택됨">통합주차</a></li>
+					</ul>
+				</div>
+				<div class="global">
+					<ul class="mynav">
+						<li><a href="https://www.gongdan.go.kr/portal/member/user/forLogin.do?menuNo=400474">로그인</a></li>
+						<li><a href="https://www.gongdan.go.kr/portal/member/user/joinSelect.do?menuNo=400475">회원가입</a></li>
+						<li><a href="/portal/singl/siteMap/list.do?menuNo=400491">사이트맵</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<header id="header">
+			<div class="top">
+				<div class="container">
+					<p class="logo"><a href="/portal/main/main.do"><span class="sr-only">성북구도시관리공단</span></a></p>
+					<div id="subtsh">
+						<script>
+							//<![CDATA[
+					function checkSearchForm(frm) {
+						if (frm.q.value == "") {
+							alert("검색어를 입력하세요.");
+							frm.q.focus();
+							return false;
+						}
+						document.frm.submit();
+					}
+				//]]>
+				</script>
+						<form name="frmSearch" id="frmSearch" method="post" action="/portal/singl/search/list.do" onsubmit="return checkSearchForm(this);">
+							<fieldset>
+								<legend class="sr-only">통합검색</legend>
+								<select name="rangeView" id="rangeView1" title="검색어 구분">
+									<option value="">통합검색</option>
+								</select>
+								<input type="text" name="q" id="q2" value="" title="통합 검색어" class="keyword" placeholder="검색어를 입력하세요.">
+								<button><span class="sr-only">검색</span></button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<i class="bg_gnb"></i>
+			<div class="container">
+				<nav id="gnb">
+					<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+					<div class="mob_global">
+						<ul>
+							<li><a href="#">성북구도시관리공단</a></li>
+							<li><a href="#">온라인예약</a></li>
+							<li class="active"><a href="#">거주자주차</a></li>
+							<li><a href="#">아이조아</a></li>
+						</ul>
+					</div>
+					<ul>
+						<li class="m_1 "><a href="#">거주자우선주차</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">이용안내</a></li>
+										<li class="s_2 "><a href="#">이용신청</a></li>
+										<li class="s_3 "><a href="#">환불신청안내</a></li>
+										<li class="s_4 "><a href="#" target="_blank">구획지도검색</a></li>
+										<li class="s_5 "><a href="#">수납 및 변경</a></li>
+										<li class="s_6 "><a href="#">방문주차</a></li>
+										<li class="s_7 "><a href="#">설치 / 삭선신청</a></li>
+										<li class="s_8 "><a href="#">모두의 주차장</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_2 "><a href="#">공영주차</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">현황 및 위치</a></li>
+										<li class="s_2 "><a href="#">운영시간 및 요금</a></li>
+										<li class="s_3 "><a href="#">요금감면안내</a></li>
+										<li class="s_4 "><a href="#">납부안내</a></li>
+										<li class="s_5 "><a href="#">미납차량조회</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_3"><a href="#">견인보관소</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">견인보관소안내</a></li>
+										<li class="s_2 "><a href="#">견인차량조회</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="m_4 "><a href="#">고객의 소리</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">공지사항</a></li>
+										<li class="s_2 "><a href="#">FAQ</a></li>
+										<li class="s_3 "><a href="#">거주자상담</a></li>
+										<li class="s_4 "><a href="#">자료실(양식)</a></li>
+										<li class="s_5 "><a href="#">설문조사</a></li>
+										<li class="s_6 "><a href="#">칭찬합시다</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="mobile_only"><a href="#">마이페이지</a>
+							<div>
+								<div class="depth2">
+									<ul>
+										<li class="s_1 "><a href="#">나의게시물</a></li>
+										<li class="s_2 "><a href="#">나의 수강/대관현황</a></li>
+										<li class="s_3 "><a href="#">나의 주차정보</a></li>
+										<li class="s_4 "><a href="#">마이조아</a></li>
+										<li class="s_5 "><a href="#">회원정보수정</a></li>
+										<li class="s_6 "><a href="#">회원탈퇴</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div id="allmenu">
+						<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+					</div>
+				</nav>
+			</div>
+			<script>
+				$(function(){
+					$('.gnbOpen').click(function(event) {
+						$('#gnb').addClass('mobileOn')
+					});
+					$('.gnbClose').click(function(event) {
+						$('#gnb').removeClass('mobileOn')
+					});
+					var gnbDepth1 = $('#gnb>ul a')
+					gnbDepth1.click(function(event) {
+						if ($(window).size() > 992) {
+							if ($(this).next().has('ul').length) {
+								$(this).parent().toggleClass('on');
+								event.preventDefault();
+							}
+						}
+					});
+					$('.familySetOpen').click(function(event) {
+						$('.familySet').addClass('mobileOn')
+					});
+					$('.familySetClose').click(function(event) {
+						$('.familySet').removeClass('mobileOn')
+					});
+				})
+			</script>
+		</header>
+
+		<div class="contents">
+			<div class="sub_tit_box">
+				<div class="container">
+					<h3 class="sub_top_tit">신청정보</h3>
+					<div class="sub_top_attr">
+						<ul class="breadcrumbs">
+							<li class="home"><span class="hide">메인</span></li>
+							<li>마이페이지</li>
+							<li>신청정보</li>
+						</ul>
+						<div class="share_box">
+							<button type="button" class="btn_share"><span class="hide">공유하기</span></button>
+							<ul>
+								<li><a href="#" class="kakao"><span class="hide">카카오스토리 공유하기</span></a></li>
+								<li><a href="#" class="twit"><span class="hide">트위터 공유하기</span></a></li>
+								<li><a href="#" class="face"><span class="hide">페이스북 공유하기</span></a></li>
+								<li><button type="button" class="btn_x"><span class="hide">공유하기 닫기</span></button></li>
+							</ul>
+						</div>
+						<a href="#" class="btn_print"><span class="hide">프린트하기</span></a>
+					</div><!-- //sub_top_attr -->
+				</div>
+			</div><!-- //sub_tit_box -->
+
+			<div class="container">
+				<div class="lnb_box">
+					<h3 class="lnb_tit"><span class="va_m">마이페이지</span></h3>
+					<ul class="lnb_list">
+						<li><a href="#">차량정보</a></li>
+						<li class="active" title="선택됨"><a href="#">신청정보</a></li>
+						<li><a href="#">배정정보</a></li>
+					</ul>
+				</div><!-- //lnb_box -->
+				<div class="sub_con_box" id="contents">
+					<div class="tab_wrapA">
+						<div class="tab_con_box">
+							<div class="tab_con active">
+								<div class="sub_each">
+									<h3 class="sub_tit2">신청 내역</h3>
+									<ul class="car_list">
+										<li>
+											<span class="icon_box">
+												<img src="../../common/img/parking/sub/icon_car1.png" alt="">
+											</span>
+											<div class="txt_box">
+												<h4 class="tit1">차량정보</h4>
+												<ul class="red_dot_list">
+													<li>차량정보 : 123456</li>
+													<li>차종 : 차종</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<span class="icon_box">
+												<img src="../../common/img/parking/sub/icon_car2.png" alt="">
+											</span>
+											<div class="txt_box">
+												<h4 class="tit1">구획정보</h4>
+												<ul class="red_dot_list">
+													<li>동명 : 동명</li>
+													<li>지구명 : 지구명</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<span class="icon_box">
+												<img src="../../common/img/parking/sub/icon_car9.png" alt="">
+											</span>
+											<div class="txt_box">
+												<h4 class="tit1">신청정보</h4>
+												<ul class="red_dot_list">
+													<li>주차방법 : 주차방법</li>
+													<li>순위 : 순위</li>
+													<li>신청상태 : <span class="bd_status">신청</span></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div><!-- //sub_each -->
+
+								<div class="sub_each">
+									<h3 class="sub_tit2">신청자 정보</h3>
+									<ul class="car_list">
+										<li>
+											<span class="icon_box">
+												<img src="../../common/img/parking/sub/icon_car7.png" alt="">
+											</span>
+											<div class="txt_box">
+												<h4 class="tit1">기본정보</h4>
+												<ul class="red_dot_list">
+													<li>집전화 : 02-1234-1234</li>
+													<li>핸드폰 : 02-1234-1234</li>
+													<li>주소 : 주소</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div><!-- //sub_each -->
+
+								<div class="sub_each">
+									<h3 class="sub_tit2">가산 정보</h3>
+									<ul class="car_list">
+										<li>
+											<span class="icon_box">
+												<img src="../../common/img/parking/sub/icon_car6.png" alt="">
+											</span>
+											<div class="txt_box">
+												<h4 class="tit1">가산정보</h4>
+												<ul class="red_dot_list">
+													<li>가산점 : 10000 POINT</li>
+													<li>가산점 요청일 : 2020-01-01</li>
+													<li>가산 요청 내용 : 저공해 차량</li>
+													<li>세부사항 : 내용</li>
+													<li>결과 : 현장검증</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div><!-- //sub_each -->
+
+								<div class="common_btn_box">
+									<div class="left_box">
+										<a href="mypage_assign_input.html" class="common_btn">신청자 정보 변경</a>
+										<a href="mypage_apply_input.html" class="common_btn">감면 신청</a>
+									</div>
+									<a href="#" class="common_btn white">목록</a>
+								</div><!-- //common_btn_box -->
+
+								<div class="sub_each">
+									<h3 class="sub_tit2">배정 구획에서 가까운 공단 시설물</h3>
+									<ul class="car_list">
+										<li>
+											<span class="icon_box">
+												<img src="../../common/img/parking/sub/icon_car7.png" alt="">
+											</span>
+											<div class="txt_box">
+												<h4 class="tit1">기본정보</h4>
+												<ul class="red_dot_list">
+													<li>공단 시설물 : 명칭</li>
+													<li>전화번호 : 02-1234-1234</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<span class="icon_box">
+												<img src="../../common/img/parking/sub/icon_car2.png" alt="">
+											</span>
+											<div class="txt_box">
+												<h4 class="tit1">구획정보</h4>
+												<ul class="red_dot_list">
+													<li>동명 : 동명</li>
+													<li>주소명 : 주소명</li>
+													<li>위치 : 위치</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+
+									<div class="paging">
+										<a href="#" class="prev_page"><span class="hide">이전 5페이지로 이동</span></a>
+										<ul>
+											<li><a href="#">1</a></li>
+											<li class="active"><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+										</ul>
+										<a href="#" class="next_page"><span class="hide">다음 5페이지로 이동</span></a>
+									</div><!-- //paging -->
+								</div><!-- //sub_each -->
+								
+								
+							</div><!-- //tab_con -->
+						</div>
+					</div><!-- //tab_wrapA -->
+
+				</div>
+			</div><!-- //container -->
+		</div><!-- //contents -->
+
+		<div class="flinkList">
+			<div class="container">
+				<div class="serviceList">
+					<h3>주요서비스</h3>
+					<div class="ctrl">
+						<button type="button" class="btn b-left serviceListLt"><span class="hidden">이전 주요서비스 보기</span></button>
+						<button type="button" class="btn b-right serviceListRt"><span class="hidden">다음 주요서비스 보기</span></button>
+					</div>
+					<div id="serviceSlide">
+						<div class="items"><a href="https://park.gongdan.go.kr/" target="_blank" title="새창열림">거주자주차</a></div>
+						<div class="items"><a href="/sbpay/main/main.do" target="_blank" title="새창열림">강좌온라인예약</a></div>
+						<div class="items"><a href="http://bomun.gongdan.go.kr/" target="_blank" title="새창열림">육아종합지원센터</a></div>
+						<div class="items"><a href="http://sbep.gongdan.go.kr/" target="_blank" title="새창열림">운동처방센터</a></div>
+					</div>
+					<script>
+						$(function(){
+							var visualSlide = $("#serviceSlide").slick({
+								accessibility : true,
+								autoplay: false,
+								autoplaySpeed:4000,
+								//speed:500,
+								//dots: true,
+								touchMove:false,
+								slidesToShow: 3,
+								variableWidth: true,
+								slidesToScroll: 1,
+								arrows:true,
+								prevArrow  : '.serviceListLt',
+								nextArrow : '.serviceListRt',
+								//slickPlay : '.b-play',
+								//slickStop : '.b-stop',
+								pauseOnFocus: true,
+								pauseOnHover : true,
+								responsive: [
+									 {
+										breakpoint: 1023,
+										settings: {
+											slidesToShow: 3
+										}
+									},
+									{
+										breakpoint: 767,
+										settings: {
+											slidesToShow: 2
+										}
+									},
+									{
+										breakpoint: 480,
+										settings: {
+											slidesToShow: 1
+										}
+									}
+								//fade : true
+								// draggable: false,
+								//focusOnSelect: true
+								]
+							});
+
+							/*$(".b-play").click(function(){
+								visualSlide.slick('slickPlay');
+								$(this).hide();
+								$(".b-stop").show();
+							})
+							$(".b-stop").click(function(){
+								visualSlide.slick('slickPause');
+								$(this).hide();
+								$(".b-play").show();
+							})*/
+						});
+						</script>
+
+					</div>
+					<div class="weSite">
+						<ul>
+							<li><a href="javascript:void(0)">패밀리사이트</a>
+								<ul>
+									<li><a href="https://park.gongdan.go.kr" target="_blank" title="새창열림">성북구주차통합홈페이지</a></li>
+									<li><a href="http://ijoa.gongdan.go.kr" target="_blank" title="새창열림">아이조아 홈페이지</a></li>
+									<li><a href="http://bomun.gongdan.go.kr/index.jsp?MID=home" target="_blank" title="새창열림">부모지원센터 홈페이지</a></li>
+									<li><a href="http://sbep.gongdan.go.kr" target="_blank" title="새창열림">운동처방센터 홈페이지</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)">관련사이트</a>
+								<ul>
+									<li><a href="http://www.mois.go.kr" target="_blank" title="새창열림">행정안전부</a></li>
+									<li><a href="http://www.seoul.go.kr" target="_blank" title="새창열림">서울특별시청</a></li>
+									<li><a href="http://www.sb.go.kr " target="_blank" title="새창열림">성북구청</a></li>
+									<li><a href="http://www.sbc.go.kr/" target="_blank" title="새창열림">성북구의회</a></li>
+
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)">유용한사이트</a>
+								<ul>
+									<li><a href="http://www.cleaneye.go.kr" target="_blank" title="새창열림">클린아이</a></li>
+									<li><a href="http://www.alio.go.kr" target="_blank" title="새창열림">공공기관 알리오</a></li>
+									<li><a href="https://www.data.go.kr" target="_blank" title="새창열림">공공데이터포털</a></li>
+									<li><a href="https://www.open.go.kr" target="_blank" title="새창열림">정보공개</a></li>
+								</ul>
+							</li>
+						</ul>
+						<script>
+							$('.weSite>ul>li>a').each(function(index, el) {
+								$(this).bind('touchstart focus mouseenter', function(event) {
+									if (event.type == 'focus' || event.type == 'mouseenter') {
+										$(this).parent().addClass('on').siblings().removeClass('on');
+									}else if(event.type == 'touchstart'){
+										$(this).parent().toggleClass('on').siblings().removeClass('on');
+									}
+									event.preventDefault();
+								});
+							});
+							$('.weSite').mouseleave(function(event) {
+								$(this).find('li').removeClass('on')
+							}).find('a:last').focusout(function(event) {
+								$(this).parents('li').removeClass('on')
+							});
+						</script>
+					</div>
+			</div>
+		</div><!-- //flinkList -->
+	</div><!-- //#wrapper -->
+
+	<footer id="footer">
+		<div class="ft">
+			<div class="set">
+			</div>
+		</div>
+		<div class="footerSet">
+			<nav class="fnav">
+				<ul>
+					<li><a href="/portal/main/contents.do?menuNo=400070">개인정보처리방침</a></li>
+					<!-- <li><a href="/portal/main/contents.do?menuNo=">배너광장</a></li> -->
+					<li><a href="/portal/main/contents.do?menuNo=400512">회원약관</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400073">이메일추출방지정책</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400457">고객서비스헌장</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400492">뷰어다운로드</a></li>
+					<li><a href="/portal/main/contents.do?menuNo=400455">오시는길</a></li>
+				</ul>
+			</nav>
+			<address>
+				<p>
+					공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+					성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 구민체육관팀 02-909-3497, 해오름휘트니스센터 02-6925-7003, 북악골프연습장 02-919-4040<br>
+					성북펜싱체육관 02-2241-0681, 거주자주차팀 02-914-2008, 공영주차장팀 02-6925-0023, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256<br>
+					월곡배드민턴센터 02-2241-0661
+				</p>
+			</address>
+			<div class="bottomset">
+				<div class="copyright">
+					<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. jeonsan@gongdan.go.kr</em>
+				</div>
+				<div class="markSet">
+					<ul>
+						<!-- <li class="wamark"><img src="https://www.gongdan.go.kr/static/portal/img/common/mark_ccm.png" alt="CCM인증마크"> &nbsp;
+							<img src="https://www.gongdan.go.kr/static/portal/img/common/mark-webacc01.png" alt="WA품질인증마크"></li> -->
+						<li class="i1"><span class="sr-only">산업통상자원부 인증 한국서비스품질 우수기업</span></li>
+						<li class="i2"><span class="sr-only">공정거래위원회, 한국소비자원 인증 소비자중심경영 우수기관</span></li>
+						<li class="i3"><span class="sr-only">개인정보보호협회인증 개인정보보호우수사이트</span></li>
+						<li class="i4"><span class="sr-only">여성가족부 인증 가족친화기관</span></li>
+						<li class="i5"><span class="sr-only">한국경영인증원 인증 부패방지경영시스템</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+/* form */
+.form_inp{height: 44px; background-color: #fff; border-radius: 3px; border: 1px solid #cacfd3;
+	input, &input{display: block; padding: 0 10px;}
+	&.date{width: 170px; padding-right: 30px; background: $white url($img-common+"icon_cal.png") no-repeat right 10px center;}
+	@include tablet{
+		&.date{width: calc(50% - 14px);}
+	}
+}
+.form_sel select{height: 44px; padding: 0 25px 0 10px; color: #222; background: #fff url(../img/select_down.png) no-repeat right 10px center; text-align: left; position: relative; border-radius: 3px; border: 1px solid #cacfd3;
+	@include tablet{background-position: right 10px center;}
+}
+.form_sel.one{margin-bottom: 20px;
+	select{display: inline-block; width: 150px; margin-right: 10px;}
+	.fc_red{font-size: $fz-xs;}
+	@include mobile{margin-bottom: 10px;
+		select{height: 35px; font-size: $fz-xs;}
+		.fc_red{display: block; margin-top: 5px;}
+	}
+}
+.form_txt{border: $border-base; resize: none;}
+
+.inp_txt{display: inline-block; line-height: 44px; padding: 0 5px; font-size: 18px; vertical-align: middle; @include tablet{line-height: 35px;} @include mobile{padding: 0 2px; margin-left: 0; font-size: 15px;}}
+
+.radio_each{display: inline-block; margin: 2px 20px 2px 0; vertical-align: middle;
+	&.one, &:last-of-type{margin-right: 0;}
+	label{display: inline-block; position: relative; padding-left: 32px; cursor: pointer; @include mobile{padding-left: 18px; font-size: $fz-sm;}}
+	.vradio{display: block; position: absolute; left: 0; top: -1px; width: 24px; height: 24px; border: 1px solid $radio-color; border-radius: 50%; @include mobile{width: 14px; height: 14px; top: 3px;}
+		&:after{content: ''; display: block; position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; margin-left: -6px; margin-top: -6px; background-color: transparent; border-radius: 50%; transition: all 0.2s; @include mobile{width: 6px; height: 6px; margin-top: -3px; margin-left: -3px;}}
+	}
+	input:checked + label .vradio{border-color: $radio-active-color;
+		&:after{background-color: $radio-active-color;}
+	}
+	input:focus + label .vradio{outline:1px dotted #000; outline:-webkit-focus-ring-color auto 5px;}
+}
+
+.chk_each{display: inline-block; margin: 5px 20px 5px 0; vertical-align: middle;
+	&.one, &:last-of-type{margin-right: 0;}
+	label{display: inline-block; padding-top: 2px; position: relative; z-index: 1; padding-left: 30px; cursor:pointer; vertical-align: top; @include mobile{padding-top: 2px; font-size: 14px;}}
+	.vchkbox{display: block; position: absolute; left: 0; top: 1px; z-index: 1; width: 24px; height: 24px; background: #fff no-repeat center / 12px auto; border: 1px solid $radio-color; border-radius: 3px; transition: all 0.2s;}
+	input:checked + label{color: #008da7;}
+	input:checked + label .vchkbox {background-image: url($img-common+"icon_chk.png"); border-color: $radio-active-color; background-color: $radio-active-color;}
+	input:focus + label .vchkbox {outline:1px dotted #000; outline:-webkit-focus-ring-color auto 5px;}
+}
+
+.attach_box{max-width: 535px; position: relative; z-index: 1; @include clearfix;
+	.attach_input{position: absolute; left: 0; top: 0; z-index: 1; visibility: hidden; width: 1px; height: 1px; font-size: 1px;}
+	.attach_vbox{vertical-align: middle;}
+	.attach_vinput {float: left; width: calc(100% - 135px); max-width: inherit; background-color: $white; cursor: pointer; padding: 0 5px; border: 0 none; cursor: pointer; 
+		@include mobile{float: none; width: 100%; height: auto; margin-top: 5px; font-size: 14px;}
+	}
+	.attach_btn, .delete_btn{float: left; width: 90px; height: 44px; line-height: 42px; margin-right: 5px; text-align: center; background: #fff; border: 1px solid #222; border-radius: 3px; cursor: pointer; vertical-align: middle; @include speed;
+		@include mobile{float: none; width: 100px; height: 35px; line-height: 35px;}
+	}
+}
+
+/* 예약입력 페이지 */
+.form_txt{height: 60px;
+	@include mobile{height: auto;}
+}
+.book_step{margin-bottom: 55px; text-align: center;
+	>ul{display: inline-block; position: relative;
+		&:before{content: ''; display: block; width: 130px; height: 1px; background: #ccc; position: absolute; top: 22px; left: 50%; margin-left: -62px; z-index: -1;}
+		>li{float: left; margin: 0 25px; text-align: center; font-size: 19px;
+			.num{display: block; width: 42px; height: 42px; line-height: 27px; margin: 0 auto 10px; font-size: 20px; color: #fff; background: #898989; border: 7px solid #e5e5e5; border-radius: 35px;}
+			&.active{color: $point-color1;
+				.num{background-color: $point-color1; border-color: #d9ebf9;}
+			}
+		}
+	}
+	@include tablet{display: none;}
+}
+.book_tit1{display: block; margin-bottom: 40px; padding: 25px 20px; text-align: center; font-size: 1.625em; font-weight: 500; background: $bg-color1; border-top: 2px solid #222; border-bottom: $border-base;
+	.txt{display: block; margin-top: 15px; font-size: 0.66em; font-weight: 400;}
+	@include tablet{display: none;}
+}
+
+.book_box{@include clearfix; position: relative;
+	.left_box{float: left; width: calc(100% - 360px);}
+	.book_each{margin-bottom: 50px;}
+	.right_box{width: 320px; position: absolute; top: 0; right: 0;}
+	.book_tit2{font-size: $fz-xxl; font-weight: 500; padding-bottom: 20px; margin-bottom: 30px; border-bottom: $border-base; @include clearfix;
+		.tit_txt{float: right; font-size: 0.6em; font-weight: 400; color: $red;}
+		.chk_each{float: right; font-size: 0.667em; font-weight: 400; color: #444;}
+	}
+	.book_user{@include clearfix;
+		.user_minus, .user_plus{float: left; width: 44px; height: 44px; font-size: 0; border: 1px solid #cacfd3; background-repeat: no-repeat; background-position: center; @include speed;
+			@include desktop{&:hover{border-color: #222;}}
+		}
+		.user_minus{background-image: url($img-common+"icon_min.png"); border-right-width: 0; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
+		.user_plus{background-image: url($img-common+"icon_min2.png"); border-left-width: 0; border-top-right-radius: 3px; border-bottom-right-radius: 3px;}
+		.user_num{float: left; padding: 0 25px; line-height: 44px; font-size: $fz-sm; background: $point-color1; color: #fff;}
+	}
+	.fee_each{margin-bottom: 10px; padding: 20px 25px; background: $bg-color2; border-radius: 3px; @include clearfix;
+		&:last-child{margin-bottom: 0;}
+		.txt_box{float: left; width: 70%; font-size: $fz-sm; color: #444;
+			.tit{display: block; margin-bottom: 5px; font-size: $fz-md2; font-weight: 500; color: #222;}
+		}
+		.right_txt{float: right; width: 30%; text-align: right;
+			.fee{font-size: $fz-md2; font-weight: 500; vertical-align: middle;}
+			.form_sel{display: inline-block; width: 110px; margin-left: 15px; vertical-align: middle;}
+		}
+	}
+	.book_discount{
+		.radio_each{margin: 0 8px 0 0;
+			label{padding: 12px 20px; border: $border-base; border-radius: 3px; @include speed;}
+			.vradio{display: none;}
+
+			input:checked+label{padding-left: 45px; color: $point-color1; border-color: $point-color1;
+				.vradio{display: block; width: 16px; height: 11px; background: url($img-common+"icon_radio.png") no-repeat; border: 0; top: 18px; left: 20px;
+					&:after{display: none;}
+				}
+			}
+			input:focus + label .vradio{outline: none;}
+			input:focus + label{outline:1px dotted #000; outline:-webkit-focus-ring-color auto 5px;}
+			
+		}
+		.dct_con_box{display: none; margin-top: 20px; padding: 24px; border: 3px solid #edf1f4; border-radius: 10px;
+			.tit_txt{display: block; margin-bottom: 15px; text-align: right; color: $red; font-size: $fz-xs;}
+			.tableB{margin-bottom: 25px;}
+		}
+	}
+	.info_wrap{padding: 25px; background: #eff4fb; border-radius: 10px;
+		.common_btn_box{margin-top: 15px;
+			.common_btn{width: 100%;}
+		}
+		.book_btn_box{margin-top: 15px; @include clearfix;
+			>li{float: left; width: calc(50% - 10px); margin: 5px; height: 56px; background: #fff; border: $border-base; border-radius: 10px; overflow: hidden;
+				&.active{border-color: $point-color1;}
+			}
+			.btn_book{width: 100%; line-height: 54px; text-align: center; font-size: $fz-md2; color: #fff; background: $point-color1; @include speed;
+				@include desktop{&:hover{background-color: #055cc7;}}
+			}
+		}
+	}
+	.q_box{margin-top: 35px; padding: 20px; font-size: $fz-sm; color: #444; background: #fff; border: $border-base; border-radius: 10px; box-shadow: 5px 5px 15px rgba(0,0,0,0.1); position: relative;
+		&:before{content: ''; display: block; width: 28px; height: 16px; background: url($img-common+"icon_bubble.png"); position: absolute; top: -16px; left: 50%; margin-left: -14px;}
+		@include tablet{margin-top: 20px; padding: 15px; font-size: 13px;}
+	}
+	.info_tit_box{margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #aec4eb; position: relative;
+		.tit1{padding-right: 20px; font-size: $fz-xl; font-weight: 500;}
+	}
+	.btn_book_x{display: block; width: 18px; height: 18px; background: url($img-common+"btn_b_x.png") no-repeat; position: absolute; top: 0; right: 0; @include speed;
+		@include desktop{&:hover{@include transform(rotate(180deg));}}
+	}
+	.hover_box{display: none; padding: 20px; text-align: center; font-size: $fz-sm; color: #444; background: #fff; border: $border-base; border-radius: 10px; position: absolute; bottom: -85px; right: -70px; z-index: 1; box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		&:before{content: ''; display: block; width: 28px; height: 16px; background: url($img-common+"icon_bubble.png"); position: absolute; top: -16px; left: 50%; margin-left: -14px;}
+	}
+	.book_info{margin-bottom: 35px;
+		.tit2{display: block; margin-bottom: 20px; font-size: $fz-md2; font-weight: 500; color: #005ac9;}
+	}
+	.dot_list{
+		>li{margin-bottom: 10px; @include clearfix;
+			&:last-child{margin-bottom: 0;}
+			.tit{float: left; width: 90px;}
+			.txt{float: right; width: calc(100% - 95px); text-align: right; font-weight: 500; color: #222;}
+			&:before{background: #444;}
+			.btn_pop{padding: 2px 10px 3px; font-weight: 400; font-size: 13px;}
+		}
+	}
+	.book_fee_info{padding: 20px; background: #fff; border-radius: 10px;
+		.tit3{display: block; padding-bottom: 17px; margin-bottom: 20px; font-size: $fz-md2; font-weight: 500; border-bottom: 1px solid #ccc;}
+		.fee_box{margin-top: 25px; text-align: right;
+			.txt{display: block; margin-bottom: 10px; font-weight: 500;}
+			.price{display: block; color: #ff6600; font-size: $fz-lg; font-weight: 500;
+				.num{font-weight: 700; font-size: $fz-xxl;}
+			}
+		}
+	}
+	
+	@include desktop{
+		.mob_info_wrap{display: none;}
+	}
+	@include tablet{
+		.left_box{float: none; width: auto;}
+		.right_box{position: static; width: auto;}
+		.m_con_wrap{display: none;}
+		.mob_info_wrap{margin-bottom: 25px; padding: 15px; background: #eff4fb; position: relative;
+			.mob_tit1{display: block; margin-bottom: 15px; font-size: 19px; font-weight: 500;}
+			.m_info_toggle{width: 30px; height: 30px; font-size: 0; background: url($img-common+"m_arr.png") no-repeat center / 15px auto; position: absolute; top: 60px; right: 24px; @include speed;
+				&.active{@include transform(rotate(180deg));
+					+.m_info_box .info_tit_box{border-bottom-width: 0;}
+				}
+			}
+			.m_info_box{background: #fff;
+				.info_tit_box{padding: 15px; margin-bottom: 0; position: static;
+					.tit1{font-size: 16px;}
+					.btn_book_x{top: 15px; right: 15px;}
+				}
+				.book_info{padding: 15px; margin-bottom: 0;
+					.tit2{margin-bottom: 7px; font-size: 15px;}
+				}
+			}
+		}
+		.form_sel{height: 35px;
+			select{height: 100%; font-size: $fz-sm;}
+		}
+		.form_inp{height: 35px;
+			input{height: 100%; font-size: $fz-sm;}
+		}
+		.book_each{margin-bottom: 25px;
+			.tableB{
+				colgroup{display: none;}
+				th{width: 95px;}
+			}
+		}
+		.book_tit2{margin-bottom: 15px; padding-bottom: 7px; font-size: $fz-base;
+			.tit_txt{float: none; display: block; margin-top: 4px; font-size: $fz-xs;}
+			.chk_each{display: block; float: none; margin-top: 5px;}
+		}
+		.book_user{
+			.user_minus, .user_plus{width: 35px; height: 35px;}
+			.user_num{line-height: 35px; padding: 0 20px;}
+		}
+		.fee_each{padding: 15px;
+			.txt_box{width: calc(100% - 200px); font-size: $fz-xs;
+				.tit{margin-bottom: 2px; font-size: $fz-base;}
+			}
+			.right_txt{width: 200px; margin-top: 4px;
+				.fee{font-size: $fz-base;}
+			}
+		}
+		.book_discount{
+			.radio_each{width: 100%; margin-bottom: 5px; margin-right: 0;
+				input:checked + label{padding-left: 35px;
+					.vradio{top: 15px; left: 15px;}
+				}
+				label{display: block; padding: 10px 15px; font-size: $fz-sm;}
+			}
+		}
+		.info_wrap{padding: 0; background: 0 none;
+			.book_fee_info{padding: 0;
+				.tit3{margin-bottom: 15px; padding-bottom: 10px; font-size: $fz-base; border-color: #aec4eb;}
+				.fee_box{text-align: left; @include clearfix;
+					.txt{float: left; width: 40%;}
+					.price{float: right; width: 60%; text-align: right; font-size: 16px;
+						.num{font-size: 24px;}
+					}
+				}
+			}
+			.book_btn_box{margin-left: -5px; margin-right: -5px;
+				>li{height: 40px; border-radius: 5px;
+					.btn_book{line-height: 38px; font-size: $fz-base;}
+				}
+			}
+		}
+		.attach_vinput{height: 25px;}
+	}
+}
+
+.agree_each{margin-bottom: 30px;
+	&:last-child{margin-bottom: 0;}
+	@include tablet{margin-bottom: 20px;}
+}
+.dct_tit1{margin-bottom: 20px; font-size: $fz-lg; font-weight: 500;
+	@include tablet{margin-bottom: 10px; font-size: $fz-sm;}
+}
+.agree_box{height: 140px; padding: 20px; background: $bg-color2; border: $border-base; border-radius: 10px; overflow-y: auto;
+	.con_txt{line-height: 1.6; font-size: $fz-sm; color: #444;}
+	@include tablet{padding: 12px;}
+}
+.chk_agree{margin-top: 10px; text-align: right;
+	@include tablet{margin-top: 5px;}
+}
+.form_idt_num{
+	.form_inp{display: inline-block; width: calc(50% - 12px); vertical-align: middle;}
+}
+.form_num{
+	.form_sel, .form_inp{display: inline-block; width: 92px; vertical-align: middle;}
+	.chk_each{margin-left: 10px;}
+	.btn_inp{display: inline-block; padding: 0 15px; margin-left: 4px; text-align: center; line-height: 42px; border: 1px solid #222; border-radius: 3px; vertical-align: middle;}
+	@include tablet{
+		.inp_txt{padding: 0 2px;}
+		.form_sel, .form_inp{width: calc(33.33% - 12px);}
+		.chk_each{display: block; margin-left: 0;}
+		.btn_inp{display: block; margin-left: 0; margin-top: 4px; line-height: 33px; font-size: 14px;}
+	}
+}
+.form_email{
+	.form_sel, .form_inp{display: inline-block; width: 112px; vertical-align: middle;}
+	.form_sel{margin-left: 4px;}
+	.chk_each{margin-left: 10px;}
+	@include tablet{
+		.form_sel, .form_inp{width: 100%; margin: 0 0 5px 0;}
+		.form_inp:first-of-type{width: calc(100% - 30px);}
+		.inp_txt{margin-bottom: 5px;}
+		.chk_each{display: block; margin-left: 0;}
+	}
+}
+.form_addr{
+	.form_inp{display: inline-block; width: 100%; margin-top: 8px; vertical-align: middle;
+		&:first-of-type{width: 122px; margin-top: 0;}
+	}
+	.btn_inp{display: inline-block; padding: 0 15px; margin-left: 4px; text-align: center; line-height: 42px; border: 1px solid #222; border-radius: 3px; vertical-align: middle;}
+	@include tablet{
+		.form_inp{margin-top: 5px;}
+		.btn_inp{line-height: 33px; font-size: 14px;}
+	}
+}
+.book_box .form_bday{
+	.year, .month{display: inline-block;}
+	select{display: inline-block; width: 92px; vertical-align: middle;}
+	.inp_txt{margin: 0 15px 0 2px;}
+	.radio_each{vertical-align: middle;}
+	@include tablet{height: auto;
+		select{height: 35px;}
+	}
+	@include tablet{
+		.inp_txt{margin: 0 10px 0 0;}
+		.year{margin-bottom: 4px;
+			select{width: 120px;}
+		}
+		.month{margin-bottom: 4px;}
+		select{width: 55px;}
+	}
+}
+.form_captcha{
+	.btn_refresh, .btn_audio, .btn_blue{display: block; width: 149px; height: 44px; line-height: 42px; text-align: center; border-radius: 3px;}
+	.btn_refresh{background: $point-color3; @include speed;
+		.ico{display: inline-block; padding-left: 20px; color: #fff; background: url($img-common+"icon_init_wh.png") no-repeat left center;}
+		@include desktop{&:hover{background-color: #224361;}}
+	}
+	.btn_audio{margin-top: 5px; background: #fff; border: 1px solid #222;
+		.ico{display: inline-block; padding-left: 20px; background: url($img-common+"icon_audio.png") no-repeat left center;}
+	}
+	.btn_blue{background: $point-color1; color: #fff; @include speed;
+		@include desktop{&:hover{background-color: #055cc7;}}
+	}
+	.captcha_attr{margin-bottom: 8px; @include clearfix;
+		.img_box{float: left; width: 242px; height: 93px; margin-right: 10px; background: $bg-color1; border: 1px solid #cacfd3; border-radius: 3px; overflow: hidden;}
+	}
+	.captcha_input{margin-bottom: 10px;
+		.form_inp{float: left; width: 242px; margin-right: 10px;}
+	}
+	@include tablet{
+		.btn_refresh, .btn_audio, .btn_blue{width: 100%; font-size: $fz-sm; height: 35px; line-height: 33px;}
+		.captcha_attr{
+			.img_box{float: none; width: 100%; margin-bottom: 5px;}
+		}
+		.captcha_input{margin-bottom: 5px; margin-top: 5px;
+			.form_inp{float: none; width: auto; margin-right: 0; margin-bottom: 5px;}
+		}
+	}
+}
+.payment_type{
+	.radio_each{margin-bottom: 15px;}
+}
+.a_link{display: block; font-size: $fz-xs; color: #09a1bd;
+	.ico{display: inline-block; padding-right: 20px; background: url($img-common+"icon_nw2.png") no-repeat right center; text-decoration: underline;}
+}
+.form_txt1{display: block; margin-top: 5px; font-size: $fz-xs;}
+.kakao_txt{font-weight: 500; color: #ff8400;}
+.naver_txt{font-weight: 500; color: #009732;}
+.btn_sns_del, .btn_sns{display: inline-block; margin-right: 15px; padding: 3px 10px; text-align: center; font-size: $fz-sm; border-radius: 3px; border: 1px solid #222;
+	@include tablet{display: block; margin-right: 0; margin-bottom: 4px;}
+}
+.btn_sns{color: #fff; background: #495f74; border-color: #495f74; @include speed;
+	@include desktop{&:hover{background-color: #224361;}}}
+
+/* 달력 */
+.cal_wrap{@include clearfix;
+	.cal_box{float: left; width: calc(100% - 300px);
+		.cal_top{@include clearfix;
+			.cal_prev, .cal_next{display: inline-block; width: 30px; height: 25px; background-repeat: no-repeat; background-position: center; vertical-align: middle;}
+			.cal_prev{background-image: url($img-common+"cal_prev.png");}
+			.cal_next{background-image: url($img-common+"cal_next.png");}
+			.txt1{display: inline-block; margin: 0 15px; font-size: 24px; color: #666; vertical-align: middle;
+				.num{font-weight: 700; color: #222;}
+			}
+			.cal_attr{float: right; font-size: 13px;
+				ul{display: inline-block; vertical-align: middle; @include clearfix;
+					>li{float: left; margin-left: 5px; padding: 4px 10px;
+						&.cal_today{position: relative;
+							&:before{content: ''; width: 100%; height: 100%; border: 3px solid $green; position: absolute; top: 0; left: 0; box-sizing: border-box;}
+						}
+						&.cal_no{background: #e8e8e8;}
+						&.cal_on{color: #fff; background: $purple;}
+					}
+				}
+			}
+		}
+	}
+	.tbl_cal{margin-top: 12px; @include table-reset; border-top: 1px solid #ededed;
+		th, td{padding: 10px; font-size: $fz-xs; text-align: center; border-bottom: 1px solid #ededed; border-right: 1px solid #f2f2f2;
+			&:last-child{border-right-width: 0;}
+		}
+		th{font-weight: 500;
+			&:first-child{color: #e60012;}
+			&:last-child{color: #0000ff;}
+		}
+		td{height: 60px; vertical-align: top; color: #888; background: #f4f4f4;
+			&:first-child{.date{color: #f18d95;}}
+			&:last-child{.date{color: #4587ff;}}
+			a{display: block; margin: -10px; padding: 10px; position: relative; z-index: 1;}
+			&.empty{background: #fff;}
+			&.able{background: #fff;
+				&:first-child{.date{color: #e60012;} .on .date{color: #fff;}}
+				&:last-child{.date{color: #0000ff;} .on .date{color: #fff;}}
+			}
+			&.today{position: relative; border-color: $green;
+				.date{color: #016f83;}
+				&:before{content: ''; width: 100%; height: 100%; border: 3px solid $green; border-right-width: 2px; border-bottom-width: 2px; position: absolute; top: 0; left: 0; box-sizing: border-box;}
+			}
+			.on{background: $purple; color: #fff; position: relative;
+				&:before{content: ''; display: block; width: 100%; height: 100%; border-right: 1px solid $purple; border-bottom: 1px solid $purple; position: absolute; top: 0; left: 0;}
+				.date{color: #fff;}
+			}
+			.date{display: block; margin: auto; color: #222;}
+		}
+	}
+	.cal_con_box{float: right; margin-top: 40px; width: 270px; border-radius: 10px; overflow: hidden;
+		.cal_tit1{padding: 10px 15px; background: $purple;
+			.ico{display: inline-block; color: #fff; padding-left: 25px; background: url($img-common+"icon_cal_wh.png") no-repeat left top 2px;}
+		}
+		.con_box{max-height: 300px; padding: 15px; background: #f8f8f8; overflow-y: auto;
+			.dot_list{
+				>li{margin-bottom: 10px;
+					@include desktop{a:hover{text-decoration: underline;}}
+					&.disable{color: #999;
+						&:before{background-color: #999;}
+					}
+					&.active{color: $purple;
+						a{display: inline-block; text-decoration: underline; padding-right: 25px; background: url($img-common+"icon_selected.png") no-repeat right 0 center;}
+						&:before{background-color: $purple;}
+						.fc_red{color: $purple;}
+					}
+				}
+			}
+		}
+		.date_box{padding-top: 20px; background: #f8f8f8;
+			.txt_box{margin: 0 20px 15px; padding: 20px; background: #fff;
+				label{display: inline-block; margin-right: 10px; font-weight: 500;}
+				.form_sel{display: inline-block; width: calc(100% - 80px);}
+			}
+			>.fc_orange{display: block; margin-bottom: 25px; margin-left: 20px; font-size: $fz-xs;}
+			.tableB{background: #fff;}
+		}
+	}
+	@include mobile{
+		.cal_box{float: none; width: auto;}
+		.cal_con_box{float: none; width: auto; margin-top: 30px;}
+	}
+	@include s-mobile{
+		.tbl_cal{
+			th, td{padding: 8px; font-size: 13px;}
+			td{height: 48px;
+				a{padding: 8px; margin: -8px; font-size: 13px;}
+			}
+		}
+		.cal_con_box{
+			.con_box{height: 160px;}
+			.date_box{padding-top: 15px;
+				.txt_box{margin: 0 15px 10px; padding: 15px;
+					label{font-size: 15px;}
+					.form_sel{width: calc(100% - 70px);}
+				}
+			}
+		}
+		.cal_box{
+			.cal_top{text-align: center;
+				.txt1{font-size: 20px;}
+				.cal_attr{display: block; float: none; margin: 20px 0;}
+			}
+		}
+	}
+}
+
+
+
+/* list style */
+.dot_list>li{margin-bottom: 5px; padding-left: 10px; font-size: $fz-sm; color: #555; position: relative;
+	&:last-child{margin-bottom: 0;}
+	&:before{content: ''; display: block; width: 4px; height: 4px; background: #222; border-radius: 15px; position: absolute; top: 8px; left: 0;}
+	@include mobile{font-size: 14px;
+		&:before{width: 3px; height: 3px;}
+	}
+}

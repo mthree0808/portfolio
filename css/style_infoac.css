@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 지식정보아카데미 */
+.infoac .svisual > span:before { background-image: url(../images/sub/infoac/bg.jpg); }
+.infoac .main_area .mock_list { width: 3300px; left: 50%; transform: translateX(-50%); }
+.infoac .main_area .mock_list > li { margin-left: 80px; }
+.infoac .main_area .mock_list > li:first-child { margin-left: 0; }
+.infoac .section1 { position: relative; padding: 220px 0 50px; }
+.infoac .section1 .sub_tit { margin-bottom: 50px; }
+.infoac .section1:before { content: ''; position: absolute; right: 50%; margin-right: -1000px; top: -310px; z-index: -1; width: 1168px; height: 876px; background-color: #eceff6; }
+.infoac .section1:after { content: ''; position: absolute; left: 50%; margin-left: -997px; bottom: 0; z-index: -1; width: 1280px; height: 2018px; background-color: #eceff6; }
+.infoac .section1 .mock_list { width: 1833px; left: 50%; margin-left: -830px; text-align: left; }
+.infoac .section1 .mock_list > li.issue1 { width: 100%; }
+.infoac .section1 .mock_list > li.issue2 { position: absolute; right: 0; top: 275px; z-index: 6; }
+.infoac .section1 .mock_list > li.issue2 > ul { margin: 115px 0 0 150px; }
+.infoac .section1 .mock_list > li.issue2 > ul > li { width: 400px; height: 340px; border-radius: 20px; margin-top: 70px; }
+.infoac .section1 .mock_list > li.issue2 > ul > li.st1 { background: url(../images/sub/infoac/cont1.jpg) no-repeat center top; border: 2px solid #bce2fe; margin-top: 0; }
+.infoac .section1 .mock_list > li.issue2 > ul > li.st2 { background: url(../images/sub/infoac/cont2.jpg) no-repeat center top; border: 2px solid #9ff1dd; }
+.infoac .section1 .mock_list > li.issue2 > ul > li.st3 { background: url(../images/sub/infoac/cont3.jpg) no-repeat center top; border: 2px solid #ced6fe; }
+.infoac .section1 .mock_list > li.issue2 > ul > li.st4 { background: url(../images/sub/infoac/cont4.jpg) no-repeat center top; border: 2px solid #fed7c0; }
+.infoac .section1 .mock_list > li.issue3 { width: 100%; margin-top: 80px; }
+.infoac .section2 { padding: 100px 0 180px; }
+.infoac .section2 .mock_list { width: 1993px; left: 50%; margin-left: -1000px; text-align: left; }
+.infoac .section2 .mock_list > li.issue1 { position: relative; margin: 0 0 0 60px; }
+.infoac .section2 .mock_list > li.issue1:after { content: ''; position: absolute; right: -470px; bottom: -400px; z-index: -1; width: 1128px; height: 642px; background: url(../images/sub/infoac/c_img.jpg) no-repeat center top; }
+.infoac .section2 .mock_list > li.issue2 { position: absolute; right: 0; top: 580px; z-index: 6; }
+.infoac .section2 .mock_list > li.issue3 { width: 100%; margin: 160px 0 0 0; }
+.infoac .section3 { width: 100%; height: 1023px; background: url(../images/sub/infoac/c_bg.jpg) no-repeat center top fixed; image-rendering: pixelated; }
+.infoac .section4 { position: relative; padding-top: 220px; }
+.infoac .section4:before { content: ''; position: absolute; left: 0; bottom: 180px; z-index: 3; width: 100%; height: 2130px; background-color: #354ca4; }
+.infoac .section4 .sub_tit { margin: 100px 0; text-align: center; }
+.infoac .section4 .mock_list { width: 1418px; left: 50%; transform: translateX(-50%); text-align: right; }
+.infoac .section4 .mock_list > li { display: block; position: absolute; z-index: 3; }
+.infoac .section4 .mock_list > li > a { display: inline-block; vertical-align: top; }
+.infoac .section4 .mock_list > li .frame { height: 2036px; }
+.infoac .section4 .mock_list > li.issue2 .frame:before { content: ''; position: absolute; left: 17px; top: 663px; z-index: 3; width: 420px; height: 197px; background: url(../images/sub/infoac/f_img1.jpg) no-repeat center top; border-radius: 15px; box-shadow: 16px 16px 56px rgba(18,40,78,0.35); image-rendering: pixelated; }
+.infoac .section4 .mock_list > li.issue2 .frame:after { content: ''; position: absolute; right: 18px; bottom: 337px; z-index: 3; width: 420px; height: 243px; background: url(../images/sub/infoac/f_img2.jpg) no-repeat center top; border-radius: 15px; box-shadow: -16px 16px 56px rgba(18,40,78,0.35); image-rendering: pixelated; }
+.infoac .section4 .mock_list > li .frame_top { height: 620px; border-radius: 30px; }
+.infoac .section4 .mock_list > li.issue1 { left: 0; top: 0; z-index: 6; }
+.infoac .section4 .mock_list > li.issue1:before { content: ''; position: absolute; left: 50%; bottom: -40px; z-index: 3; width: 428px; height: 300px; transform: translateX(-50%); background-color: #354ca4; }
+.infoac .section4 .mock_list > li.issue2 { left: 50%; transform: translateX(-50%); z-index: 9; text-align: center; }
+.infoac .section4 .mock_list > li.issue3 { position: relative; padding: 565px 0 0 0; width: 100%; text-align: right; }
+.infoac .section4 .mock_list > li.issue4 { left: 60px; top: 712px; }
+.infoac .section4 .mock_list > li.issue5 { position: relative; margin: 110px 60px 0 0; width: 100%; }
+.infoac .section4 .mock_list > li.issue6 { left: 0; top: 1450px; }
+.infoac .section4 .mock_list > li.issue7 { position: relative; margin: 110px 0 0 0; width: 100%; }
+.infoac .info { padding: 220px 0 240px; }
+.infoac .info dl:first-child { float: left; width: 920px; }
+.infoac .info:after { content: ''; display: block; clear: both; }
+.infoac .info .wrap { width: 1512px; }
+.infoac .info dt { margin-bottom: 50px; }
+.infoac .info dl:first-child ul:after { content: ''; display: block; clear: both; }
+.infoac .info dl:first-child li { position: relative; float: left; display: table; margin-left: 40px; width: 200px; height: 200px; border-radius: 50%; overflow: hidden; }
+.infoac .info dl:first-child li:first-child { margin-left: 0; }
+.infoac .info dl:first-child li > span { position: relative; z-index: 3; display: table-cell; vertical-align: middle; text-align: center; font-family: montM; font-size: 20px; color: #fff; }
+.infoac .info dl:first-child li:after { content: ''; position: absolute; left: 10px; top: 10px; z-index: 1; width: 200px; height: 200px; border-radius: 50%; }
+.infoac .info dl:first-child li.st1 { background-color: #556bb5; }
+.infoac .info dl:first-child li.st1:after { background-color: #4759a3; }
+.infoac .info dl:first-child li.st2 { background-color: #e4e7f2; }
+.infoac .info dl:first-child li.st2:after { background-color: #eceff6; }
+.infoac .info dl:first-child li.st2 > span { color: #222; }
+
+.infoac .info dl:first-child li.st3 { background-color: #2fcbb2; }
+.infoac .info dl:first-child li.st3:after { background-color: #01c0a1; }
+.infoac .info dl:first-child li.st4 { background-color: #ff9f2e; }
+.infoac .info dl:first-child li.st4:after { background-color: #ff8a00; }
+.infoac .info dl:last-child { float: left; width: auto; margin-left: 180px; }
+.infoac .info dl:last-child li { margin-top: 45px; }
+.infoac .info dl:last-child li:first-child { margin-left: 0; }
+
+/* 지식정보아카데미 이미지 */
+.infoac .main_w_1 { background-image: url(../images/sub/infoac/main_w_1_th.jpg); height: 665px; }
+.infoac .main_w_2 { background-image: url(../images/sub/infoac/main_w_2_th.jpg); height: 665px; }
+.infoac .main_w_3 { background-image: url(../images/sub/infoac/main_w_3_th.jpg); height: 665px; }
+.infoac .main_m { background-image: url(../images/sub/infoac/main_m_th.jpg); }
+.infoac .sub_w_1 { background-image: url(../images/sub/infoac/sub_w_1_th.jpg); height: 600px; }
+.infoac .sub_w_2 { background-image: url(../images/sub/infoac/sub_w_2_th.jpg); height: 600px; }
+.infoac .sub_w_3 { background-image: url(../images/sub/infoac/sub_w_3_th.jpg); height: 1526px; }
+.infoac .sub_w_4 { background-image: url(../images/sub/infoac/sub_w_4_th.jpg); height: 642px; }
+.infoac .sub_w_5 { background-image: url(../images/sub/infoac/sub_w_5_th.jpg); height: 672px; }
+.infoac .sub_w_6 { background-image: url(../images/sub/infoac/sub_w_6_th.jpg); height: 572px; }
+.infoac .sub_m_1 { background-image: url(../images/sub/infoac/sub_m_1_th.jpg); height: 620px; }
+.infoac .sub_m_2 { background-image: url(../images/sub/infoac/sub_m_2_th.jpg); height: 620px; }
+.infoac .sub_m_3 { background-image: url(../images/sub/infoac/sub_m_3_th.jpg); height: 620px; }
+.infoac .sub_m_4 { background-image: url(../images/sub/infoac/sub_m_4_th.jpg); height: 620px; }
+.infoac .sub_m_5 { background-image: url(../images/sub/infoac/sub_m_5_th.jpg); height: 620px; }
+.infoac .sub_m_6 { background-image: url(../images/sub/infoac/sub_m_6_th.jpg); height: 620px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

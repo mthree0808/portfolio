@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* 전기재해통계 */
+
+progress{height: 12px; border: 0; border-radius: 9px; appearance: none; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; background-color: #f1f1f1;}
+progress::-webkit-progress-bar{background-color: #f1f1f1; border-radius: 9px;}
+progress::-moz-progress-bar{background-color: #0d6cb7; border-radius: 9px;}
+progress::-ms-progress-bar{background-color: #f1f1f1; border-radius: 9px;}
+progress::-webkit-progress-value{background-color: #0d6cb7; border-top-left-radius: 9px; border-bottom-left-radius: 9px;}
+progress::-ms-progress-value{background-color: #0d6cb7; border-top-left-radius: 9px; border-bottom-left-radius: 9px;}
+progress::-ms-fill{border: 0 none; background-color: #0d6cb7;}
+
+/* 지도 legend */
+.stats_row #legend_wrap{background: #fff !important; color: #222; border: 0 none; border-radius: 5px;}
+.stats_row #legend_wrap2{background: #fff !important; color: #222; border: 0 none; border-radius: 5px;}
+
+/* 레이아웃 */
+.stats_row .layer_pop{max-width: 900px;}
+.stats_row{margin-bottom: 30px;}
+.stats_row:last-child{margin-bottom: 0;}
+.stats_row select{width: 100%; max-width: 350px; height: 36px; padding: 0 25px 0 10px; background: #fff url(../images/stats/icon_select.png) no-repeat right 18px center; border: 1px solid #dedede; appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;}
+.stats_row.pcs2:after{content: ''; display: block; clear: both;}
+.stats_row.pcs2 .stats_box{float: left; width: calc(50% - 10px); margin-right: 20px;}
+.stats_row.pcs2 .stats_box:last-child{margin-right: 0;}
+.stats_row.pcs2 .stats_top{text-align: center;}
+.stats_box{border: 1px solid #e5e5e5; box-shadow: 0 3px 5px 0 rgba(189, 189, 189, 0.15);}
+.stats_top{min-height: 70px; padding: 12px 20px 12px 40px; background: #f7f7f7;}
+.stats_top:after{content: ''; display: block; clear: both;}
+.stats_tit1{display: inline-block; line-height: 45px; font-size: 1.2em; font-weight: 500; color: #0e2545; vertical-align: middle;}
+.stats_tit2{margin-bottom: 15px; font-size: 1.067em; font-weight: 500; color: #0e2545;}
+.stats_top .stats_sel{float: right; max-width: 400px; height: 45px; border-radius: 5px; border-width: 0; box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.15);}
+.stats_con{padding: 15px; background: #fff;}
+.basic_tab.tab_10pcs>li{width: 33.33%;}
+.basic_tab.tab_10pcs>li>a:before{width: 15px; height: 13px; margin-top: -6px; background-image: url(../images/stats/icon_tab.png); background-size: 100% auto;}
+.basic_tab.tab_10pcs>li>a:hover:before, .basic_tab.tab_10pcs>li.active>a:before{background-image: url(../images/stats/icon_tab_on.png);}
+.basic_tab.tab_10pcs>li:nth-child(3n){border-right-width: 1px;}
+.basic_tab.tab_10pcs>li:nth-child(-n+7){border-bottom-width: 0;}
+.stats_down{float: right; display: inline-block; padding: 0 20px; line-height: 44px; font-size: 1.067em; color: #0e2545; background: #fff; border: 1px solid #d7d7d7;}
+.stats_down .icon_xls{display: inline-block; padding-left: 29px; background: url(../images/stats/icon_exel.png) no-repeat left center;}
+
+/* graph_box height */
+div[class^=graph_box]{text-align: center;}
+.graph_box1{height: 290px;}
+.graph_box1 img{padding: 20px 0;}
+.graph_box2{height: 280px;}
+.graph_box3{height: 400px;}
+.graph_box4{padding: 60px 20px; border-bottom: 1px solid #e5e5e5;}
+
+.graph_attr{margin: 10px 0 20px; text-align: right;}
+.graph_attr>li{display: inline-block; margin-left: 20px; font-weight: 500; color: #080e46;}
+.graph_attr>li:first-child{margin-left: 0;}
+.graph_legend{margin: 20px 0 10px; text-align: right;}
+.graph_legend>li{display: inline-block; margin-left: 11px; padding-left: 13px; font-size: 0.867em; position: relative;}
+.graph_legend>li:first-child{margin-left: 0;}
+.graph_legend>li:before{content: ''; display: block; width: 10px; height: 10px; border-radius: 50%; position: absolute; top: 4px; left: 0;}
+.graph_legend>li.color1:before{background: #568de8;}
+.graph_legend>li.color2:before{background: #f84f63;}
+.graph_legend>li.color3:before{background: #616be4;}
+.graph_legend>li.color4:before{background: #ff8c11;}
+.graph_legend>li.color5:before{background: #44aeb0;}
+.graph_legend>li.color6:before{background: #ff6eb9;}
+.graph_txt1{text-align: right; color: #ff4848;}
+.graph_txt2{padding-left: 40px;}
+.pro_attr{display: inline-block; margin-left: 10px;}
+.graph_row{position: relative; min-height: 19px;}
+.graph_row .graph_txt2{position: absolute; top: 0; left: 0;}
+
+/* 습도 */
+.humidity_list{margin: 0 -15px;}
+.humidity_list:after{content: ''; display: block; clear: both;}
+.humidity_list>li{float: left; width: 25%; padding: 15px 40px 20px; border-right: 1px dashed #d1d1d1;}
+.humidity_list>li:last-child{border-right-width: 0;}
+.hm_num{display: block; margin-bottom: 15px; font: 700 42px/1 'Roboto'; color: #d91414;}
+.hm_num.blue{color: #0e438d;}
+.hm_num.green{color: #2da490;}
+.hm_txt{color: #515b6a;}
+.stats_icon_list{margin: 0 -8px;}
+.stats_icon_list:after{content: ''; display: block; clear: both;}
+.stats_icon_list>li{float: left; width: calc(20% - 16px); margin: 0 8px; padding: 20px 40px; background: #c5c5c5 url(../images/stats/stats_bg1.png) no-repeat left 13px top -50px; border-radius: 5px; overflow: hidden; position: relative;}
+.stats_icon_list>li:after{content: ''; display: block; width: 40px; height: 40px; background: url(../images/stats/stats_icon1.png) no-repeat center / 100% auto; position: absolute; top: 20px; right: 15px;}
+.stats_icon_list>li:nth-child(2){background: #568de8 url(../images/stats/stats_bg2.png) no-repeat left -70px top -90px;}
+.stats_icon_list>li:nth-child(2):after{background-image: url(../images/stats/stats_icon2.png);}
+.stats_icon_list>li:nth-child(3){background: #ffb400 url(../images/stats/stats_bg3.png) no-repeat right -50px bottom -50px;}
+.stats_icon_list>li:nth-child(3):after{background-image: url(../images/stats/stats_icon3.png);}
+.stats_icon_list>li:nth-child(4){background: #44d3a6 url(../images/stats/stats_bg4.png) no-repeat right -20px top -40px;}
+.stats_icon_list>li:nth-child(4):after{background-image: url(../images/stats/stats_icon4.png);}
+.stats_icon_list>li:nth-child(5){background: #ff6e89 url(../images/stats/stats_bg5.png) no-repeat left -5px bottom -30px;}
+.stats_icon_list>li:nth-child(5):after{background-image: url(../images/stats/stats_icon5.png);}
+.sil_num{display: block; margin-bottom: 7px; font: 500 36px/1 'Roboto'; color: #fff;}
+.sil_txt{color: #fff;}
+
+/* 월별 */
+.sub_sch_box.ssch_box{margin-bottom: 0; background-color: #fff;}
+.sub_sch_box.ssch_box .row{max-width: 845px; min-height: 42px;}
+.ssch_box .ssch_label{display: table-cell; width: 155px; font-size: 1.06em; font-weight: 500; vertical-align: middle;}
+.ssch_box input.hide{width: 1px; height: 1px; padding: 0; border: 0 none;}
+.sub_sch_box.ssch_box input{height: 40px;}
+.ssch_box .input_box label{width: auto;}
+.ssch_box .chk_each label{width: auto; padding-left: 22px;}
+.ssch_box .vchkbox{top: 3px;}
+.ssch_box .chk_each{margin-right: 20px;}
+.ssch_box .chk_each:last-child{margin-right: 0;}
+.sub_sch_box.ssch_box .input_box.date input{background-color: #fafafa; background-image: url(../images/stats/icon_cal.png);}
+.sub_sch_box.ssch_box .input_box.date.one input{width: 100%;}
+.ssch_box select{max-width: inherit; background-color: #fafafa;}
+.ssch_box .slt_box.city{width: 40%;}
+.stats_btn_box{display: table-cell; width: 196px; font-size: 0; text-align: right;}
+.ssch_btn{display: inline-block; margin-left: 10px; padding: 0 15px; font-size: 15px; line-height: 40px; color: #fff; background: #0e438d;}
+.ssch_btn .ico{display: inline-block; padding-left: 20px; background: url(../images/stats/icon_ssch.png) no-repeat left center;}
+.ssch_btn.refresh{background: #444;}
+.ssch_btn.refresh .ico{background-image: url(../images/stats/icon_refresh.png);}
+.row.one .stats_btn_box{text-align: center;}
+.chk_each.dtc{display: table-cell; padding-left: 20px;}
+.input_box.volume{font-size: 0;}
+.input_box.volume input{width: 46%; font-size: 13px;}
+.input_box.volume .date_wave{display: inline-block; width: 8%; font-size: 15px; text-align: center;}
+
+/* 전국 */
+.stats_map{border-top: 1px solid #d1d1d1;}
+.basic_table.pop tbody tr{cursor: pointer;}
+.basic_table.pop tbody tr:hover td{background-color: #fafafa;}
+
+/* 인구 */
+.humidity_list.population{margin-top: 20px;}
+.humidity_list.population>li{width: 14.28%; padding: 15px;}
+.humidity_list.population>li:first-child{padding-left: 20px;}
+.population .hm_num{margin-bottom: 10px; font-size: 1.4em; word-break: break-all;}
+.scroll_h{max-height: 500px; overflow-y: auto;}
+
+/* 대국민 변압기 */
+.stats_tab_wrap{padding-top: 17px; text-align: center; background: #f7f7f7;}
+.stats_tab{float: right; position: relative; left: -50%;}
+.stats_tab:after{content: ''; display: block; clear: both;}
+.stats_tab>li{float: left; position: relative; left: 50%;}
+.stats_tab>li>a{display: block; padding: 0 25px; color: #767676;}
+.stats_tab li span{display: inline-block; padding: 17px 0;}
+.stats_tab>li.active a{background: #fff;}
+.stats_tab>li.active span{color: #0e2545; font-weight: 500; position: relative;}
+.stats_tab>li.active span:after{content: ''; display: block; width: calc(100% + 12px); height: 3px; background: #0e438d; position: absolute; left: -5px; bottom: 0;}
+.tab_con_box{clear: both; background: #fff; text-align: left;}
+.tab_con{display: none;}
+.tab_con:first-child{display: block;}
+
+.stats_each{padding: 25px 40px 0;}
+.stats_each:last-child{padding-bottom: 25px;}
+
+
+@media screen and (max-width: 991px){
+	.basic_tab.tab_10pcs>li{width: 50%;}
+	.basic_tab.tab_10pcs > li:nth-child(3n){border-right-width: 0;}
+	.basic_tab.tab_10pcs > li:nth-child(2n){border-right-width: 1px;}
+	.basic_tab.tab_10pcs > li:nth-child(-n+8){border-bottom-width: 0;}
+
+	div[class^=graph_box]{height: auto;}
+
+	.stats_row{margin-bottom: 15px;}
+	.stats_top{min-height: inherit; padding: 12px 15px;}
+	.stats_tit1{line-height: 1.4em; font-size: 15px;}
+	.humidity_list{margin: 5px 10px;}
+	.humidity_list>li{width: 50%; padding: 20px 0 5px;}
+	.humidity_list>li:nth-child(-n+2){padding: 5px 0 20px; border-bottom: 1px solid #d1d1d1;}
+	.humidity_list>li:nth-child(2n){padding-left: 25px; border-right-width: 0;}
+	.hm_num{margin-bottom: 7px; font-size: 28px;}
+	.hm_txt{font-size: 12px;}
+	.stats_row.pcs2 .stats_box{float: none; width: auto; margin: 0;}
+	.stats_row.pcs2 .stats_box:first-child{margin-bottom: 15px;}
+	.stats_row.pcs2 .stats_top{text-align: left;}
+
+	.stats_icon_list{margin: 0;}
+	.stats_icon_list>li{float: none; width: auto; margin: 0 0 5px 0; padding: 12px 25px; background-position: left 20px top -60px;}
+	.stats_icon_list>li:nth-child(2){background-position: left -50px top -70px; background-size: 160px auto;}
+	.stats_icon_list>li:nth-child(3){background-position: right -40px bottom -60px; background-size: 160px auto;}
+	.stats_icon_list>li:nth-child(4){background-position: right -10px top -65px; background-size: 140px auto;}
+	.stats_icon_list>li:last-child{margin-bottom: 0; background-position: left -30px bottom -40px; background-size: 140px auto;}
+	.stats_icon_list>li:after{width: 30px; height: 30px; top: 12px; right: 15px;}
+	.sil_num{float: right; margin-bottom: 0; padding-right: 30px; font-size: 24px;}
+	.sil_txt{line-height: 30px; font-size: 14px;}
+
+	.graph_attr>li{font-size: 12px; margin-left: 10px;}
+	.graph_legend>li{font-size: 12px;}
+	.graph_legend>li:before{top: 3px;}
+
+	.humidity_list.population>li{width: 50%; border-bottom: 1px solid #d1d1d1;}
+	.population>li:last-child{border-bottom-width: 0; border-right: 1px dashed #d1d1d1;}
+}
+
+@media screen and (max-width: 768px){
+	.stats_down{padding: 0 12px; line-height: 32px; font-size: 14px;}
+	.stats_down .icon_xls{padding-left: 25px; background-size: auto 20px;}
+
+	.sub_sch_box.ssch_box{padding: 0;}
+	.stats_btn_box{display: block; width: 100%; margin-top: 5px !important; text-align: center;}
+	.ssch_btn{width: 100%; margin: 0 0 5px; line-height: 32px; font-size: 14px;}
+	.ssch_btn .ico{background-size: auto 14px;}
+	.ssch_box .ssch_label{display: block; width: 100%; margin-top: 10px; font-size: 14px;}
+	.ssch_box .row:first-child .ssch_label{margin-top: 0;}
+	.sub_sch_box.ssch_box input{height: 32px;}
+	.ssch_box .slt_box.city{width: 100%;}
+
+	.scroll_h{max-height: 300px;}
+	.chk_each.dtc{padding: 5px 0; display: block;}
+}
